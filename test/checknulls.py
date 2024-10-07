@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Cargar el archivo CSV
-df = pd.read_csv('dataset.csv', sep=';', encoding='utf-8')
+df = pd.read_csv('dataset.csv', encoding='utf-8')
 
 # Analizar la columna "kms" y revisar si hay valores vacíos
 empty_kms = df['power'].isnull()

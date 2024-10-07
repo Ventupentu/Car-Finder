@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 
 # Cargar el dataset
-data = pd.read_csv('dataset.csv', sep=';')
+data = pd.read_csv('dataset.csv')
 
 # Imputar valores faltantes en la columna de potencia (power)
 # Primero, asegurémonos de que la columna 'power' sea de tipo numérico
@@ -41,4 +41,4 @@ unknown_power['power'] = np.ceil(predicted_power).astype(int)
 data.loc[data['power'].isna(), 'power'] = unknown_power['power']
 
 # Opcional: Guardar el dataset con los valores imputados
-data.to_csv('dataset_imputado.csv', sep=';', index=False)
+data.to_csv('dataset_imputado.csv', index=False)
