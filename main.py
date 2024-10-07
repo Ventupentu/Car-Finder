@@ -4,8 +4,27 @@ import pandas as pd
 from modules.geo_utils import GeoDistanceCalculator
 from modules.data_loader import load_data, assign_model_ids
 from modules.recommendation_model import RecommendationModel
+import sys
+
+def ask_user_preferences():
+    "Función que solicita las preferencias del usuario para la recomendación."
+    preferences = {}
+    preferences['make'] = input("Marca del coche (e.g., 'ABARTH'): ")
+    preferences['model'] = input("Modelo del coche (e.g., '500'): ")
+    preferences['min_price'] = int(input("Precio mínimo (e.g., 20000): "))
+    preferences['max_price'] = int(input("Precio máximo (e.g., 30000): "))
+    preferences['fuel'] = input("Tipo de combustible (e.g., 'Gasolina', presione Enter para omitir): ") or None
+    preferences['max_year'] = input("Año máximo (e.g., 2021, presione Enter para omitir): ") or None
+    preferences['max_kms'] = input("Kilómetros máximos (e.g., 10000, presione Enter para omitir): ") or None
+    preferences['power'] = int(input("Potencia mínima (e.g., 180): "))
+    preferences['doors'] = input("Número de puertas (e.g., 3, presione Enter para omitir): ") or None
+    preferences['shift'] = input("Tipo de cambio (e.g., 'Manual', presione Enter para omitir): ") or None
+    preferences['color'] = input("Color (e.g., 'Negro', presione Enter para omitir): ") or None
+    preferences['origin_city'] = input("Ciudad de origen del usuario (e.g., 'Madrid'): ")
+    return preferences
 
 def main():
+    " Función main para ejecutar el programa principal."
     # Rutas a los archivos CSV
     coches_path = 'data/coches.csv'
     ratings_path = 'data/car_ratings.csv'
@@ -21,22 +40,7 @@ def main():
     recommender.train(test_size=0.2, random_state=42)
     rmse, mae = recommender.evaluate()
     
-    # Definir preferencias del usuario (puede dejar cualquiera como None)
-    user_preferences = {
-        'make': 'PORSCHE',             # e.g., 'ABARTH'
-        'model': '911',                 # e.g., '500'
-        'min_price': 50000,            # e.g., 20000
-        'max_price': 400000,          # e.g., 30000
-        'fuel': None,                  # e.g., 'Gasolina'
-        'max_year': None,              # e.g., 2021
-        'max_kms': None,               # e.g., 10000
-        'power': 500,                   # e.g., 180
-        'doors': None,                 # e.g., 3
-        'shift': None,                 # e.g., 'Manual'
-        'color': None,                 # e.g., 'Negro'
-        'origin_city': 'Madrid'      # Ciudad de origen del usuario
-        # 'max_distance': 100    # Eliminado como preferencia de filtrado
-    }
+    user_preferences = ask_user_preferences()
     
     # Crear instancia de GeoDistanceCalculator
     geo_calculator = GeoDistanceCalculator()
