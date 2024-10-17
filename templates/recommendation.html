@@ -1,0 +1,41 @@
+<!-- recommendation.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendaciones de Coches</title>
+</head>
+<body>
+    <h1>Recomendaciones de Coches</h1>
+
+    <form action="{{ url_for('recommendation') }}" method="post">
+        <input type="text" name="make" placeholder="Marca">
+        <input type="text" name="model" placeholder="Modelo">
+        <input type="number" name="min_price" placeholder="Precio mínimo">
+        <input type="number" name="max_price" placeholder="Precio máximo">
+        <input type="text" name="fuel" placeholder="Combustible">
+        <input type="number" name="year" placeholder="Año">
+        <input type="number" name="max_kms" placeholder="Máximos kilómetros">
+        <input type="number" name="power" placeholder="Potencia">
+        <input type="number" name="doors" placeholder="Número de puertas">
+        <input type="text" name="shift" placeholder="Transmisión">
+        <input type="text" name="color" placeholder="Color">
+        <input type="text" name="origin_city" placeholder="Ciudad de origen">
+        <button type="submit">Buscar</button>
+    </form>
+
+    {% if recommendations %}
+        <h2>Coches recomendados:</h2>
+        <ul>
+            {% for car in recommendations %}
+                <li>{{ car['make'] }} {{ car['model'] }} - ${{ car['price'] }} (Calificación estimada: {{ car['estimated_rating'] }})</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No hay recomendaciones disponibles.</p>
+    {% endif %}
+    
+    <a href="{{ url_for('home') }}">Volver a la página principal</a>
+</body>
+</html>
