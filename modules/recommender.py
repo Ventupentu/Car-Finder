@@ -1,4 +1,4 @@
-# main.py
+# rm.py
 
 import pandas as pd
 from modules.geo_utils import GeoDistanceCalculator
@@ -8,6 +8,22 @@ from surprise import SVD, Dataset, Reader
 from surprise.model_selection import GridSearchCV, train_test_split
 import numpy as np
 
+# Ejemplo de pesos para probar
+weights = {
+    'make': 10,
+    'model': 8,
+    'min_price': 9,
+    'max_price': 7,
+    'fuel': 6,
+    'year': 5,
+    'max_kms': 6,
+    'power': 8,
+    'doors': 4,
+    'shift': 3,
+    'color': 2,
+    'origin_city': 7,
+    'distance': 10,  # Añadir el peso para la distancia
+}
 def tune_hyperparameters(df_ratings):
     """
     Ajusta los hiperparámetros del modelo SVD utilizando GridSearchCV.
@@ -32,7 +48,6 @@ def tune_hyperparameters(df_ratings):
     
     return gs.best_params['rmse']
 
-
 def recommend(user_preferences):
     """Función principal para ejecutar el programa de recomendación de coches."""
     # Rutas a los archivos CSV
@@ -50,7 +65,6 @@ def recommend(user_preferences):
     df_ratings['user_id'] = df_ratings['user_id'].astype(str)
     
     # Ajustar hiperparámetros
-    #print("Iniciando ajuste de hiperparámetros...")
     best_params = tune_hyperparameters(df_ratings)
     
     # Inicializar el modelo de recomendación con los mejores parámetros
@@ -59,13 +73,6 @@ def recommend(user_preferences):
     
     # Entrenar el modelo
     recommender.train(test_size=0.2, random_state=42)
-    
-    # Evaluar el modelo
-    #rmse, mae = recommender.evaluate()
-    #print(f"Evaluación del Modelo - RMSE: {rmse}, MAE: {mae}")
-    
-    # Definir preferencias del usuario
-
     
     # Crear instancia de GeoDistanceCalculator
     geo_calculator = GeoDistanceCalculator()
@@ -88,7 +95,7 @@ def recommend(user_preferences):
                 filtered_cars = filtered_cars[filtered_cars['kms'] <= value]
             elif key == 'power':
                 filtered_cars = filtered_cars[filtered_cars['power'] >= value]
-                print(type(filtered_cars['power']))
+
         else:
             filtered_cars = filtered_cars[filtered_cars[key] == value]
     
@@ -101,12 +108,24 @@ def recommend(user_preferences):
             filtered_cars = pd.DataFrame()  # Vaciar el DataFrame si no se puede calcular la distancia
         else:
             # Calcular la distancia para cada coche
-            distances = filtered_cars['province'].apply(
+            filtered_cars['distance_km'] = filtered_cars['province'].apply(
                 lambda prov: geo_calculator.calcular_distancia(user_origin, prov, 'España', 'España')
             )
-            # Añadir la columna de distancia
-            filtered_cars = filtered_cars.copy()
-            filtered_cars['distance_km'] = distances
+            
+            # Aplicar penalización según la distancia y filtrar coches lejanos
+            distance_weight = weights.get('distance', 0)  # Obtener el peso de la distancia
+            max_distance = user_preferences.get('max_distance', 500)  # Distancia máxima predeterminada
+
+            # Filtrar coches que están demasiado lejos
+            filtered_cars = filtered_cars[filtered_cars['distance_km'] <= max_distance]
+
+            # Si se quiere penalizar las recomendaciones basadas en la distancia
+            if distance_weight > 0:
+                filtered_cars['distance_penalty'] = filtered_cars['distance_km'].apply(
+                    lambda dist: distance_weight * (dist / max_distance)  # Penalización basada en la distancia
+                )
+            else:
+                filtered_cars['distance_penalty'] = 0
     
     # Generar recomendaciones
     if not filtered_cars.empty:
@@ -118,12 +137,25 @@ def recommend(user_preferences):
         
         # Predecir calificaciones para cada modelo filtrado usando el método para usuarios nuevos
         predicted_ratings = []
+
+
+
+        # Calcular las puntuaciones de los coches filtrados
         for car in filtered_cars_details:
             estimated_rating = recommender.predict_rating_new_user(
                 model_id=car['model_id'],
                 car_features=car,
-                preferences=user_preferences
+                preferences=user_preferences,
+                weights=weights  # Pasar los pesos aquí
             )
+            
+            # Penalizar según la distancia
+            if 'distance_penalty' in filtered_cars.columns:
+                estimated_rating -= filtered_cars.loc[filtered_cars['model_id'] == car['model_id'], 'distance_penalty'].values[0]
+
+            # Asegurarse de que la puntuación no sea menor que 1 ni mayor que 5
+            estimated_rating = min(max(estimated_rating, 1), 5)
+            
             predicted_ratings.append({
                 'model_id': car['model_id'],
                 'estimated_rating': estimated_rating
@@ -146,31 +178,11 @@ def recommend(user_preferences):
         # Mostrar las recomendaciones incluyendo la distancia
         print("\nMejores recomendaciones para el usuario nuevo:")
         top = top_recommendations[['make', 'model', 'price', 'fuel', 'year', 'kms', 'power', 'doors', 'shift', 'color', 'province', 'distance_km', 'estimated_rating']]
+        
         # Convertir a diccionario para mostrar en la interfaz
         return top.to_dict('records')
-
 
     else:
         print("No hay coches que cumplan con las preferencias del usuario.")
 
-    
 
-"""
-if __name__ == "__main__":
-    user_preferences = {
-        'make': 'PORSCHE',             # Marca preferida
-        'model': '911',                # Modelo preferido
-        'min_price': 50000,            # Precio mínimo
-        'max_price': 400000,           # Precio máximo
-        'fuel': 'Gasolina',            # Tipo de combustible
-        'year': 2020,              # Año máximo
-        'max_kms': 50000,              # Kilometraje máximo
-        'power': 500,                  # Potencia mínima
-        'doors': 2,                    # Número de puertas
-        'shift': 'Automatico',         # Tipo de cambio
-        'color': 'Negro',              # Color
-        'origin_city': 'Madrid'        # Ciudad de origen del usuario
-        # 'max_distance': 100    # Eliminado como preferencia de filtrado
-    }
-
-"""

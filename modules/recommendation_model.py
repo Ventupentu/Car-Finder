@@ -35,26 +35,14 @@ class RecommendationModel:
         pred = self.model.predict(uid=user_id, iid=model_id)
         return pred.est
 
-    def predict_rating_new_user(self, model_id: int, car_features: dict, preferences: dict) -> float:
-        """
-        Predice la calificación estimada para un usuario nuevo y un modelo de coche basándose en características.
-        
-        :param model_id: ID del modelo de coche.
-        :param car_features: Diccionario con las características del coche.
-        :param preferences: Diccionario con las preferencias del usuario.
-        :return: Calificación estimada.
-        """
+    def predict_rating_new_user(self, model_id: int, car_features: dict, preferences: dict, weights: dict) -> float:
         # Obtener la media de las valoraciones para el modelo
         model_ratings = self.df_ratings[self.df_ratings['model_id'] == model_id]['rating']
-        if not model_ratings.empty:
-            mean_rating = model_ratings.mean()
-        else:
-            mean_rating = self.trainset.global_mean
-        
+        mean_rating = model_ratings.mean() if not model_ratings.empty else self.trainset.global_mean
+
         # Ajustar la puntuación basada en la coincidencia de características
-        # Definir un factor de ajuste
         adjustment = 0
-        
+
         # Comparar cada preferencia con las características del coche
         for key, value in preferences.items():
             if value is None:
@@ -62,19 +50,23 @@ class RecommendationModel:
             if key in ['min_price', 'max_price', 'min_power', 'max_kms']:
                 # Manejar rangos
                 if key == 'min_price' and car_features.get('price', 0) >= value:
-                    adjustment += 0.5
+                    adjustment += weights.get('min_price', 0) * 0.5
                 elif key == 'max_price' and car_features.get('price', 0) <= value:
-                    adjustment += 0.5
+                    adjustment += weights.get('max_price', 0) * 0.5
                 elif key == 'min_power' and car_features.get('power', 0) >= value:
-                    adjustment += 0.5
+                    adjustment += weights.get('min_power', 0) * 0.5
                 elif key == 'max_kms' and car_features.get('kms', 0) <= value:
-                    adjustment += 0.5
+                    adjustment += weights.get('max_kms', 0) * 0.5
             else:
                 # Manejar igualdad
                 if car_features.get(key) == value:
-                    adjustment += 0.5  # Puedes ajustar este valor según sea necesario
-        
-        # Asegurar que la puntuación no exceda el máximo permitido
-        estimated_rating = min(mean_rating + adjustment, 5.0)
-        
-        return estimated_rating
+                    adjustment += weights.get(key, 0) * 0.5
+
+        # Penalizar según la distancia
+        if 'distance' in weights and 'distance_km' in car_features:
+            adjustment -= weights['distance'] * (car_features['distance_km'] / 100)  # Penalizar según la distancia, puede ajustar el factor
+
+        return mean_rating + adjustment
+
+
+

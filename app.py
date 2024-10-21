@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for, session
-from rm import recommend  # Función que contiene la lógica de recomendación
+from modules.recommender import recommend  # Función que contiene la lógica de recomendación
 import os
 
 app = Flask(__name__)
@@ -21,23 +21,23 @@ def recommendation():
     if request.method == 'POST':
         # Captura los parámetros elegidos por el usuario
         user_preferences = {
-            'make': request.form.get('make'),
-            'model': request.form.get('model'),
+            'make': request.form.get('make') if request.form.get('make') else None,
+            'model': request.form.get('model') if request.form.get('model') else None,
             'min_price': int(request.form.get('min_price')) if request.form.get('min_price') else None,
             'max_price': int(request.form.get('max_price')) if request.form.get('max_price') else None,
-            'fuel': request.form.get('fuel'),
+            'fuel': request.form.get('fuel') if request.form.get('fuel') else None,
             'year': int(request.form.get('year')) if request.form.get('year') else None,
             'max_kms': int(request.form.get('max_kms')) if request.form.get('max_kms') else None,
             'power': int(request.form.get('power')) if request.form.get('power') else None,
             'doors': int(request.form.get('doors')) if request.form.get('doors') else None,
-            'shift': request.form.get('shift'),
-            'color': request.form.get('color'),
+            'shift': request.form.get('shift') if request.form.get('shift') else None,
+            'color': request.form.get('color') if request.form.get('color') else None,
             'origin_city': request.form.get('origin_city'),
         }
 
         # Llama a la lógica de recomendación con las preferencias del usuario
         recommendations = recommend(user_preferences)
-        print(recommendations)
+        #print(recommendations)
 
         return render_template('recommendation.html', recommendations=recommendations)
 

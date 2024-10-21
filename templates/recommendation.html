@@ -29,7 +29,7 @@
         <h2>Coches recomendados:</h2>
         <ul>
             {% for car in recommendations %}
-                <li>{{ car['make'] }} {{ car['model'] }} - ${{ car['price'] }} (Calificación estimada: {{ car['estimated_rating'] }})</li>
+            <li>{{ car['make'] }} {{ car['model'] }} {{ car['power'] }}cv - {{ car['price'] }}€  - {{ car['fuel'] }}  - Año {{ car['year'] }}  - {{ car['kms'] }}kms  - {{ car['shift'] }}  - {{ car['color'] }}  - Lugar: {{ car['province'] }}  (Calificación estimada: {{ car['estimated_rating'] }})</li>
             {% endfor %}
         </ul>
     {% else %}
