@@ -118,4 +118,65 @@ endif
 
 stop
 @enduml
+
+@startuml
+start
+
+:Inicializar el modelo SVD con hiperparámetros óptimos;
+
+:Entrenar el modelo con los datos de ratings;
+note right: Realiza división en training y test sets
+
+if (¿Entrenamiento exitoso?) then (Sí)
+    :Calcular predicciones para el test set;
+    :Evaluar el modelo (RMSE, MAE);
+    if (¿Métricas aceptables?) then (Sí)
+        :Guardar el modelo entrenado;
+    else (No)
+        :Ajustar hiperparámetros;
+        :Reentrenar el modelo;
+    endif
+else (No)
+    :Mostrar error de entrenamiento;
+    stop
+endif
+
+:Recibir las preferencias del usuario nuevo;
+
+:Recibir pesos para cada característica;
+note right: Los pesos indican la importancia de cada parámetro
+
+if (¿El usuario introdujo algún peso?) then (Sí)
+    :Asignar pesos a las características;
+else (No)
+    :Solicitar al usuario que asigne al menos un peso;
+    stop
+endif
+
+:Calcular predicción base (mean rating) para el modelo;
+
+if (¿Existen datos del modelo?) then (Sí)
+    :Ajustar la predicción según las características del coche;
+    :Penalizar/bonificar según la coincidencia de características;
+    note right: Si no hay coincidencia o se exceden los límites, penaliza
+else (No)
+    :Usar la media global como estimación base;
+endif
+
+if (¿El usuario especificó una ciudad de origen?) then (Sí)
+    :Calcular distancia del coche a la ciudad del usuario;
+    if (Distancia alta y peso de distancia alto) then (Sí)
+        :Penalizar por distancia lejana;
+    endif
+else (No)
+    :Continuar sin penalización por distancia;
+endif
+
+:Generar predicción final para cada modelo de coche;
+
+:Devolver la lista de recomendaciones ordenadas por calificación;
+
+stop
+@enduml
+
 ```
