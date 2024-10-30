@@ -11,18 +11,18 @@ import numpy as np
 # Ejemplo de pesos para probar
 weights = {
     'make': 10,
-    'model': 8,
-    'min_price': 9,
-    'max_price': 7,
-    'fuel': 6,
-    'year': 5,
+    'model': 10,
+    'min_price': 0,
+    'max_price': 0,
+    'fuel': 0,
+    'year': 8,
     'max_kms': 6,
     'power': 8,
-    'doors': 4,
+    'doors': 2,
     'shift': 3,
-    'color': 2,
+    'color': 8,
     'origin_city': 7,
-    'distance': 10,  # Añadir el peso para la distancia
+    'distance': 0,
 }
 def tune_hyperparameters(df_ratings):
     """
@@ -48,7 +48,7 @@ def tune_hyperparameters(df_ratings):
     
     return gs.best_params['rmse']
 
-def recommend(user_preferences, weights=weights):
+def recommend(user_preferences):
     """Función principal para ejecutar el programa de recomendación de coches."""
     # Rutas a los archivos CSV
     coches_path = 'data/coches.csv'
@@ -95,7 +95,6 @@ def recommend(user_preferences, weights=weights):
                 filtered_cars = filtered_cars[filtered_cars['kms'] <= value]
             elif key == 'power':
                 filtered_cars = filtered_cars[filtered_cars['power'] >= value]
-
         else:
             filtered_cars = filtered_cars[filtered_cars[key] == value]
     
@@ -112,34 +111,21 @@ def recommend(user_preferences, weights=weights):
                 lambda prov: geo_calculator.calcular_distancia(user_origin, prov, 'España', 'España')
             )
             
-            # Aplicar penalización según la distancia y filtrar coches lejanos
-            distance_weight = weights.get('distance', 0)  # Obtener el peso de la distancia
-            max_distance = user_preferences.get('max_distance', 500)  # Distancia máxima predeterminada
-
             # Filtrar coches que están demasiado lejos
+            max_distance = user_preferences.get('max_distance', 100)  # Distancia máxima predeterminada
             filtered_cars = filtered_cars[filtered_cars['distance_km'] <= max_distance]
 
-            # Si se quiere penalizar las recomendaciones basadas en la distancia
-            if distance_weight > 0:
-                filtered_cars['distance_penalty'] = filtered_cars['distance_km'].apply(
-                    lambda dist: distance_weight * (dist / max_distance)  # Penalización basada en la distancia
-                )
-            else:
-                filtered_cars['distance_penalty'] = 0
-    
     # Generar recomendaciones
     if not filtered_cars.empty:
-        # Obtener IDs de los modelos filtrados
+        # Obtener IDs de los modelos filtrados y eliminar duplicados
         model_ids = filtered_cars['model_id'].unique()
         
         # Obtener los detalles de los coches filtrados
-        filtered_cars_details = df_cars[df_cars['model_id'].isin(model_ids)].to_dict('records')
+        filtered_cars_details = df_cars[df_cars['model_id'].isin(model_ids)].drop_duplicates(subset=['id']).to_dict('records')
         
         # Predecir calificaciones para cada modelo filtrado usando el método para usuarios nuevos
         predicted_ratings = []
-
-
-
+        
         # Calcular las puntuaciones de los coches filtrados
         for car in filtered_cars_details:
             estimated_rating = recommender.predict_rating_new_user(
@@ -149,10 +135,6 @@ def recommend(user_preferences, weights=weights):
                 weights=weights  # Pasar los pesos aquí
             )
             
-            # Penalizar según la distancia
-            if 'distance_penalty' in filtered_cars.columns:
-                estimated_rating -= filtered_cars.loc[filtered_cars['model_id'] == car['model_id'], 'distance_penalty'].values[0]
-
             # Asegurarse de que la puntuación no sea menor que 1 ni mayor que 5
             estimated_rating = min(max(estimated_rating, 1), 5)
             
@@ -173,16 +155,19 @@ def recommend(user_preferences, weights=weights):
             recommendations['distance_km'] = recommendations['distance_km'].round(2)
         
         # Ordenar por calificación estimada y seleccionar las top 5
-        top_recommendations = recommendations.sort_values(by='estimated_rating', ascending=False).head(5)
-        
+        top_recommendations = recommendations.sort_values(by='estimated_rating', ascending=False).drop_duplicates(subset=['id']).head(5)
+
         # Mostrar las recomendaciones incluyendo la distancia
-        print("\nMejores recomendaciones para el usuario nuevo:")
+        print("\nMejores recomendaciones para el usuario:")
         top = top_recommendations[['make', 'model', 'price', 'fuel', 'year', 'kms', 'power', 'doors', 'shift', 'color', 'province', 'distance_km', 'estimated_rating']]
         
         # Convertir a diccionario para mostrar en la interfaz
         return top.to_dict('records')
 
     else:
-        print("No hay coches que cumplan con las preferencias del usuario.")
-
-
+        # Si no hay resultados exactos, busca recomendaciones alternativas
+        print("No hemos encontrado resultados exactos, pero creemos que podrían interesarle los siguientes...")
+        # Aquí podrías hacer una búsqueda más general, tal como quitar filtros o usar otras recomendaciones.
+        alternative_cars = df_cars.sample(n=5)  # O realizar un filtrado menos estricto
+        top = alternative_cars[['make', 'model', 'price', 'fuel', 'year', 'kms', 'power', 'doors', 'shift', 'color', 'province']]
+        return alternative_cars.to_dict('records')

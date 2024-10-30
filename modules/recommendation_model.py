@@ -40,33 +40,42 @@ class RecommendationModel:
         model_ratings = self.df_ratings[self.df_ratings['model_id'] == model_id]['rating']
         mean_rating = model_ratings.mean() if not model_ratings.empty else self.trainset.global_mean
 
+        # Normalizar los pesos
+        total_weight = sum(weights.values())
+        normalized_weights = {key: value / total_weight if total_weight > 0 else 0 for key, value in weights.items()}
+
         # Ajustar la puntuación basada en la coincidencia de características
         adjustment = 0
 
-        # Comparar cada preferencia con las características del coche
         for key, value in preferences.items():
             if value is None:
                 continue
             if key in ['min_price', 'max_price', 'min_power', 'max_kms']:
-                # Manejar rangos
+                # Comparar con rangos
                 if key == 'min_price' and car_features.get('price', 0) >= value:
-                    adjustment += weights.get('min_price', 0) * 0.5
+                    adjustment += normalized_weights.get('min_price', 0) * 0.5
                 elif key == 'max_price' and car_features.get('price', 0) <= value:
-                    adjustment += weights.get('max_price', 0) * 0.5
+                    adjustment += normalized_weights.get('max_price', 0) * 0.5
                 elif key == 'min_power' and car_features.get('power', 0) >= value:
-                    adjustment += weights.get('min_power', 0) * 0.5
+                    adjustment += normalized_weights.get('min_power', 0) * 0.5
                 elif key == 'max_kms' and car_features.get('kms', 0) <= value:
-                    adjustment += weights.get('max_kms', 0) * 0.5
+                    adjustment += normalized_weights.get('max_kms', 0) * 0.5
             else:
-                # Manejar igualdad
+                # Comparar con igualdad
                 if car_features.get(key) == value:
-                    adjustment += weights.get(key, 0) * 0.5
+                    adjustment += normalized_weights.get(key, 0) * 0.5
 
         # Penalizar según la distancia
-        if 'distance' in weights and 'distance_km' in car_features:
-            adjustment -= weights['distance'] * (car_features['distance_km'] / 100)  # Penalizar según la distancia, puede ajustar el factor
+        if 'distance' in normalized_weights and 'distance_km' in car_features:
+            adjustment -= normalized_weights['distance'] * (car_features['distance_km'] / 100)
 
-        return mean_rating + adjustment
+        # Asegurarse de que el ajuste no cause que la calificación sea menor que 1 o mayor que 5
+        final_rating = min(max(mean_rating + adjustment, 1), 5)
+
+        return final_rating
+
+
+
 
 
 
