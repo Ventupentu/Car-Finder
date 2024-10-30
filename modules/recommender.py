@@ -48,7 +48,7 @@ def tune_hyperparameters(df_ratings):
     
     return gs.best_params['rmse']
 
-def recommend(user_preferences):
+def recommend(user_preferences, weights=weights):
     """Función principal para ejecutar el programa de recomendación de coches."""
     # Rutas a los archivos CSV
     coches_path = 'data/coches.csv'
