@@ -1,372 +1,2655 @@
 origin,destination,distance_km
-madrid,valladolid,162.03064318899396
-avila,madrid,88.53445368565832
-huesca,madrid,362.166873291629
-castellon,madrid,310.0078651356576
+las palmas,avila,1726.61
+las palmas,valladolid,1812.78
+las palmas,lleida,2114.77
+las palmas,huesca,2112.83
+las palmas,barcelona,2199.54
+las palmas,castellon,1973.37
+las palmas,baleares,2138.22
+las palmas,madrid,1760.99
+las palmas,cadiz,1317.35
+las palmas,sevilla,1379.05
+las palmas,pontevedra,1724.9
+las palmas,salamanca,1705.04
+las palmas,zaragoza,2024.6
+las palmas,la rioja,1988.63
+las palmas,murcia,1748.15
+las palmas,alicante,1816.63
+las palmas,malaga,1430.84
+las palmas,vizcaya,2046.53
+las palmas,lugo,1827.14
+las palmas,alava,2021.04
+las palmas,valencia,1898.41
+las palmas,asturias,1912.24
+las palmas,tenerife,106.45
+las palmas,soria,1914.06
+las palmas,granada,1519.31
+las palmas,leon,1860.24
+las palmas,huelva,1311.64
+las palmas,orense,1740.36
+las palmas,burgos,1925.65
+las palmas,albacete,1765.76
+las palmas,girona,2282.15
+las palmas,zamora,1758.18
+las palmas,badajoz,1452.17
+las palmas,segovia,1782.8
+las palmas,almeria,1578.23
+las palmas,ciudad real,1633.13
+las palmas,a coruña,1828.67
+las palmas,tarragona,2120.27
+las palmas,toledo,1696.54
+las palmas,navarra,2046.91
+las palmas,guipuzcoa,2071.63
+las palmas,cordoba,1493.81
+las palmas,cantabria,1979.35
+las palmas,guadalajara,8750.48
+las palmas,jaen,1582.26
+las palmas,palencia,1886.39
+las palmas,melilla,1448.93
+las palmas,caceres,1572.97
+las palmas,cuenca,1826.8
+las palmas,teruel,1942.64
+las palmas,ceuta,1307.74
+avila,las palmas,1726.61
+avila,valladolid,110.61
+avila,lleida,459.67
+avila,huesca,423.67
+avila,barcelona,583.92
+avila,castellon,395.99
+avila,baleares,656.35
+avila,madrid,88.53
+avila,cadiz,470.25
+avila,sevilla,379.71
+avila,pontevedra,383.5
+avila,salamanca,88.25
+avila,zaragoza,339.08
+avila,la rioja,263.13
+avila,murcia,426.81
+avila,alicante,443.98
+avila,malaga,437.51
+avila,vizcaya,325.16
+avila,lugo,349.9
+avila,alava,295.29
+avila,valencia,391.67
+avila,asturias,312.53
+avila,tenerife,1751.46
+avila,soria,196.47
+avila,granada,398.26
+avila,leon,227.55
+avila,huelva,424.64
+avila,orense,292.2
+avila,burgos,205.28
+avila,albacete,305.46
+avila,girona,646.33
+avila,zamora,154.69
+avila,badajoz,276.82
+avila,segovia,58.9
+avila,almeria,465.99
+avila,ciudad real,200.97
+avila,a coruña,429.59
+avila,tarragona,504.37
+avila,toledo,105.87
+avila,navarra,323.02
+avila,guipuzcoa,345.33
+avila,cordoba,307.81
+avila,cantabria,282.62
+avila,guadalajara,9234.67
+avila,jaen,317.42
+avila,palencia,194.84
+avila,melilla,615.15
+avila,caceres,157.82
+avila,cuenca,227.83
+avila,teruel,319.62
+avila,ceuta,531.7
+valladolid,las palmas,1812.78
+valladolid,avila,110.61
+valladolid,lleida,446.18
+valladolid,huesca,393.58
+valladolid,barcelona,577.09
+valladolid,castellon,422.53
+valladolid,baleares,682.28
+valladolid,madrid,162.03
+valladolid,cadiz,578.02
+valladolid,sevilla,485.72
+valladolid,pontevedra,335.45
+valladolid,salamanca,109.35
+valladolid,zaragoza,320.49
+valladolid,la rioja,201.86
+valladolid,murcia,509.81
+valladolid,alicante,515.7
+valladolid,malaga,548.06
+valladolid,vizcaya,234.28
+valladolid,lugo,272.52
+valladolid,alava,214.59
+valladolid,valencia,441.04
+valladolid,asturias,209.76
+valladolid,tenerife,1833.37
+valladolid,soria,167.31
+valladolid,granada,506.64
+valladolid,leon,126.02
+valladolid,huelva,523.93
+valladolid,orense,240.6
+valladolid,burgos,114.93
+valladolid,albacete,382.91
+valladolid,girona,628.05
+valladolid,zamora,101.14
+valladolid,badajoz,361.59
+valladolid,segovia,93.47
+valladolid,almeria,568.72
+valladolid,ciudad real,307.49
+valladolid,a coruña,356.73
+valladolid,tarragona,503.87
+valladolid,toledo,208.14
+valladolid,navarra,262.24
+valladolid,guipuzcoa,265.86
+valladolid,cordoba,418.34
+valladolid,cantabria,175.55
+valladolid,guadalajara,9192.37
+valladolid,jaen,423.85
+valladolid,palencia,84.65
+valladolid,melilla,723.01
+valladolid,caceres,241.6
+valladolid,cuenca,281.01
+valladolid,teruel,340.21
+valladolid,ceuta,641.49
+lleida,las palmas,2114.77
+lleida,avila,459.67
+lleida,valladolid,446.18
+lleida,huesca,79.52
+lleida,barcelona,132.01
+lleida,castellon,162.07
+lleida,baleares,292.97
+lleida,madrid,387.73
+lleida,cadiz,798.42
+lleida,sevilla,737.55
+lleida,pontevedra,772.69
+lleida,salamanca,531.74
+lleida,zaragoza,125.7
+lleida,la rioja,268.43
+lleida,murcia,429.4
+lleida,alicante,375.48
+lleida,malaga,696.48
+lleida,vizcaya,338.3
+lleida,lugo,684.51
+lleida,alava,305.35
+lleida,valencia,252.9
+lleida,asturias,572.06
+lleida,tenerife,2152.26
+lleida,soria,279.13
+lleida,granada,612.74
+lleida,leon,523.8
+lleida,huelva,811.46
+lleida,orense,680.18
+lleida,burgos,367.34
+lleida,albacete,359.36
+lleida,girona,186.72
+lleida,zamora,547.15
+lleida,badajoz,714.08
+lleida,segovia,404.22
+lleida,almeria,593.19
+lleida,ciudad real,483.59
+lleida,a coruña,766.53
+lleida,tarragona,76.24
+lleida,toledo,438.63
+lleida,navarra,231.49
+lleida,guipuzcoa,288.45
+lleida,cordoba,621.0
+lleida,cantabria,424.38
+lleida,guadalajara,9605.05
+lleida,jaen,537.94
+lleida,palencia,443.1
+lleida,melilla,767.66
+lleida,caceres,607.62
+lleida,cuenca,289.26
+lleida,teruel,172.13
+lleida,ceuta,820.32
+huesca,las palmas,2112.83
+huesca,avila,423.67
+huesca,valladolid,393.58
+huesca,lleida,79.52
+huesca,barcelona,201.71
+huesca,castellon,209.27
+huesca,baleares,372.46
+huesca,madrid,362.17
+huesca,cadiz,802.14
+huesca,sevilla,733.89
+huesca,pontevedra,710.9
+huesca,salamanca,487.62
+huesca,zaragoza,88.76
+huesca,la rioja,202.35
+huesca,murcia,469.57
+huesca,alicante,422.91
+huesca,malaga,709.96
+huesca,vizcaya,261.66
+huesca,lugo,617.61
+huesca,alava,231.79
+huesca,valencia,297.54
+huesca,asturias,501.45
+huesca,tenerife,2146.51
+huesca,soria,231.25
+huesca,granada,630.28
+huesca,leon,459.02
+huesca,huelva,802.93
+huesca,orense,620.21
+huesca,burgos,303.54
+huesca,albacete,381.51
+huesca,girona,236.52
+huesca,zamora,492.98
+huesca,badajoz,690.26
+huesca,segovia,365.64
+huesca,almeria,623.91
+huesca,ciudad real,480.45
+huesca,a coruña,698.19
+huesca,tarragona,155.75
+huesca,toledo,420.7
+huesca,navarra,157.49
+huesca,guipuzcoa,210.56
+huesca,cordoba,621.92
+huesca,cantabria,351.62
+huesca,guadalajara,9531.52
+huesca,jaen,550.1
+huesca,palencia,379.52
+huesca,melilla,800.7
+huesca,caceres,577.9
+huesca,cuenca,289.83
+huesca,teruel,186.19
+huesca,ceuta,832.0
+barcelona,las palmas,2199.54
+barcelona,avila,583.92
+barcelona,valladolid,577.09
+barcelona,lleida,132.01
+barcelona,huesca,201.71
+barcelona,castellon,226.83
+barcelona,baleares,205.39
+barcelona,madrid,506.92
+barcelona,cadiz,883.08
+barcelona,sevilla,831.56
+barcelona,pontevedra,904.69
+barcelona,salamanca,659.41
+barcelona,zaragoza,257.03
+barcelona,la rioja,399.69
+barcelona,murcia,471.33
+barcelona,alicante,407.25
+barcelona,malaga,770.36
+barcelona,vizcaya,462.92
+barcelona,lugo,816.04
+barcelona,alava,433.35
+barcelona,valencia,303.45
+barcelona,asturias,702.19
+barcelona,tenerife,2241.62
+barcelona,soria,409.79
+barcelona,granada,682.97
+barcelona,leon,655.63
+barcelona,huelva,909.81
+barcelona,orense,812.08
+barcelona,burgos,499.17
+barcelona,albacete,433.82
+barcelona,girona,85.15
+barcelona,zamora,678.19
+barcelona,badajoz,827.58
+barcelona,segovia,530.36
+barcelona,almeria,644.19
+barcelona,ciudad real,581.93
+barcelona,a coruña,897.7
+barcelona,tarragona,82.78
+barcelona,toledo,551.3
+barcelona,navarra,359.04
+barcelona,guipuzcoa,410.97
+barcelona,cordoba,711.82
+barcelona,cantabria,553.09
+barcelona,guadalajara,9733.22
+barcelona,jaen,617.37
+barcelona,palencia,575.01
+barcelona,melilla,810.42
+barcelona,caceres,726.52
+barcelona,cuenca,392.24
+barcelona,teruel,274.95
+barcelona,ceuta,894.53
+castellon,las palmas,1973.37
+castellon,avila,395.99
+castellon,valladolid,422.53
+castellon,lleida,162.07
+castellon,huesca,209.27
+castellon,barcelona,226.83
+castellon,baleares,261.46
+castellon,madrid,310.01
+castellon,cadiz,656.46
+castellon,sevilla,605.26
+castellon,pontevedra,757.57
+castellon,salamanca,480.63
+castellon,zaragoza,170.12
+castellon,la rioja,306.26
+castellon,murcia,267.33
+castellon,alicante,215.03
+castellon,malaga,546.03
+castellon,vizcaya,404.79
+castellon,lugo,689.15
+castellon,alava,361.47
+castellon,valencia,90.93
+castellon,asturias,595.25
+castellon,tenerife,2014.89
+castellon,soria,269.55
+castellon,granada,459.77
+castellon,leon,528.84
+castellon,huelva,684.44
+castellon,orense,662.63
+castellon,burgos,382.95
+castellon,albacete,207.86
+castellon,girona,308.79
+castellon,zamora,519.87
+castellon,badajoz,613.24
+castellon,segovia,351.85
+castellon,almeria,432.56
+castellon,ciudad real,358.13
+castellon,a coruña,773.86
+castellon,tarragona,147.01
+castellon,toledo,340.92
+castellon,navarra,301.0
+castellon,guipuzcoa,367.42
+castellon,cordoba,485.21
+castellon,cantabria,465.3
+castellon,guadalajara,9614.82
+castellon,jaen,391.14
+castellon,palencia,450.24
+castellon,melilla,606.05
+castellon,caceres,521.62
+castellon,cuenca,177.54
+castellon,teruel,82.72
+castellon,ceuta,670.36
+baleares,las palmas,2138.22
+baleares,avila,656.35
+baleares,valladolid,682.28
+baleares,lleida,292.97
+baleares,huesca,372.46
+baleares,barcelona,205.39
+baleares,castellon,261.46
+baleares,madrid,569.21
+baleares,cadiz,843.0
+baleares,sevilla,812.47
+baleares,pontevedra,1017.72
+baleares,salamanca,741.78
+baleares,zaragoza,390.64
+baleares,la rioja,541.8
+baleares,murcia,392.28
+baleares,alicante,324.32
+baleares,malaga,715.78
+baleares,vizcaya,625.73
+baleares,lugo,944.69
+baleares,alava,588.36
+baleares,valencia,280.61
+baleares,asturias,843.39
+baleares,tenerife,2189.09
+baleares,soria,523.06
+baleares,granada,627.53
+baleares,leon,783.02
+baleares,huelva,896.78
+baleares,orense,922.83
+baleares,burgos,631.1
+baleares,albacete,414.42
+baleares,girona,262.78
+baleares,zamora,780.68
+baleares,badajoz,854.72
+baleares,segovia,613.29
+baleares,almeria,559.99
+baleares,ciudad real,588.07
+baleares,a coruña,1029.04
+baleares,tarragona,216.81
+baleares,toledo,592.55
+baleares,navarra,517.23
+baleares,guipuzcoa,578.46
+baleares,cordoba,692.65
+baleares,cantabria,703.21
+baleares,guadalajara,9872.74
+baleares,jaen,583.52
+baleares,palencia,702.75
+baleares,melilla,703.65
+baleares,caceres,773.68
+baleares,cuenca,432.06
+baleares,teruel,342.46
+baleares,ceuta,834.66
+madrid,las palmas,1760.99
+madrid,avila,88.53
+madrid,valladolid,162.03
+madrid,lleida,387.73
+madrid,huesca,362.17
+madrid,barcelona,506.92
+madrid,castellon,310.01
+madrid,baleares,569.21
+madrid,cadiz,472.47
+madrid,sevilla,390.5
+madrid,pontevedra,469.56
+madrid,salamanca,176.54
+madrid,zaragoza,274.14
+madrid,la rioja,236.17
+madrid,murcia,349.01
+madrid,alicante,360.13
+madrid,malaga,414.96
+madrid,vizcaya,321.3
+madrid,lugo,426.97
+madrid,alava,282.71
+madrid,valencia,303.15
+madrid,asturias,371.52
+madrid,tenerife,1790.61
+madrid,soria,155.32
+madrid,granada,360.15
+madrid,leon,288.04
+madrid,huelva,449.78
+madrid,orense,376.81
+madrid,burgos,214.04
+madrid,albacete,223.64
+madrid,girona,573.89
+madrid,zamora,235.12
+madrid,badajoz,328.33
+madrid,segovia,68.59
+madrid,almeria,411.32
+madrid,ciudad real,162.49
+madrid,a coruña,509.08
+madrid,tarragona,425.73
+madrid,toledo,67.98
+madrid,navarra,289.67
+madrid,guipuzcoa,327.61
+madrid,cordoba,296.0
+madrid,cantabria,306.32
+madrid,guadalajara,9322.97
+madrid,jaen,273.83
+madrid,palencia,234.11
+madrid,melilla,572.76
+madrid,caceres,220.07
+madrid,cuenca,139.33
+madrid,teruel,236.55
+madrid,ceuta,521.83
+cadiz,las palmas,1317.35
+cadiz,avila,470.25
+cadiz,valladolid,578.02
+cadiz,lleida,798.42
+cadiz,huesca,802.14
+cadiz,barcelona,883.08
+cadiz,castellon,656.46
+cadiz,baleares,843.0
+cadiz,madrid,472.47
+cadiz,sevilla,96.07
+cadiz,pontevedra,696.72
+cadiz,salamanca,493.2
+cadiz,zaragoza,715.56
+cadiz,la rioja,703.36
+cadiz,murcia,453.3
+cadiz,alicante,519.65
+cadiz,malaga,134.07
+cadiz,vizcaya,789.44
+cadiz,lugo,735.32
+cadiz,alava,753.69
+cadiz,valencia,584.8
+cadiz,asturias,753.61
+cadiz,tenerife,1358.61
+cadiz,soria,626.88
+cadiz,granada,217.44
+cadiz,leon,674.84
+cadiz,huelva,123.72
+cadiz,orense,644.82
+cadiz,burgos,673.12
+cadiz,albacete,449.5
+cadiz,girona,965.1
+cadiz,zamora,572.81
+cadiz,badajoz,277.55
+cadiz,segovia,514.75
+cadiz,almeria,309.25
+cadiz,ciudad real,323.38
+cadiz,a coruña,789.23
+cadiz,tarragona,803.17
+cadiz,toledo,404.5
+cadiz,navarra,760.63
+cadiz,guipuzcoa,799.86
+cadiz,cordoba,180.82
+cadiz,cantabria,752.62
+cadiz,guadalajara,9302.84
+cadiz,jaen,266.16
+cadiz,palencia,662.47
+cadiz,melilla,300.24
+cadiz,caceres,359.45
+cadiz,cuenca,512.85
+cadiz,teruel,626.5
+cadiz,ceuta,85.54
+sevilla,las palmas,1379.05
+sevilla,avila,379.71
+sevilla,valladolid,485.72
+sevilla,lleida,737.55
+sevilla,huesca,733.89
+sevilla,barcelona,831.56
+sevilla,castellon,605.26
+sevilla,baleares,812.47
+sevilla,madrid,390.5
+sevilla,cadiz,96.07
+sevilla,pontevedra,603.92
+sevilla,salamanca,398.09
+sevilla,zaragoza,645.87
+sevilla,la rioja,625.93
+sevilla,murcia,434.22
+sevilla,alicante,495.96
+sevilla,malaga,158.36
+sevilla,vizcaya,702.24
+sevilla,lugo,639.66
+sevilla,alava,668.22
+sevilla,valencia,542.16
+sevilla,asturias,657.91
+sevilla,tenerife,1414.76
+sevilla,soria,545.82
+sevilla,granada,213.8
+sevilla,leon,579.68
+sevilla,huelva,85.72
+sevilla,orense,549.61
+sevilla,burgos,584.22
+sevilla,albacete,404.04
+sevilla,girona,911.19
+sevilla,zamora,477.12
+sevilla,badajoz,187.65
+sevilla,segovia,427.17
+sevilla,almeria,319.76
+sevilla,ciudad real,254.3
+sevilla,a coruña,694.78
+sevilla,tarragona,749.9
+sevilla,toledo,323.24
+sevilla,navarra,680.16
+sevilla,guipuzcoa,715.69
+sevilla,cordoba,120.88
+sevilla,cantabria,660.97
+sevilla,guadalajara,9260.71
+sevilla,jaen,229.63
+sevilla,palencia,569.81
+sevilla,melilla,359.59
+sevilla,caceres,263.44
+sevilla,cuenca,448.51
+sevilla,teruel,565.73
+sevilla,ceuta,175.4
+pontevedra,las palmas,1724.9
+pontevedra,avila,383.5
+pontevedra,valladolid,335.45
+pontevedra,lleida,772.69
+pontevedra,huesca,710.9
+pontevedra,barcelona,904.69
+pontevedra,castellon,757.57
+pontevedra,baleares,1017.72
+pontevedra,madrid,469.56
+pontevedra,cadiz,696.72
+pontevedra,sevilla,603.92
+pontevedra,salamanca,296.68
+pontevedra,zaragoza,648.26
+pontevedra,la rioja,508.62
+pontevedra,murcia,806.93
+pontevedra,alicante,827.38
+pontevedra,malaga,730.2
+pontevedra,vizcaya,481.81
+pontevedra,lugo,118.31
+pontevedra,alava,490.95
+pontevedra,valencia,769.4
+pontevedra,asturias,241.45
+pontevedra,tenerife,1726.08
+pontevedra,soria,498.94
+pontevedra,granada,725.94
+pontevedra,leon,253.36
+pontevedra,huelva,592.5
+pontevedra,orense,94.94
+pontevedra,burgos,407.36
+pontevedra,albacete,688.54
+pontevedra,girona,947.28
+pontevedra,zamora,238.41
+pontevedra,badajoz,417.72
+pontevedra,segovia,411.18
+pontevedra,almeria,816.06
+pontevedra,ciudad real,557.09
+pontevedra,a coruña,106.26
+pontevedra,tarragona,835.27
+pontevedra,toledo,481.76
+pontevedra,navarra,559.98
+pontevedra,guipuzcoa,532.65
+pontevedra,cordoba,602.74
+pontevedra,cantabria,381.29
+pontevedra,guadalajara,8858.17
+pontevedra,jaen,662.62
+pontevedra,palencia,331.42
+pontevedra,melilla,933.93
+pontevedra,caceres,363.83
+pontevedra,cuenca,605.52
+pontevedra,teruel,675.49
+pontevedra,ceuta,779.24
+salamanca,las palmas,1705.04
+salamanca,avila,88.25
+salamanca,valladolid,109.35
+salamanca,lleida,531.74
+salamanca,huesca,487.62
+salamanca,barcelona,659.41
+salamanca,castellon,480.63
+salamanca,baleares,741.78
+salamanca,madrid,176.54
+salamanca,cadiz,493.2
+salamanca,sevilla,398.09
+salamanca,pontevedra,296.68
+salamanca,zaragoza,407.69
+salamanca,la rioja,306.31
+salamanca,murcia,510.83
+salamanca,alicante,530.92
+salamanca,malaga,483.29
+salamanca,vizcaya,343.3
+salamanca,lugo,274.11
+salamanca,alava,323.65
+salamanca,valencia,479.65
+salamanca,asturias,261.84
+salamanca,tenerife,1724.7
+salamanca,soria,256.38
+salamanca,granada,457.25
+salamanca,leon,181.64
+salamanca,huelva,426.32
+salamanca,orense,207.42
+salamanca,burgos,224.26
+salamanca,albacete,391.93
+salamanca,girona,717.26
+salamanca,zamora,83.35
+salamanca,badajoz,256.44
+salamanca,segovia,130.24
+salamanca,almeria,535.33
+salamanca,ciudad real,269.69
+salamanca,a coruña,349.77
+salamanca,tarragona,581.83
+salamanca,toledo,185.86
+salamanca,navarra,367.38
+salamanca,guipuzcoa,374.97
+salamanca,cordoba,350.45
+salamanca,cantabria,276.45
+salamanca,guadalajara,9146.46
+salamanca,jaen,382.82
+salamanca,palencia,182.62
+salamanca,melilla,673.37
+salamanca,caceres,139.83
+salamanca,cuenca,315.57
+salamanca,teruel,402.19
+salamanca,ceuta,563.52
+zaragoza,las palmas,2024.6
+zaragoza,avila,339.08
+zaragoza,valladolid,320.49
+zaragoza,lleida,125.7
+zaragoza,huesca,88.76
+zaragoza,barcelona,257.03
+zaragoza,castellon,170.12
+zaragoza,baleares,390.64
+zaragoza,madrid,274.14
+zaragoza,cadiz,715.56
+zaragoza,sevilla,645.87
+zaragoza,pontevedra,648.26
+zaragoza,salamanca,407.69
+zaragoza,la rioja,151.42
+zaragoza,murcia,406.91
+zaragoza,alicante,368.88
+zaragoza,malaga,626.95
+zaragoza,vizcaya,239.44
+zaragoza,lugo,563.16
+zaragoza,alava,199.05
+zaragoza,valencia,246.09
+zaragoza,asturias,455.1
+zaragoza,tenerife,2057.91
+zaragoza,soria,153.52
+zaragoza,granada,549.52
+zaragoza,leon,401.54
+zaragoza,huelva,714.33
+zaragoza,orense,555.26
+zaragoza,burgos,245.63
+zaragoza,albacete,306.45
+zaragoza,girona,309.62
+zaragoza,zamora,421.46
+zaragoza,badajoz,602.4
+zaragoza,segovia,282.08
+zaragoza,almeria,551.24
+zaragoza,ciudad real,393.02
+zaragoza,a coruña,646.18
+zaragoza,tarragona,188.24
+zaragoza,toledo,331.97
+zaragoza,navarra,132.47
+zaragoza,guipuzcoa,198.35
+zaragoza,cordoba,535.0
+zaragoza,cantabria,312.59
+zaragoza,guadalajara,9488.68
+zaragoza,jaen,467.32
+zaragoza,palencia,320.52
+zaragoza,melilla,728.48
+zaragoza,caceres,491.36
+zaragoza,cuenca,205.27
+zaragoza,teruel,116.84
+zaragoza,ceuta,746.17
+la rioja,las palmas,1983.85
+la rioja,avila,258.6
+la rioja,valladolid,198.84
+la rioja,lleida,268.25
+la rioja,huesca,203.2
+la rioja,barcelona,399.72
+la rioja,castellon,303.24
+la rioja,baleares,540.12
+la rioja,madrid,230.92
+la rioja,cadiz,703.36
+la rioja,sevilla,620.77
+la rioja,pontevedra,507.69
+la rioja,salamanca,302.72
+la rioja,zaragoza,150.06
+la rioja,murcia,489.97
+la rioja,alicante,468.94
+la rioja,malaga,639.39
+la rioja,vizcaya,110.52
+la rioja,lugo,416.33
+la rioja,alava,64.6
+la rioja,valencia,359.17
+la rioja,asturias,305.29
+la rioja,tenerife,2009.78
+la rioja,soria,78.11
+la rioja,granada,575.14
+la rioja,leon,256.28
+la rioja,huelva,676.18
+la rioja,orense,417.24
+la rioja,burgos,100.34
+la rioja,albacete,368.77
+la rioja,girona,439.65
+la rioja,zamora,294.21
+la rioja,badajoz,535.72
+la rioja,segovia,201.21
+la rioja,almeria,603.99
+la rioja,ciudad real,387.41
+la rioja,a coruña,498.32
+la rioja,tarragona,336.86
+la rioja,toledo,298.87
+la rioja,navarra,65.04
+la rioja,guipuzcoa,98.56
+la rioja,cordoba,525.88
+la rioja,cantabria,163.7
+la rioja,guadalajara,9339.13
+la rioja,jaen,487.95
+la rioja,palencia,176.36
+la rioja,melilla,776.94
+la rioja,caceres,415.83
+la rioja,cuenca,247.79
+la rioja,teruel,227.69
+la rioja,ceuta,750.43
+murcia,las palmas,1748.15
+murcia,avila,426.81
+murcia,valladolid,509.81
+murcia,lleida,429.4
+murcia,huesca,469.57
+murcia,barcelona,471.33
+murcia,castellon,267.33
+murcia,baleares,392.28
+murcia,madrid,349.01
+murcia,cadiz,453.3
+murcia,sevilla,434.22
+murcia,pontevedra,806.93
+murcia,salamanca,510.83
+murcia,zaragoza,406.91
+murcia,la rioja,489.97
+murcia,alicante,68.48
+murcia,malaga,323.88
+murcia,vizcaya,600.45
+murcia,lugo,775.13
+murcia,alava,554.57
+murcia,valencia,176.62
+murcia,asturias,717.15
+murcia,tenerife,1797.46
+murcia,soria,423.22
+murcia,granada,236.25
+murcia,leon,635.41
+murcia,huelva,519.94
+murcia,orense,718.04
+murcia,burgos,530.27
+murcia,albacete,128.04
+murcia,girona,556.47
+murcia,zamora,581.01
+murcia,badajoz,519.15
+murcia,segovia,416.76
+murcia,almeria,173.85
+murcia,ciudad real,263.07
+murcia,a coruña,856.09
+murcia,tarragona,402.93
+murcia,toledo,325.18
+murcia,navarra,516.46
+murcia,guipuzcoa,579.28
+murcia,cordoba,320.66
+murcia,cantabria,625.94
+murcia,guadalajara,9632.25
+murcia,jaen,207.52
+murcia,palencia,573.15
+murcia,melilla,340.59
+murcia,caceres,476.65
+murcia,cuenca,245.98
+murcia,teruel,290.11
+murcia,ceuta,438.96
+alicante,las palmas,1816.63
+alicante,avila,443.98
+alicante,valladolid,515.7
+alicante,lleida,375.48
+alicante,huesca,422.91
+alicante,barcelona,407.25
+alicante,castellon,215.03
+alicante,baleares,324.32
+alicante,madrid,360.13
+alicante,cadiz,519.65
+alicante,sevilla,495.96
+alicante,pontevedra,827.38
+alicante,salamanca,530.92
+alicante,zaragoza,368.88
+alicante,la rioja,468.94
+alicante,murcia,68.48
+alicante,malaga,391.48
+alicante,vizcaya,578.95
+alicante,lugo,786.17
+alicante,alava,533.09
+alicante,valencia,125.38
+alicante,asturias,718.14
+alicante,tenerife,1865.86
+alicante,soria,408.92
+alicante,granada,303.35
+alicante,leon,639.19
+alicante,huelva,581.45
+alicante,orense,735.97
+alicante,burgos,521.09
+alicante,albacete,139.28
+alicante,girona,492.24
+alicante,zamora,595.22
+alicante,badajoz,567.56
+alicante,segovia,424.95
+alicante,almeria,241.26
+alicante,ciudad real,303.3
+alicante,a coruña,868.92
+alicante,tarragona,342.26
+alicante,toledo,348.88
+alicante,navarra,487.5
+alicante,guipuzcoa,552.44
+alicante,cordoba,379.43
+alicante,cantabria,615.01
+alicante,guadalajara,9667.93
+alicante,jaen,266.79
+alicante,palencia,571.45
+alicante,melilla,403.18
+alicante,caceres,513.58
+alicante,cuenca,238.13
+alicante,teruel,253.35
+alicante,ceuta,507.29
+malaga,las palmas,1430.84
+malaga,avila,437.51
+malaga,valladolid,548.06
+malaga,lleida,696.48
+malaga,huesca,709.96
+malaga,barcelona,770.36
+malaga,castellon,546.03
+malaga,baleares,715.78
+malaga,madrid,414.96
+malaga,cadiz,134.07
+malaga,sevilla,158.36
+malaga,pontevedra,730.2
+malaga,salamanca,483.29
+malaga,zaragoza,626.95
+malaga,la rioja,639.39
+malaga,murcia,323.88
+malaga,alicante,391.48
+malaga,vizcaya,735.91
+malaga,lugo,747.89
+malaga,alava,695.91
+malaga,valencia,467.86
+malaga,asturias,743.33
+malaga,tenerife,1476.83
+malaga,soria,561.29
+malaga,granada,88.77
+malaga,leon,659.95
+malaga,huelva,232.68
+malaga,orense,664.0
+malaga,burgos,627.35
+malaga,albacete,338.6
+malaga,girona,854.03
+malaga,zamora,566.56
+malaga,badajoz,328.13
+malaga,segovia,469.97
+malaga,almeria,175.36
+malaga,ciudad real,252.94
+malaga,a coruña,812.26
+malaga,tarragona,692.86
+malaga,toledo,349.7
+malaga,navarra,690.74
+malaga,guipuzcoa,737.88
+malaga,cordoba,132.87
+malaga,cantabria,715.43
+malaga,guadalajara,9418.05
+malaga,jaen,159.86
+malaga,palencia,631.78
+malaga,melilla,207.31
+malaga,caceres,369.15
+malaga,cuenca,421.72
+malaga,teruel,527.31
+malaga,ceuta,121.76
+vizcaya,las palmas,2046.53
+vizcaya,avila,325.16
+vizcaya,valladolid,234.28
+vizcaya,lleida,338.3
+vizcaya,huesca,261.66
+vizcaya,barcelona,462.92
+vizcaya,castellon,404.79
+vizcaya,baleares,625.73
+vizcaya,madrid,321.3
+vizcaya,cadiz,789.44
+vizcaya,sevilla,702.24
+vizcaya,pontevedra,481.81
+vizcaya,salamanca,343.3
+vizcaya,zaragoza,239.44
+vizcaya,la rioja,110.52
+vizcaya,murcia,600.45
+vizcaya,alicante,578.95
+vizcaya,malaga,735.91
+vizcaya,lugo,375.25
+vizcaya,alava,45.94
+vizcaya,valencia,466.96
+vizcaya,asturias,250.98
+vizcaya,tenerife,2067.63
+vizcaya,soria,182.18
+vizcaya,granada,676.44
+vizcaya,leon,232.89
+vizcaya,huelva,749.79
+vizcaya,orense,400.9
+vizcaya,burgos,121.07
+vizcaya,albacete,478.61
+vizcaya,girona,485.84
+vizcaya,zamora,307.16
+vizcaya,badajoz,595.09
+vizcaya,segovia,275.1
+vizcaya,almeria,711.07
+vizcaya,ciudad real,483.0
+vizcaya,a coruña,450.01
+vizcaya,tarragona,412.97
+vizcaya,toledo,388.18
+vizcaya,navarra,108.54
+vizcaya,guipuzcoa,53.69
+vizcaya,cordoba,616.41
+vizcaya,cantabria,100.86
+vizcaya,guadalajara,9270.74
+vizcaya,jaen,589.12
+vizcaya,palencia,171.16
+vizcaya,melilla,882.27
+vizcaya,caceres,473.85
+vizcaya,cuenca,357.41
+vizcaya,teruel,333.82
+vizcaya,ceuta,842.72
+lugo,las palmas,1827.14
+lugo,avila,349.9
+lugo,valladolid,272.52
+lugo,lleida,684.51
+lugo,huesca,617.61
+lugo,barcelona,816.04
+lugo,castellon,689.15
+lugo,baleares,944.69
+lugo,madrid,426.97
+lugo,cadiz,735.32
+lugo,sevilla,639.66
+lugo,pontevedra,118.31
+lugo,salamanca,274.11
+lugo,zaragoza,563.16
+lugo,la rioja,416.33
+lugo,murcia,775.13
+lugo,alicante,786.17
+lugo,malaga,747.89
+lugo,vizcaya,375.25
+lugo,alava,390.24
+lugo,valencia,713.26
+lugo,asturias,126.85
+lugo,tenerife,1831.75
+lugo,soria,421.65
+lugo,granada,729.45
+lugo,leon,162.0
+lugo,huelva,643.48
+lugo,orense,94.17
+lugo,burgos,317.61
+lugo,albacete,650.61
+lugo,girona,852.21
+lugo,zamora,195.38
+lugo,badajoz,463.95
+lugo,segovia,361.23
+lugo,almeria,809.44
+lugo,ciudad real,543.65
+lugo,a coruña,84.75
+lugo,tarragona,751.39
+lugo,toledo,455.2
+lugo,navarra,462.38
+lugo,guipuzcoa,427.77
+lugo,cordoba,615.84
+lugo,cantabria,274.55
+lugo,guadalajara,8928.19
+lugo,jaen,656.81
+lugo,palencia,242.93
+lugo,melilla,944.16
+lugo,caceres,380.64
+lugo,cuenca,553.39
+lugo,teruel,606.44
+lugo,ceuta,815.2
+alava,las palmas,2021.04
+alava,avila,295.29
+alava,valladolid,214.59
+alava,lleida,305.35
+alava,huesca,231.79
+alava,barcelona,433.35
+alava,castellon,361.47
+alava,baleares,588.36
+alava,madrid,282.71
+alava,cadiz,753.69
+alava,sevilla,668.22
+alava,pontevedra,490.95
+alava,salamanca,323.65
+alava,zaragoza,199.05
+alava,la rioja,64.6
+alava,murcia,554.57
+alava,alicante,533.09
+alava,malaga,695.91
+alava,vizcaya,45.94
+alava,lugo,390.24
+alava,valencia,421.73
+alava,asturias,270.52
+alava,tenerife,2044.16
+alava,soria,138.09
+alava,granada,634.47
+alava,leon,237.95
+alava,huelva,719.0
+alava,orense,405.38
+alava,burgos,100.13
+alava,albacete,433.06
+alava,girona,462.88
+alava,zamora,298.15
+alava,badajoz,569.63
+alava,segovia,241.92
+alava,almeria,666.75
+alava,ciudad real,443.06
+alava,a coruña,468.67
+alava,tarragona,378.4
+alava,toledo,350.32
+alava,navarra,74.31
+alava,guipuzcoa,51.34
+alava,cordoba,578.66
+alava,cantabria,119.86
+alava,guadalajara,9300.14
+alava,jaen,547.14
+alava,palencia,165.83
+alava,melilla,838.72
+alava,caceres,448.41
+alava,cuenca,311.94
+alava,teruel,288.98
+alava,ceuta,804.5
+valencia,las palmas,1898.41
+valencia,avila,391.67
+valencia,valladolid,441.04
+valencia,lleida,252.9
+valencia,huesca,297.54
+valencia,barcelona,303.45
+valencia,castellon,90.93
+valencia,baleares,280.61
+valencia,madrid,303.15
+valencia,cadiz,584.8
+valencia,sevilla,542.16
+valencia,pontevedra,769.4
+valencia,salamanca,479.65
+valencia,zaragoza,246.09
+valencia,la rioja,359.17
+valencia,murcia,176.62
+valencia,alicante,125.38
+valencia,malaga,467.86
+valencia,vizcaya,466.96
+valencia,lugo,713.26
+valencia,alava,421.73
+valencia,asturias,631.31
+valencia,tenerife,1942.63
+valencia,soria,309.03
+valencia,granada,379.96
+valencia,leon,557.83
+valencia,huelva,624.47
+valencia,orense,675.22
+valencia,burgos,424.37
+valencia,albacete,138.19
+valencia,girona,388.0
+valencia,zamora,531.5
+valencia,badajoz,573.43
+valencia,segovia,358.25
+valencia,almeria,344.29
+valencia,ciudad real,308.06
+valencia,a coruña,797.69
+valencia,tarragona,229.55
+valencia,toledo,315.91
+valencia,navarra,369.82
+valencia,guipuzcoa,435.84
+valencia,cordoba,421.29
+valencia,cantabria,514.19
+valencia,guadalajara,9625.78
+valencia,jaen,318.85
+valencia,palencia,483.69
+valencia,melilla,516.26
+valencia,caceres,495.72
+valencia,cuenca,164.3
+valencia,teruel,133.95
+valencia,ceuta,588.86
+asturias,las palmas,1912.24
+asturias,avila,312.53
+asturias,valladolid,209.76
+asturias,lleida,572.06
+asturias,huesca,501.45
+asturias,barcelona,702.19
+asturias,castellon,595.25
+asturias,baleares,843.39
+asturias,madrid,371.52
+asturias,cadiz,753.61
+asturias,sevilla,657.91
+asturias,pontevedra,241.45
+asturias,salamanca,261.84
+asturias,zaragoza,455.1
+asturias,la rioja,305.29
+asturias,murcia,717.15
+asturias,alicante,718.14
+asturias,malaga,743.33
+asturias,vizcaya,250.98
+asturias,lugo,126.85
+asturias,alava,270.52
+asturias,valencia,631.31
+asturias,tenerife,1922.12
+asturias,soria,326.03
+asturias,granada,710.22
+asturias,leon,85.02
+asturias,huelva,677.85
+asturias,orense,180.32
+asturias,burgos,212.81
+asturias,albacete,589.42
+asturias,girona,733.29
+asturias,zamora,180.8
+asturias,badajoz,500.06
+asturias,segovia,302.94
+asturias,almeria,777.29
+asturias,ciudad real,513.43
+asturias,a coruña,199.09
+asturias,tarragona,642.07
+asturias,toledo,415.93
+asturias,navarra,344.3
+asturias,guipuzcoa,304.23
+asturias,cordoba,610.85
+asturias,cantabria,151.57
+asturias,guadalajara,9033.86
+asturias,jaen,629.94
+asturias,palencia,147.71
+asturias,melilla,927.24
+asturias,caceres,395.08
+asturias,cuenca,480.22
+asturias,teruel,513.6
+asturias,ceuta,826.19
+tenerife,las palmas,106.45
+tenerife,avila,1751.46
+tenerife,valladolid,1833.37
+tenerife,lleida,2152.26
+tenerife,huesca,2146.51
+tenerife,barcelona,2241.62
+tenerife,castellon,2014.89
+tenerife,baleares,2189.09
+tenerife,madrid,1790.61
+tenerife,cadiz,1358.61
+tenerife,sevilla,1414.76
+tenerife,pontevedra,1726.08
+tenerife,salamanca,1724.7
+tenerife,zaragoza,2057.91
+tenerife,la rioja,2009.78
+tenerife,murcia,1797.46
+tenerife,alicante,1865.86
+tenerife,malaga,1476.83
+tenerife,vizcaya,2067.63
+tenerife,lugo,1831.75
+tenerife,alava,2044.16
+tenerife,valencia,1942.63
+tenerife,asturias,1922.12
+tenerife,soria,1941.96
+tenerife,granada,1565.59
+tenerife,leon,1874.02
+tenerife,huelva,1343.59
+tenerife,orense,1747.32
+tenerife,burgos,1947.28
+tenerife,albacete,1808.11
+tenerife,girona,2323.23
+tenerife,zamora,1773.83
+tenerife,badajoz,1474.82
+tenerife,segovia,1808.59
+tenerife,almeria,1629.86
+tenerife,ciudad real,1668.98
+tenerife,a coruña,1828.28
+tenerife,tarragona,2161.34
+tenerife,toledo,1727.55
+tenerife,navarra,2073.58
+tenerife,guipuzcoa,2095.13
+tenerife,cordoba,1531.87
+tenerife,cantabria,1996.59
+tenerife,guadalajara,8644.2
+tenerife,jaen,1624.65
+tenerife,palencia,1904.47
+tenerife,melilla,1508.0
+tenerife,caceres,1595.84
+tenerife,cuenca,1863.27
+tenerife,teruel,1980.3
+tenerife,ceuta,1358.65
+soria,las palmas,1914.06
+soria,avila,196.47
+soria,valladolid,167.31
+soria,lleida,279.13
+soria,huesca,231.25
+soria,barcelona,409.79
+soria,castellon,269.55
+soria,baleares,523.06
+soria,madrid,155.32
+soria,cadiz,626.88
+soria,sevilla,545.82
+soria,pontevedra,498.94
+soria,salamanca,256.38
+soria,zaragoza,153.52
+soria,la rioja,78.11
+soria,murcia,423.22
+soria,alicante,408.92
+soria,malaga,561.29
+soria,vizcaya,182.18
+soria,lugo,421.65
+soria,alava,138.09
+soria,valencia,309.03
+soria,asturias,326.03
+soria,tenerife,1941.96
+soria,granada,497.35
+soria,leon,260.21
+soria,huelva,603.97
+soria,orense,404.91
+soria,burgos,115.48
+soria,albacete,298.6
+soria,girona,462.48
+soria,zamora,268.44
+soria,badajoz,470.99
+soria,segovia,137.58
+soria,almeria,528.91
+soria,ciudad real,309.48
+soria,a coruña,506.09
+soria,tarragona,337.03
+soria,toledo,222.83
+soria,navarra,134.35
+soria,guipuzcoa,176.66
+soria,cordoba,448.61
+soria,cantabria,206.43
+soria,guadalajara,9349.71
+soria,jaen,410.1
+soria,palencia,180.79
+soria,melilla,700.63
+soria,caceres,353.85
+soria,cuenca,177.61
+soria,teruel,187.59
+soria,ceuta,673.53
+granada,las palmas,1519.31
+granada,avila,398.26
+granada,valladolid,506.64
+granada,lleida,612.74
+granada,huesca,630.28
+granada,barcelona,682.97
+granada,castellon,459.77
+granada,baleares,627.53
+granada,madrid,360.15
+granada,cadiz,217.44
+granada,sevilla,213.8
+granada,pontevedra,725.94
+granada,salamanca,457.25
+granada,zaragoza,549.52
+granada,la rioja,580.51
+granada,murcia,236.25
+granada,alicante,303.35
+granada,malaga,88.77
+granada,vizcaya,676.44
+granada,lugo,729.45
+granada,alava,634.47
+granada,valencia,379.96
+granada,asturias,710.22
+granada,tenerife,1565.59
+granada,soria,497.35
+granada,leon,625.45
+granada,huelva,297.38
+granada,orense,651.59
+granada,burgos,574.13
+granada,albacete,253.53
+granada,girona,766.97
+granada,zamora,539.99
+granada,badajoz,352.63
+granada,segovia,421.43
+granada,almeria,107.67
+granada,ciudad real,199.82
+granada,a coruña,799.65
+granada,tarragona,606.25
+granada,toledo,300.07
+granada,navarra,622.53
+granada,guipuzcoa,673.56
+granada,cordoba,130.55
+granada,cantabria,665.98
+granada,guadalajara,9467.03
+granada,jaen,87.34
+granada,palencia,587.84
+granada,melilla,217.02
+granada,caceres,362.54
+granada,cuenca,345.61
+granada,teruel,445.67
+granada,ceuta,211.85
+leon,las palmas,1860.24
+leon,avila,227.55
+leon,valladolid,126.02
+leon,lleida,523.8
+leon,huesca,459.02
+leon,barcelona,655.63
+leon,castellon,528.84
+leon,baleares,783.02
+leon,madrid,288.04
+leon,cadiz,674.84
+leon,sevilla,579.68
+leon,pontevedra,253.36
+leon,salamanca,181.64
+leon,zaragoza,401.54
+leon,la rioja,256.77
+leon,murcia,635.41
+leon,alicante,639.19
+leon,malaga,659.95
+leon,vizcaya,232.89
+leon,lugo,162.0
+leon,alava,237.95
+leon,valencia,557.83
+leon,asturias,85.02
+leon,tenerife,1874.02
+leon,soria,260.21
+leon,granada,625.45
+leon,huelva,604.67
+leon,orense,168.23
+leon,burgos,156.47
+leon,albacete,508.14
+leon,girona,694.94
+leon,zamora,106.05
+leon,badajoz,428.81
+leon,segovia,219.48
+leon,almeria,692.36
+leon,ciudad real,428.42
+leon,a coruña,246.04
+leon,tarragona,589.76
+leon,toledo,330.98
+leon,navarra,306.68
+leon,guipuzcoa,281.49
+leon,cordoba,527.8
+leon,cantabria,136.04
+leon,guadalajara,9090.05
+leon,jaen,544.94
+leon,palencia,81.04
+leon,melilla,842.44
+leon,caceres,318.98
+leon,cuenca,402.31
+leon,teruel,446.27
+leon,ceuta,744.57
+huelva,las palmas,1311.64
+huelva,avila,424.64
+huelva,valladolid,523.93
+huelva,lleida,811.46
+huelva,huesca,802.93
+huelva,barcelona,909.81
+huelva,castellon,684.44
+huelva,baleares,896.78
+huelva,madrid,449.78
+huelva,cadiz,123.72
+huelva,sevilla,85.72
+huelva,pontevedra,592.5
+huelva,salamanca,426.32
+huelva,zaragoza,714.33
+huelva,la rioja,681.16
+huelva,murcia,519.94
+huelva,alicante,581.45
+huelva,malaga,232.68
+huelva,vizcaya,749.79
+huelva,lugo,643.48
+huelva,alava,719.0
+huelva,valencia,624.47
+huelva,asturias,677.85
+huelva,tenerife,1343.59
+huelva,soria,603.97
+huelva,granada,297.38
+huelva,leon,604.67
+huelva,orense,550.4
+huelva,burgos,629.53
+huelva,albacete,486.3
+huelva,girona,988.17
+huelva,zamora,499.19
+huelva,badajoz,181.18
+huelva,segovia,477.26
+huelva,almeria,401.64
+huelva,ciudad real,328.58
+huelva,a coruña,689.86
+huelva,tarragona,827.64
+huelva,toledo,384.9
+huelva,navarra,737.83
+huelva,guipuzcoa,768.12
+huelva,cordoba,204.14
+huelva,cantabria,699.02
+huelva,guadalajara,9186.78
+huelva,jaen,314.86
+huelva,palencia,605.81
+huelva,melilla,420.95
+huelva,caceres,286.55
+huelva,cuenca,522.35
+huelva,teruel,640.62
+huelva,ceuta,207.85
+orense,las palmas,1740.36
+orense,avila,292.2
+orense,valladolid,240.6
+orense,lleida,680.18
+orense,huesca,620.21
+orense,barcelona,812.08
+orense,castellon,662.63
+orense,baleares,922.83
+orense,madrid,376.81
+orense,cadiz,644.82
+orense,sevilla,549.61
+orense,pontevedra,94.94
+orense,salamanca,207.42
+orense,zaragoza,555.26
+orense,la rioja,418.51
+orense,murcia,718.04
+orense,alicante,735.97
+orense,malaga,664.0
+orense,vizcaya,400.9
+orense,lugo,94.17
+orense,alava,405.38
+orense,valencia,675.22
+orense,asturias,180.32
+orense,tenerife,1747.32
+orense,soria,404.91
+orense,granada,651.59
+orense,leon,168.23
+orense,huelva,550.4
+orense,burgos,317.23
+orense,albacete,597.65
+orense,girona,856.73
+orense,zamora,143.79
+orense,badajoz,369.95
+orense,segovia,316.99
+orense,almeria,736.94
+orense,ciudad real,473.95
+orense,a coruña,148.44
+orense,tarragona,741.67
+orense,toledo,393.27
+orense,navarra,471.98
+orense,guipuzcoa,449.69
+orense,cordoba,533.29
+orense,cantabria,302.36
+orense,guadalajara,8952.99
+orense,jaen,583.38
+orense,palencia,242.04
+orense,melilla,863.8
+orense,caceres,294.91
+orense,cuenca,511.61
+orense,teruel,580.57
+orense,ceuta,724.33
+burgos,las palmas,1925.65
+burgos,avila,205.28
+burgos,valladolid,114.93
+burgos,lleida,367.34
+burgos,huesca,303.54
+burgos,barcelona,499.17
+burgos,castellon,382.95
+burgos,baleares,631.1
+burgos,madrid,214.04
+burgos,cadiz,673.12
+burgos,sevilla,584.22
+burgos,pontevedra,407.36
+burgos,salamanca,224.26
+burgos,zaragoza,245.63
+burgos,la rioja,101.34
+burgos,murcia,530.27
+burgos,alicante,521.09
+burgos,malaga,627.35
+burgos,vizcaya,121.07
+burgos,lugo,317.61
+burgos,alava,100.13
+burgos,valencia,424.37
+burgos,asturias,212.81
+burgos,tenerife,1947.28
+burgos,soria,115.48
+burgos,granada,574.13
+burgos,leon,156.47
+burgos,huelva,629.53
+burgos,orense,317.23
+burgos,albacete,403.12
+burgos,girona,539.95
+burgos,zamora,199.83
+burgos,badajoz,473.54
+burgos,segovia,158.93
+burgos,almeria,620.04
+burgos,ciudad real,376.13
+burgos,a coruña,400.57
+burgos,tarragona,433.83
+burgos,toledo,277.65
+burgos,navarra,156.32
+burgos,guipuzcoa,151.18
+burgos,cordoba,503.61
+burgos,cantabria,96.09
+burgos,guadalajara,9243.8
+burgos,jaen,487.57
+burgos,palencia,76.05
+burgos,melilla,785.6
+burgos,caceres,352.82
+burgos,cuenca,285.01
+burgos,teruel,301.94
+burgos,ceuta,730.2
+albacete,las palmas,1765.76
+albacete,avila,305.46
+albacete,valladolid,382.91
+albacete,lleida,359.36
+albacete,huesca,381.51
+albacete,barcelona,433.82
+albacete,castellon,207.86
+albacete,baleares,414.42
+albacete,madrid,223.64
+albacete,cadiz,449.5
+albacete,sevilla,404.04
+albacete,pontevedra,688.54
+albacete,salamanca,391.93
+albacete,zaragoza,306.45
+albacete,la rioja,373.76
+albacete,murcia,128.04
+albacete,alicante,139.28
+albacete,malaga,338.6
+albacete,vizcaya,478.61
+albacete,lugo,650.61
+albacete,alava,433.06
+albacete,valencia,138.19
+albacete,asturias,589.42
+albacete,tenerife,1808.11
+albacete,soria,298.6
+albacete,granada,253.53
+albacete,leon,508.14
+albacete,huelva,486.3
+albacete,orense,597.65
+albacete,burgos,403.12
+albacete,girona,516.55
+albacete,zamora,457.97
+albacete,badajoz,444.35
+albacete,segovia,290.4
+albacete,almeria,244.93
+albacete,ciudad real,175.68
+albacete,a coruña,732.56
+albacete,tarragona,354.86
+albacete,toledo,209.72
+albacete,navarra,401.72
+albacete,guipuzcoa,461.74
+albacete,cordoba,283.16
+albacete,cantabria,499.02
+albacete,guadalajara,9529.89
+albacete,jaen,183.56
+albacete,palencia,445.12
+albacete,melilla,422.12
+albacete,caceres,378.54
+albacete,cuenca,121.24
+albacete,teruel,195.34
+albacete,ceuta,462.89
+girona,las palmas,2282.15
+girona,avila,646.33
+girona,valladolid,628.05
+girona,lleida,186.72
+girona,huesca,236.52
+girona,barcelona,85.15
+girona,castellon,308.79
+girona,baleares,262.78
+girona,madrid,573.89
+girona,cadiz,965.1
+girona,sevilla,911.19
+girona,pontevedra,947.28
+girona,salamanca,717.26
+girona,zaragoza,309.62
+girona,la rioja,438.66
+girona,murcia,556.47
+girona,alicante,492.24
+girona,malaga,854.03
+girona,vizcaya,485.84
+girona,lugo,852.21
+girona,alava,462.88
+girona,valencia,388.0
+girona,asturias,733.29
+girona,tenerife,2323.23
+girona,soria,462.48
+girona,granada,766.97
+girona,leon,694.94
+girona,huelva,988.17
+girona,orense,856.73
+girona,burgos,539.95
+girona,albacete,516.55
+girona,zamora,728.27
+girona,badajoz,898.84
+girona,segovia,590.58
+girona,almeria,729.32
+girona,ciudad real,659.67
+girona,a coruña,931.52
+girona,tarragona,161.93
+girona,toledo,622.65
+girona,navarra,389.87
+girona,guipuzcoa,432.29
+girona,cordoba,792.13
+girona,cantabria,581.95
+girona,guadalajara,9752.56
+girona,jaen,699.93
+girona,palencia,615.86
+girona,melilla,895.41
+girona,caceres,793.93
+girona,cuenca,467.4
+girona,teruel,348.87
+girona,ceuta,978.3
+zamora,las palmas,1758.18
+zamora,avila,154.69
+zamora,valladolid,101.14
+zamora,lleida,547.15
+zamora,huesca,492.98
+zamora,barcelona,678.19
+zamora,castellon,519.87
+zamora,baleares,780.68
+zamora,madrid,235.12
+zamora,cadiz,572.81
+zamora,sevilla,477.12
+zamora,pontevedra,238.41
+zamora,salamanca,83.35
+zamora,zaragoza,421.46
+zamora,la rioja,296.56
+zamora,murcia,581.01
+zamora,alicante,595.22
+zamora,malaga,566.56
+zamora,vizcaya,307.16
+zamora,lugo,195.38
+zamora,alava,298.15
+zamora,valencia,531.5
+zamora,asturias,180.8
+zamora,tenerife,1773.83
+zamora,soria,268.44
+zamora,granada,539.99
+zamora,leon,106.05
+zamora,huelva,499.19
+zamora,orense,143.79
+zamora,burgos,199.83
+zamora,albacete,457.97
+zamora,girona,728.27
+zamora,badajoz,322.77
+zamora,segovia,173.39
+zamora,almeria,615.84
+zamora,ciudad real,349.64
+zamora,a coruña,275.08
+zamora,tarragona,604.95
+zamora,toledo,259.82
+zamora,navarra,355.05
+zamora,guipuzcoa,347.73
+zamora,cordoba,433.7
+zamora,cantabria,223.81
+zamora,guadalajara,9096.56
+zamora,jaen,464.2
+zamora,palencia,136.08
+zamora,melilla,756.39
+zamora,caceres,214.58
+zamora,cuenca,368.11
+zamora,teruel,438.21
+zamora,ceuta,644.92
+badajoz,las palmas,1452.17
+badajoz,avila,276.82
+badajoz,valladolid,361.59
+badajoz,lleida,714.08
+badajoz,huesca,690.26
+badajoz,barcelona,827.58
+badajoz,castellon,613.24
+badajoz,baleares,854.72
+badajoz,madrid,328.33
+badajoz,cadiz,279.04
+badajoz,sevilla,187.65
+badajoz,pontevedra,417.72
+badajoz,salamanca,256.44
+badajoz,zaragoza,602.45
+badajoz,la rioja,539.92
+badajoz,murcia,520.22
+badajoz,alicante,568.51
+badajoz,malaga,329.65
+badajoz,vizcaya,594.52
+badajoz,lugo,462.61
+badajoz,alava,569.16
+badajoz,valencia,574.1
+badajoz,asturias,498.95
+badajoz,tenerife,1475.23
+badajoz,soria,470.99
+badajoz,granada,352.63
+badajoz,leon,428.81
+badajoz,huelva,181.18
+badajoz,orense,369.95
+badajoz,burgos,473.54
+badajoz,albacete,444.35
+badajoz,girona,898.84
+badajoz,zamora,322.77
+badajoz,segovia,334.85
+badajoz,almeria,457.83
+badajoz,ciudad real,268.69
+badajoz,a coruña,511.66
+badajoz,tarragona,745.03
+badajoz,toledo,276.39
+badajoz,navarra,599.8
+badajoz,guipuzcoa,620.0
+badajoz,cordoba,222.55
+badajoz,cantabria,532.86
+badajoz,guadalajara,9121.41
+badajoz,jaen,321.73
+badajoz,palencia,439.01
+badajoz,melilla,536.9
+badajoz,caceres,120.8
+badajoz,cuenca,437.09
+badajoz,teruel,552.68
+badajoz,ceuta,362.19
+segovia,las palmas,1782.8
+segovia,avila,58.9
+segovia,valladolid,93.47
+segovia,lleida,404.22
+segovia,huesca,365.64
+segovia,barcelona,530.36
+segovia,castellon,351.85
+segovia,baleares,613.29
+segovia,madrid,68.59
+segovia,cadiz,514.75
+segovia,sevilla,427.17
+segovia,pontevedra,411.18
+segovia,salamanca,130.24
+segovia,zaragoza,282.08
+segovia,la rioja,205.9
+segovia,murcia,416.76
+segovia,alicante,424.95
+segovia,malaga,469.97
+segovia,vizcaya,275.1
+segovia,lugo,361.23
+segovia,alava,241.92
+segovia,valencia,358.25
+segovia,asturias,302.94
+segovia,tenerife,1808.59
+segovia,soria,137.58
+segovia,granada,421.43
+segovia,leon,219.48
+segovia,huelva,477.26
+segovia,orense,316.99
+segovia,burgos,158.93
+segovia,albacete,290.4
+segovia,girona,590.58
+segovia,zamora,173.39
+segovia,badajoz,334.85
+segovia,almeria,477.93
+segovia,ciudad real,221.68
+segovia,a coruña,444.27
+segovia,tarragona,452.05
+segovia,toledo,121.52
+segovia,navarra,265.13
+segovia,guipuzcoa,290.86
+segovia,cordoba,344.82
+segovia,cantabria,245.65
+segovia,guadalajara,9268.59
+segovia,jaen,336.55
+segovia,palencia,167.56
+segovia,melilla,636.23
+segovia,caceres,216.55
+segovia,cuenca,194.73
+segovia,teruel,272.4
+segovia,ceuta,571.3
+almeria,las palmas,1578.23
+almeria,avila,465.99
+almeria,valladolid,568.72
+almeria,lleida,593.19
+almeria,huesca,623.91
+almeria,barcelona,644.19
+almeria,castellon,432.56
+almeria,baleares,559.99
+almeria,madrid,411.32
+almeria,cadiz,309.25
+almeria,sevilla,319.76
+almeria,pontevedra,816.06
+almeria,salamanca,535.33
+almeria,zaragoza,551.24
+almeria,la rioja,609.22
+almeria,murcia,173.85
+almeria,alicante,241.26
+almeria,malaga,175.36
+almeria,vizcaya,711.07
+almeria,lugo,809.44
+almeria,alava,666.75
+almeria,valencia,344.29
+almeria,asturias,777.29
+almeria,tenerife,1629.86
+almeria,soria,528.91
+almeria,granada,107.67
+almeria,leon,692.36
+almeria,huelva,401.64
+almeria,orense,736.94
+almeria,burgos,620.04
+almeria,albacete,244.93
+almeria,girona,729.32
+almeria,zamora,615.84
+almeria,badajoz,457.83
+almeria,segovia,477.93
+almeria,ciudad real,266.23
+almeria,a coruña,883.51
+almeria,tarragona,573.52
+almeria,toledo,361.37
+almeria,navarra,643.05
+almeria,guipuzcoa,700.21
+almeria,cordoba,235.35
+almeria,cantabria,715.08
+almeria,guadalajara,9574.59
+almeria,jaen,153.62
+almeria,palencia,645.21
+almeria,melilla,177.24
+almeria,caceres,456.25
+almeria,cuenca,359.12
+almeria,teruel,438.24
+almeria,ceuta,280.07
+ciudad real,las palmas,1633.13
+ciudad real,avila,200.97
+ciudad real,valladolid,307.49
+ciudad real,lleida,483.59
+ciudad real,huesca,480.45
+ciudad real,barcelona,581.93
+ciudad real,castellon,358.13
+ciudad real,baleares,588.07
+ciudad real,madrid,162.49
+ciudad real,cadiz,323.38
+ciudad real,sevilla,254.3
+ciudad real,pontevedra,557.09
+ciudad real,salamanca,269.69
+ciudad real,zaragoza,393.02
+ciudad real,la rioja,392.77
+ciudad real,murcia,263.07
+ciudad real,alicante,303.3
+ciudad real,malaga,252.94
+ciudad real,vizcaya,483.0
+ciudad real,lugo,543.65
+ciudad real,alava,443.06
+ciudad real,valencia,308.06
+ciudad real,asturias,513.43
+ciudad real,tenerife,1668.98
+ciudad real,soria,309.48
+ciudad real,granada,199.82
+ciudad real,leon,428.42
+ciudad real,huelva,328.58
+ciudad real,orense,473.95
+ciudad real,burgos,376.13
+ciudad real,albacete,175.68
+ciudad real,girona,659.67
+ciudad real,zamora,349.64
+ciudad real,badajoz,268.69
+ciudad real,segovia,221.68
+ciudad real,almeria,266.23
+ciudad real,a coruña,619.03
+ciudad real,tarragona,499.51
+ciudad real,toledo,100.25
+ciudad real,navarra,441.04
+ciudad real,guipuzcoa,485.68
+ciudad real,cordoba,142.57
+ciudad real,cantabria,466.73
+ciudad real,guadalajara,9369.24
+ciudad real,jaen,116.55
+ciudad real,palencia,388.08
+ciudad real,melilla,415.57
+ciudad real,caceres,213.65
+ciudad real,cuenca,194.36
+ciudad real,teruel,312.2
+ciudad real,ceuta,364.32
+a coruña,las palmas,1828.67
+a coruña,avila,429.59
+a coruña,valladolid,356.73
+a coruña,lleida,766.53
+a coruña,huesca,698.19
+a coruña,barcelona,897.7
+a coruña,castellon,773.86
+a coruña,baleares,1029.04
+a coruña,madrid,509.08
+a coruña,cadiz,789.23
+a coruña,sevilla,694.78
+a coruña,pontevedra,106.26
+a coruña,salamanca,349.77
+a coruña,zaragoza,646.18
+a coruña,la rioja,498.11
+a coruña,murcia,856.09
+a coruña,alicante,868.92
+a coruña,malaga,812.26
+a coruña,vizcaya,450.01
+a coruña,lugo,84.75
+a coruña,alava,468.67
+a coruña,valencia,797.69
+a coruña,asturias,199.09
+a coruña,tenerife,1828.28
+a coruña,soria,506.09
+a coruña,granada,799.65
+a coruña,leon,246.04
+a coruña,huelva,689.86
+a coruña,orense,148.44
+a coruña,burgos,400.57
+a coruña,albacete,732.56
+a coruña,girona,931.52
+a coruña,zamora,275.08
+a coruña,badajoz,511.66
+a coruña,segovia,444.27
+a coruña,almeria,883.51
+a coruña,ciudad real,619.03
+a coruña,tarragona,834.33
+a coruña,toledo,533.88
+a coruña,navarra,541.84
+a coruña,guipuzcoa,503.31
+a coruña,cordoba,681.72
+a coruña,cantabria,350.52
+a coruña,guadalajara,8844.04
+a coruña,jaen,730.15
+a coruña,palencia,326.67
+a coruña,melilla,1012.22
+a coruña,caceres,443.11
+a coruña,cuenca,637.28
+a coruña,teruel,691.16
+a coruña,ceuta,869.99
+tarragona,las palmas,2120.27
+tarragona,avila,504.37
+tarragona,valladolid,503.87
+tarragona,lleida,76.24
+tarragona,huesca,155.75
+tarragona,barcelona,82.78
+tarragona,castellon,147.01
+tarragona,baleares,216.81
+tarragona,madrid,425.73
+tarragona,cadiz,803.17
+tarragona,sevilla,749.9
+tarragona,pontevedra,835.27
+tarragona,salamanca,581.83
+tarragona,zaragoza,188.24
+tarragona,la rioja,337.63
+tarragona,murcia,402.93
+tarragona,alicante,342.26
+tarragona,malaga,692.86
+tarragona,vizcaya,412.97
+tarragona,lugo,751.39
+tarragona,alava,378.4
+tarragona,valencia,229.55
+tarragona,asturias,642.07
+tarragona,tenerife,2161.34
+tarragona,soria,337.03
+tarragona,granada,606.25
+tarragona,leon,589.76
+tarragona,huelva,827.64
+tarragona,orense,741.67
+tarragona,burgos,433.83
+tarragona,albacete,354.86
+tarragona,girona,161.93
+tarragona,zamora,604.95
+tarragona,badajoz,745.03
+tarragona,segovia,452.05
+tarragona,almeria,573.52
+tarragona,ciudad real,499.51
+tarragona,a coruña,834.33
+tarragona,toledo,468.85
+tarragona,navarra,305.26
+tarragona,guipuzcoa,363.91
+tarragona,cordoba,630.52
+tarragona,cantabria,496.38
+tarragona,guadalajara,9675.92
+tarragona,jaen,538.1
+tarragona,palencia,508.73
+tarragona,melilla,743.49
+tarragona,caceres,644.88
+tarragona,cuenca,309.46
+tarragona,teruel,192.35
+tarragona,ceuta,817.18
+toledo,las palmas,1696.54
+toledo,avila,105.87
+toledo,valladolid,208.14
+toledo,lleida,438.63
+toledo,huesca,420.7
+toledo,barcelona,551.3
+toledo,castellon,340.92
+toledo,baleares,592.55
+toledo,madrid,67.98
+toledo,cadiz,404.5
+toledo,sevilla,323.24
+toledo,pontevedra,481.76
+toledo,salamanca,185.86
+toledo,zaragoza,331.97
+toledo,la rioja,304.12
+toledo,murcia,325.18
+toledo,alicante,348.88
+toledo,malaga,349.7
+toledo,vizcaya,388.18
+toledo,lugo,455.2
+toledo,alava,350.32
+toledo,valencia,315.91
+toledo,asturias,415.93
+toledo,tenerife,1727.55
+toledo,soria,222.83
+toledo,granada,300.07
+toledo,leon,330.98
+toledo,huelva,384.9
+toledo,orense,393.27
+toledo,burgos,277.65
+toledo,albacete,209.72
+toledo,girona,622.65
+toledo,zamora,259.82
+toledo,badajoz,276.39
+toledo,segovia,121.52
+toledo,almeria,361.37
+toledo,ciudad real,100.25
+toledo,a coruña,533.88
+toledo,tarragona,468.85
+toledo,navarra,357.07
+toledo,guipuzcoa,395.56
+toledo,cordoba,228.38
+toledo,cantabria,366.94
+toledo,guadalajara,9320.84
+toledo,jaen,215.95
+toledo,palencia,287.91
+toledo,melilla,515.52
+toledo,caceres,181.34
+toledo,cuenca,163.38
+toledo,teruel,276.55
+toledo,ceuta,455.05
+navarra,las palmas,2046.91
+navarra,avila,323.02
+navarra,valladolid,262.24
+navarra,lleida,231.49
+navarra,huesca,157.49
+navarra,barcelona,359.04
+navarra,castellon,301.0
+navarra,baleares,517.23
+navarra,madrid,289.67
+navarra,cadiz,760.63
+navarra,sevilla,680.16
+navarra,pontevedra,559.98
+navarra,salamanca,367.38
+navarra,zaragoza,132.47
+navarra,la rioja,61.13
+navarra,murcia,516.46
+navarra,alicante,487.5
+navarra,malaga,690.74
+navarra,vizcaya,108.54
+navarra,lugo,462.38
+navarra,alava,74.31
+navarra,valencia,369.82
+navarra,asturias,344.3
+navarra,tenerife,2073.58
+navarra,soria,134.35
+navarra,granada,622.53
+navarra,leon,306.68
+navarra,huelva,737.83
+navarra,orense,471.98
+navarra,burgos,156.32
+navarra,albacete,401.72
+navarra,girona,389.87
+navarra,zamora,355.05
+navarra,badajoz,599.8
+navarra,segovia,265.13
+navarra,almeria,643.05
+navarra,ciudad real,441.04
+navarra,a coruña,541.84
+navarra,tarragona,305.26
+navarra,toledo,357.07
+navarra,guipuzcoa,66.49
+navarra,cordoba,581.63
+navarra,cantabria,194.13
+navarra,guadalajara,9374.39
+navarra,jaen,536.01
+navarra,palencia,230.01
+navarra,melilla,818.35
+navarra,caceres,480.51
+navarra,cuenca,283.93
+navarra,teruel,235.93
+navarra,ceuta,805.32
+guipuzcoa,las palmas,2071.63
+guipuzcoa,avila,345.33
+guipuzcoa,valladolid,265.86
+guipuzcoa,lleida,288.45
+guipuzcoa,huesca,210.56
+guipuzcoa,barcelona,410.97
+guipuzcoa,castellon,367.42
+guipuzcoa,baleares,578.46
+guipuzcoa,madrid,327.61
+guipuzcoa,cadiz,799.86
+guipuzcoa,sevilla,715.69
+guipuzcoa,pontevedra,532.65
+guipuzcoa,salamanca,374.97
+guipuzcoa,zaragoza,198.35
+guipuzcoa,la rioja,93.18
+guipuzcoa,murcia,579.28
+guipuzcoa,alicante,552.44
+guipuzcoa,malaga,737.88
+guipuzcoa,vizcaya,53.69
+guipuzcoa,lugo,427.77
+guipuzcoa,alava,51.34
+guipuzcoa,valencia,435.84
+guipuzcoa,asturias,304.23
+guipuzcoa,tenerife,2095.13
+guipuzcoa,soria,176.66
+guipuzcoa,granada,673.56
+guipuzcoa,leon,281.49
+guipuzcoa,huelva,768.12
+guipuzcoa,orense,449.69
+guipuzcoa,burgos,151.18
+guipuzcoa,albacete,461.74
+guipuzcoa,girona,432.29
+guipuzcoa,zamora,347.73
+guipuzcoa,badajoz,620.0
+guipuzcoa,segovia,290.86
+guipuzcoa,almeria,700.21
+guipuzcoa,ciudad real,485.68
+guipuzcoa,a coruña,503.31
+guipuzcoa,tarragona,363.91
+guipuzcoa,toledo,395.56
+guipuzcoa,navarra,66.49
+guipuzcoa,cordoba,623.35
+guipuzcoa,cantabria,153.25
+guipuzcoa,guadalajara,9323.41
+guipuzcoa,jaen,586.41
+guipuzcoa,palencia,213.62
+guipuzcoa,melilla,874.11
+guipuzcoa,caceres,499.3
+guipuzcoa,cuenca,341.96
+guipuzcoa,teruel,301.9
+guipuzcoa,ceuta,849.17
+cordoba,las palmas,1493.81
+cordoba,avila,307.81
+cordoba,valladolid,418.34
+cordoba,lleida,621.0
+cordoba,huesca,621.92
+cordoba,barcelona,711.82
+cordoba,castellon,485.21
+cordoba,baleares,692.65
+cordoba,madrid,296.0
+cordoba,cadiz,180.82
+cordoba,sevilla,120.88
+cordoba,pontevedra,602.74
+cordoba,salamanca,350.45
+cordoba,zaragoza,535.0
+cordoba,la rioja,531.19
+cordoba,murcia,320.66
+cordoba,alicante,379.43
+cordoba,malaga,132.87
+cordoba,vizcaya,616.41
+cordoba,lugo,615.84
+cordoba,alava,578.66
+cordoba,valencia,421.29
+cordoba,asturias,610.85
+cordoba,tenerife,1531.87
+cordoba,soria,448.61
+cordoba,granada,130.55
+cordoba,leon,527.8
+cordoba,huelva,204.14
+cordoba,orense,533.29
+cordoba,burgos,503.61
+cordoba,albacete,283.16
+cordoba,girona,792.13
+cordoba,zamora,433.7
+cordoba,badajoz,222.55
+cordoba,segovia,344.82
+cordoba,almeria,235.35
+cordoba,ciudad real,142.57
+cordoba,a coruña,681.72
+cordoba,tarragona,630.52
+cordoba,toledo,228.38
+cordoba,navarra,581.63
+cordoba,guipuzcoa,623.35
+cordoba,cantabria,588.65
+cordoba,guadalajara,9341.08
+cordoba,jaen,113.17
+cordoba,palencia,502.64
+cordoba,melilla,331.27
+cordoba,caceres,239.36
+cordoba,cuenca,333.39
+cordoba,teruel,448.87
+cordoba,ceuta,226.82
+cantabria,las palmas,1979.35
+cantabria,avila,282.62
+cantabria,valladolid,175.55
+cantabria,lleida,424.38
+cantabria,huesca,351.62
+cantabria,barcelona,553.09
+cantabria,castellon,465.3
+cantabria,baleares,703.21
+cantabria,madrid,306.32
+cantabria,cadiz,752.62
+cantabria,sevilla,660.97
+cantabria,pontevedra,381.29
+cantabria,salamanca,276.45
+cantabria,zaragoza,312.59
+cantabria,la rioja,161.62
+cantabria,murcia,625.94
+cantabria,alicante,615.01
+cantabria,malaga,715.43
+cantabria,vizcaya,100.86
+cantabria,lugo,274.55
+cantabria,alava,119.86
+cantabria,valencia,514.19
+cantabria,asturias,151.57
+cantabria,tenerife,1996.59
+cantabria,soria,206.43
+cantabria,granada,665.98
+cantabria,leon,136.04
+cantabria,huelva,699.02
+cantabria,orense,302.36
+cantabria,burgos,96.09
+cantabria,albacete,499.02
+cantabria,girona,581.95
+cantabria,zamora,223.81
+cantabria,badajoz,532.86
+cantabria,segovia,245.65
+cantabria,almeria,715.08
+cantabria,ciudad real,466.73
+cantabria,a coruña,350.52
+cantabria,tarragona,496.38
+cantabria,toledo,366.94
+cantabria,navarra,194.13
+cantabria,guipuzcoa,153.25
+cantabria,cordoba,588.65
+cantabria,guadalajara,9180.71
+cantabria,jaen,580.06
+cantabria,palencia,93.85
+cantabria,melilla,879.04
+cantabria,caceres,414.65
+cantabria,cuenca,380.28
+cantabria,teruel,386.99
+cantabria,ceuta,813.92
+guadalajara,las palmas,8750.48
+guadalajara,avila,9234.67
+guadalajara,valladolid,9192.37
+guadalajara,lleida,9605.05
+guadalajara,huesca,9531.52
+guadalajara,barcelona,9733.22
+guadalajara,castellon,9614.82
+guadalajara,baleares,9872.74
+guadalajara,madrid,9322.97
+guadalajara,cadiz,9302.84
+guadalajara,sevilla,9260.71
+guadalajara,pontevedra,8858.17
+guadalajara,salamanca,9146.46
+guadalajara,zaragoza,9488.68
+guadalajara,la rioja,9338.29
+guadalajara,murcia,9632.25
+guadalajara,alicante,9667.93
+guadalajara,malaga,9418.05
+guadalajara,vizcaya,9270.74
+guadalajara,lugo,8928.19
+guadalajara,alava,9300.14
+guadalajara,valencia,9625.78
+guadalajara,asturias,9033.86
+guadalajara,tenerife,8644.2
+guadalajara,soria,9349.71
+guadalajara,granada,9467.03
+guadalajara,leon,9090.05
+guadalajara,huelva,9186.78
+guadalajara,orense,8952.99
+guadalajara,burgos,9243.8
+guadalajara,albacete,9529.89
+guadalajara,girona,9752.56
+guadalajara,zamora,9096.56
+guadalajara,badajoz,9121.41
+guadalajara,segovia,9268.59
+guadalajara,almeria,9574.59
+guadalajara,ciudad real,9369.24
+guadalajara,a coruña,8844.04
+guadalajara,tarragona,9675.92
+guadalajara,toledo,9320.84
+guadalajara,navarra,9374.39
+guadalajara,guipuzcoa,9323.41
+guadalajara,cordoba,9341.08
+guadalajara,cantabria,9180.71
+guadalajara,jaen,9442.85
+guadalajara,palencia,9170.67
+guadalajara,melilla,9601.84
+guadalajara,caceres,9155.93
+guadalajara,cuenca,9461.48
+guadalajara,teruel,9532.3
+guadalajara,ceuta,9373.92
+jaen,las palmas,1582.26
+jaen,avila,317.42
+jaen,valladolid,423.85
+jaen,lleida,537.94
+jaen,huesca,550.1
+jaen,barcelona,617.37
+jaen,castellon,391.14
+jaen,baleares,583.52
+jaen,madrid,273.83
+jaen,cadiz,266.16
+jaen,sevilla,229.63
+jaen,pontevedra,662.62
+jaen,salamanca,382.82
+jaen,zaragoza,467.32
+jaen,la rioja,493.32
+jaen,murcia,207.52
+jaen,alicante,266.79
+jaen,malaga,159.86
+jaen,vizcaya,589.12
+jaen,lugo,656.81
+jaen,alava,547.14
+jaen,valencia,318.85
+jaen,asturias,629.94
+jaen,tenerife,1624.65
+jaen,soria,410.1
+jaen,granada,87.34
+jaen,leon,544.94
+jaen,huelva,314.86
+jaen,orense,583.38
+jaen,burgos,487.57
+jaen,albacete,183.56
+jaen,girona,699.93
+jaen,zamora,464.2
+jaen,badajoz,321.73
+jaen,segovia,336.55
+jaen,almeria,153.62
+jaen,ciudad real,116.55
+jaen,a coruña,730.15
+jaen,tarragona,538.1
+jaen,toledo,215.95
+jaen,navarra,536.01
+jaen,guipuzcoa,586.41
+jaen,cordoba,113.17
+jaen,cantabria,580.06
+jaen,guadalajara,9442.85
+jaen,palencia,503.72
+jaen,melilla,299.69
+jaen,caceres,304.65
+jaen,cuenca,262.25
+jaen,teruel,367.87
+jaen,ceuta,282.66
+palencia,las palmas,1886.39
+palencia,avila,194.84
+palencia,valladolid,84.65
+palencia,lleida,443.1
+palencia,huesca,379.52
+palencia,barcelona,575.01
+palencia,castellon,450.24
+palencia,baleares,702.75
+palencia,madrid,234.11
+palencia,cadiz,662.47
+palencia,sevilla,569.81
+palencia,pontevedra,331.42
+palencia,salamanca,182.62
+palencia,zaragoza,320.52
+palencia,la rioja,176.36
+palencia,murcia,573.15
+palencia,alicante,571.45
+palencia,malaga,631.78
+palencia,vizcaya,171.16
+palencia,lugo,242.93
+palencia,alava,165.83
+palencia,valencia,483.69
+palencia,asturias,147.71
+palencia,tenerife,1904.47
+palencia,soria,180.79
+palencia,granada,587.84
+palencia,leon,81.04
+palencia,huelva,605.81
+palencia,orense,242.04
+palencia,burgos,76.05
+palencia,albacete,445.12
+palencia,girona,615.86
+palencia,zamora,136.08
+palencia,badajoz,439.76
+palencia,segovia,167.56
+palencia,almeria,645.21
+palencia,ciudad real,388.08
+palencia,a coruña,326.67
+palencia,tarragona,508.73
+palencia,toledo,287.91
+palencia,navarra,230.01
+palencia,guipuzcoa,213.62
+palencia,cordoba,502.64
+palencia,cantabria,93.85
+palencia,guadalajara,9170.67
+palencia,jaen,503.72
+palencia,melilla,803.38
+palencia,caceres,320.91
+palencia,cuenca,333.33
+palencia,teruel,367.97
+palencia,ceuta,726.41
+melilla,las palmas,1448.91
+melilla,avila,615.15
+melilla,valladolid,723.01
+melilla,lleida,767.67
+melilla,huesca,800.71
+melilla,barcelona,810.43
+melilla,castellon,606.06
+melilla,baleares,703.67
+melilla,madrid,572.76
+melilla,cadiz,300.22
+melilla,sevilla,359.58
+melilla,pontevedra,933.92
+melilla,salamanca,673.37
+melilla,zaragoza,728.48
+melilla,la rioja,776.94
+melilla,murcia,340.59
+melilla,alicante,403.18
+melilla,malaga,207.31
+melilla,vizcaya,882.27
+melilla,lugo,944.16
+melilla,alava,838.72
+melilla,valencia,516.26
+melilla,asturias,927.24
+melilla,tenerife,1508.0
+melilla,soria,700.63
+melilla,granada,217.02
+melilla,leon,842.44
+melilla,huelva,420.93
+melilla,orense,863.8
+melilla,burgos,785.6
+melilla,albacete,422.13
+melilla,girona,895.42
+melilla,zamora,756.39
+melilla,badajoz,535.37
+melilla,segovia,636.24
+melilla,almeria,177.25
+melilla,ciudad real,415.57
+melilla,a coruña,1012.22
+melilla,tarragona,743.5
+melilla,toledo,515.52
+melilla,navarra,818.36
+melilla,guipuzcoa,874.11
+melilla,cordoba,331.26
+melilla,cantabria,879.04
+melilla,guadalajara,9601.83
+melilla,jaen,299.69
+melilla,palencia,803.38
+melilla,caceres,570.59
+melilla,cuenca,534.68
+melilla,teruel,615.3
+melilla,ceuta,224.16
+caceres,las palmas,1572.97
+caceres,avila,157.82
+caceres,valladolid,241.6
+caceres,lleida,607.62
+caceres,huesca,577.9
+caceres,barcelona,726.52
+caceres,castellon,521.62
+caceres,baleares,773.68
+caceres,madrid,220.07
+caceres,cadiz,359.45
+caceres,sevilla,263.44
+caceres,pontevedra,363.83
+caceres,salamanca,139.83
+caceres,zaragoza,491.36
+caceres,la rioja,415.83
+caceres,murcia,476.65
+caceres,alicante,513.58
+caceres,malaga,369.15
+caceres,vizcaya,473.85
+caceres,lugo,380.64
+caceres,alava,448.41
+caceres,valencia,495.72
+caceres,asturias,395.08
+caceres,tenerife,1595.84
+caceres,soria,353.85
+caceres,granada,362.54
+caceres,leon,318.98
+caceres,huelva,286.55
+caceres,orense,294.91
+caceres,burgos,352.82
+caceres,albacete,378.54
+caceres,girona,793.93
+caceres,zamora,214.58
+caceres,badajoz,121.31
+caceres,segovia,216.55
+caceres,almeria,456.25
+caceres,ciudad real,213.65
+caceres,a coruña,443.11
+caceres,tarragona,644.88
+caceres,toledo,181.34
+caceres,navarra,480.51
+caceres,guipuzcoa,499.3
+caceres,cordoba,239.36
+caceres,cantabria,414.65
+caceres,guadalajara,9155.93
+caceres,jaen,304.65
+caceres,palencia,320.91
+caceres,melilla,570.59
+caceres,cuenca,344.24
+caceres,teruel,453.8
+caceres,ceuta,435.85
+cuenca,las palmas,1826.8
+cuenca,avila,227.83
+cuenca,valladolid,281.01
+cuenca,lleida,289.26
+cuenca,huesca,289.83
+cuenca,barcelona,392.24
+cuenca,castellon,177.54
+cuenca,baleares,432.06
+cuenca,madrid,139.33
+cuenca,cadiz,512.85
+cuenca,sevilla,448.51
+cuenca,pontevedra,605.52
+cuenca,salamanca,315.57
+cuenca,zaragoza,205.27
+cuenca,la rioja,247.79
+cuenca,murcia,245.98
+cuenca,alicante,238.13
+cuenca,malaga,421.72
+cuenca,vizcaya,357.41
+cuenca,lugo,553.39
+cuenca,alava,311.94
+cuenca,valencia,164.3
+cuenca,asturias,480.22
+cuenca,tenerife,1863.27
+cuenca,soria,177.61
+cuenca,granada,345.61
+cuenca,leon,402.31
+cuenca,huelva,522.35
+cuenca,orense,511.61
+cuenca,burgos,285.01
+cuenca,albacete,121.24
+cuenca,girona,467.4
+cuenca,zamora,368.11
+cuenca,badajoz,436.68
+cuenca,segovia,194.73
+cuenca,almeria,359.12
+cuenca,ciudad real,194.36
+cuenca,a coruña,637.28
+cuenca,tarragona,309.46
+cuenca,toledo,163.38
+cuenca,navarra,283.93
+cuenca,guipuzcoa,341.96
+cuenca,cordoba,333.39
+cuenca,cantabria,380.28
+cuenca,guadalajara,9461.48
+cuenca,jaen,262.25
+cuenca,palencia,333.33
+cuenca,melilla,534.68
+cuenca,caceres,344.24
+cuenca,teruel,118.6
+cuenca,ceuta,540.95
+teruel,las palmas,1942.64
+teruel,avila,319.62
+teruel,valladolid,340.21
+teruel,lleida,172.13
+teruel,huesca,186.19
+teruel,barcelona,274.95
+teruel,castellon,82.72
+teruel,baleares,342.46
+teruel,madrid,236.55
+teruel,cadiz,626.5
+teruel,sevilla,565.73
+teruel,pontevedra,675.49
+teruel,salamanca,402.19
+teruel,zaragoza,116.84
+teruel,la rioja,227.69
+teruel,murcia,290.11
+teruel,alicante,253.35
+teruel,malaga,527.31
+teruel,vizcaya,333.82
+teruel,lugo,606.44
+teruel,alava,288.98
+teruel,valencia,133.95
+teruel,asturias,513.6
+teruel,tenerife,1980.3
+teruel,soria,187.59
+teruel,granada,445.67
+teruel,leon,446.27
+teruel,huelva,640.62
+teruel,orense,580.57
+teruel,burgos,301.94
+teruel,albacete,195.34
+teruel,girona,348.87
+teruel,zamora,438.21
+teruel,badajoz,552.35
+teruel,segovia,272.4
+teruel,almeria,438.24
+teruel,ciudad real,312.2
+teruel,a coruña,691.16
+teruel,tarragona,192.35
+teruel,toledo,276.55
+teruel,navarra,235.93
+teruel,guipuzcoa,301.9
+teruel,cordoba,448.87
+teruel,cantabria,386.99
+teruel,guadalajara,9532.3
+teruel,jaen,367.87
+teruel,palencia,367.97
+teruel,melilla,615.3
+teruel,caceres,453.8
+teruel,cuenca,118.6
+teruel,ceuta,648.4
+ceuta,las palmas,1310.92
+ceuta,avila,531.9
+ceuta,valladolid,641.8
+ceuta,lleida,818.03
+ceuta,huesca,830.11
+ceuta,barcelona,891.73
+ceuta,castellon,667.73
+ceuta,baleares,831.07
+ceuta,madrid,521.83
+ceuta,cadiz,88.82
+ceuta,sevilla,177.59
+ceuta,pontevedra,781.5
+ceuta,salamanca,564.42
+ceuta,zaragoza,746.17
+ceuta,la rioja,750.43
+ceuta,murcia,438.96
+ceuta,alicante,507.29
+ceuta,malaga,121.76
+ceuta,vizcaya,842.72
+ceuta,lugo,815.2
+ceuta,alava,804.5
+ceuta,valencia,588.86
+ceuta,asturias,826.19
+ceuta,tenerife,1358.65
+ceuta,soria,672.66
+ceuta,granada,208.9
+ceuta,leon,745.37
+ceuta,huelva,211.53
+ceuta,orense,726.15
+ceuta,burgos,730.0
+ceuta,albacete,460.36
+ceuta,girona,975.56
+ceuta,zamora,645.96
+ceuta,badajoz,363.13
+ceuta,segovia,571.12
+ceuta,almeria,276.04
+ceuta,ciudad real,363.34
+ceuta,a coruña,871.97
+ceuta,tarragona,814.51
+ceuta,toledo,454.55
+ceuta,navarra,804.28
+ceuta,guipuzcoa,848.41
+ceuta,cordoba,226.48
+ceuta,cantabria,814.01
+ceuta,guadalajara,9378.51
+ceuta,jaen,280.53
+ceuta,palencia,726.41
+ceuta,melilla,224.16
+ceuta,caceres,435.85
+ceuta,cuenca,540.95
+ceuta,teruel,648.4
 madrid,madrid,0.0
-cadiz,madrid,472.4719464695164
-madrid,sevilla,390.5041916016753
-madrid,pontevedra,457.99212314003057
-madrid,salamanca,176.5424777290737
-madrid,zaragoza,274.13763641502413
-lleida,madrid,387.7328724067369
-baleares,madrid,569.2118425034417
-las palmas,madrid,1760.9910065497888
-guipuzcoa,madrid,327.6136590375775
-girona,madrid,573.8947106749041
-cantabria,madrid,306.3162521491929
-madrid,navarra,289.66688414
-asturias,madrid,371.51518115473993
-barcelona,madrid,506.9220157558605
-barcelona,valladolid,577.0923586655146
-avila,barcelona,583.9171741695029
-barcelona,huesca,201.7125653850481
-barcelona,castellon,226.82709173331835
-barcelona,cadiz,883.0826721458213
-barcelona,sevilla,831.5570047319178
-barcelona,pontevedra,895.1745228951213
-barcelona,salamanca,659.4099701459719
-barcelona,zaragoza,257.02508677047655
-barcelona,lleida,132.0096276040434
-baleares,barcelona,205.38586693311544
-barcelona,las palmas,2199.5448569535743
-barcelona,guipuzcoa,410.9714737648538
-barcelona,girona,85.14562641122278
-barcelona,cantabria,553.0903665781169
-barcelona,navarra,359.0370211956704
-asturias,barcelona,702.194768731762
-barcelona,barcelona,0.0
-barcelona,orense,812.0779497485869
-albacete,barcelona,433.81639028758656
-orense,orense,0.0
-albacete,orense,597.6463064255552
-orense,sevilla,549.610887135657
-madrid,orense,376.8074551132209
-orense,valencia,675.2170660802606
-orense,tenerife,1747.3246710044075
-navarra,orense,471.98151991336704
-las palmas,orense,1740.3582013695034
-burgos,orense,318.85384409716045
-murcia,orense,718.0439583513536
-orense,zaragoza,555.2589079195457
-asturias,orense,180.3221966097617
-orense,tarragona,741.6666138439057
-caceres,orense,294.9110555933471
-alicante,orense,735.9742517470953
-orense,vizcaya,400.9036885721618
-baleares,orense,922.829198648773
-cantabria,orense,302.3625885100413
-lleida,orense,680.1813209275091
-malaga,orense,664.0031369610555
-orense,pontevedra,84.26459035340575
-guipuzcoa,orense,449.69314843072056
-orense,toledo,393.2705116257701
-a coruña,orense,136.734291807016
-girona,orense,856.7312359860935
-ciudad real,orense,469.2304828440726
-orense,salamanca,207.4178900128489
-orense,segovia,316.99386332505185
-castellon,orense,662.6318849670168
-guadalajara,orense,450.1620624529484
-almeria,orense,710.7455010519128
-lugo,orense,94.17027708912566
-orense,valladolid,240.60150580732
-badajoz,orense,369.9472319893203
-granada,orense,651.592723488078
-huelva,orense,550.3973560074697
-la rioja,orense,418.5054709374352
-cuenca,orense,511.6085678317153
-cadiz,orense,644.8152622947782
-alava,orense,405.3808623945509
-avila,pontevedra,371.8071582174844
-avila,tenerife,1751.4575113143687
-avila,sevilla,379.710928499289
-avila,granada,398.2586094008731
-avila,valencia,391.6687882829314
-avila,las palmas,1726.6140162419897
-asturias,avila,312.5255028664204
-avila,cadiz,470.2537623287769
-avila,lugo,349.90496205993554
-avila,burgos,204.0457029001236
-avila,leon,243.8412562257468
-avila,zaragoza,339.08156597363933
-avila,murcia,426.80825067494754
-avila,zamora,154.69414402979965
-avila,ciudad real,196.9499080499615
-avila,castellon,395.9901030142958
-avila,cordoba,307.8073586346829
-avila,girona,646.334958893194
-avila,baleares,656.3515064911923
-a coruña,avila,424.9360542539491
-avila,navarra,323.01548693189466
-avila,vizcaya,325.1599439423954
-avila,cantabria,282.62392448613184
-alicante,avila,443.9765764995759
-avila,guipuzcoa,345.3345079017306
-avila,malaga,437.5135402897656
-alava,avila,295.29391804773985
-avila,toledo,105.87384931727306
-avila,segovia,58.90067795261547
-avila,tarragona,504.36686324882805
-avila,lleida,459.6707243115071
-avila,orense,292.19565075037787
-avila,guadalajara,185.68307941048263
-avila,caceres,157.82191952748116
-avila,la rioja,263.1322561370204
-avila,valladolid,110.60531956049286
-avila,salamanca,88.24980462857346
-avila,jaen,317.42299662428155
-albacete,avila,305.4554746972564
-avila,cuenca,227.829415958994
-avila,badajoz,276.8171421761776
-avila,huelva,424.6387393269688
-almeria,avila,431.6400482544709
-avila,huesca,423.6658849045895
-avila,soria,196.47107597336245
-avila,avila,0.0
-avila,palencia,194.8391996320493
-avila,teruel,319.6163937940139
-avila,ceuta,531.6957122274562
-avila,melilla,615.1475718363379
-a coruña,madrid,506.6392373732117
-a coruña,murcia,851.7289888670898
-a coruña,las palmas,1800.6110834383985
-a coruña,barcelona,908.4420589787215
-a coruña,valencia,799.1043877804392
-a coruña,tenerife,1800.002970673204
-a coruña,burgos,411.9739370905934
-a coruña,alicante,866.7653160493829
-a coruña,vizcaya,465.7023528459078
-a coruña,pontevedra,88.05973483061874
-a coruña,girona,944.4525381406036
-a coruña,tarragona,843.4732101676227
-a coruña,lugo,92.42722813215931
-a coruña,malaga,797.5608060312637
-a coruña,navarra,554.586129511675
-a coruña,a coruña,0.0
-a coruña,asturias,215.10689949955463
-a coruña,badajoz,492.3181101805868
-a coruña,sevilla,676.8136222103674
-a coruña,ciudad real,605.7777364564712
-a coruña,lleida,776.8713977309822
-a coruña,baleares,1035.2869504558887
-a coruña,caceres,428.70076048495326
-a coruña,leon,220.8370311874509
-a coruña,zaragoza,655.2369688522654
-a coruña,salamanca,342.6098831772885
-a coruña,almeria,847.266656785047
-lugo,madrid,426.9673872237112
-lugo,murcia,761.5652700861789
-las palmas,lugo,1827.1448462077867
-barcelona,lugo,816.0420497534734
-lugo,valencia,713.2602901815961
-lugo,tenerife,1831.7505731847195
-burgos,lugo,319.798711316154
-alicante,lugo,786.1740483552409
-lugo,vizcaya,375.2495337652828
-lugo,pontevedra,115.95812111922092
-girona,lugo,852.2132505513665
-lugo,tarragona,751.3928727276412
-lugo,lugo,0.0
-lugo,malaga,747.8891264926502
-lugo,navarra,462.3775075052367
-asturias,lugo,126.85334036335573
-badajoz,lugo,462.6063531936842
-lugo,sevilla,639.6579165609587
-ciudad real,lugo,539.1264186997118
-lleida,lugo,684.5115391096647
-baleares,lugo,944.6907683770556
-caceres,lugo,380.6381913512569
-leon,lugo,129.5066081005849
-lugo,zaragoza,563.1568923797768
-lugo,salamanca,274.11329305449874
-almeria,lugo,779.2293889815503
-madrid,murcia,349.01265206203044
-madrid,tenerife,1790.6107312867482
-madrid,malaga,414.9576716395722
-alicante,madrid,360.12761659874974
-madrid,vizcaya,321.3010776594385
-almeria,madrid,370.3011868605722
-madrid,valencia,303.15461710340566
-alava,madrid,282.70997515736053
-leon,madrid,310.58521938974377
-madrid,toledo,67.97598193637754
-madrid,tarragona,425.727678877722
-granada,madrid,360.1468983462626
-burgos,madrid,214.04037808575416
-huelva,madrid,449.7779766259188
-badajoz,madrid,328.27354947971264
-jaen,madrid,273.82568439877514
-cuenca,madrid,139.33165283400763
-cordoba,madrid,295.99624131611847
-ciudad real,madrid,160.08041632875046
-barcelona,vizcaya,462.92438917157176
-barcelona,malaga,770.3567914602507
-alava,barcelona,433.3475960007589
-alicante,barcelona,407.2523795686752
-barcelona,murcia,471.3289069890664
-barcelona,leon,688.911503551052
-barcelona,toledo,551.3032798529753
-barcelona,valencia,303.44845395416024
-barcelona,tarragona,82.78334188966144
-barcelona,granada,682.9725819224844
-barcelona,burgos,499.1704274127409
-barcelona,huelva,909.80826354928
-almeria,barcelona,644.1912914110746
-barcelona,tenerife,2241.62308897769
-badajoz,barcelona,827.5833699763846
-barcelona,jaen,617.3690569638441
-barcelona,cuenca,392.2395395813893
-barcelona,cordoba,711.8176165682502
-barcelona,ciudad real,583.9904674855514
-barcelona,soria,409.7911959981664
-barcelona,palencia,575.0116638139826
-barcelona,caceres,726.5244226536752
-barcelona,la rioja,399.689545535113
-barcelona,guadalajara,400.038185302749
-barcelona,melilla,810.4277645353579
-barcelona,zamora,678.1921600660584
-barcelona,teruel,274.95061099531955
-las palmas,vigo,1702.439479490949
-avila,vigo,379.334906413412
-valladolid,vigo,337.6530849219355
-lleida,vigo,778.3567938972581
-huesca,vigo,718.0463293990017
-barcelona,vigo,910.257109896124
-castellon,vigo,758.5256139748935
-baleares,vigo,1019.2616452689329
-madrid,vigo,466.3708087936424
-cadiz,vigo,679.0605216250688
-sevilla,vigo,586.8400139970544
-pontevedra,vigo,20.9826005728667
-salamanca,vigo,291.6576846992878
-vigo,zaragoza,653.4310063524321
-la rioja,vigo,514.9481855217247
-murcia,vigo,800.3007235047434
-alicante,vigo,822.5066985727819
-malaga,vigo,715.4171038262169
-vigo,vizcaya,493.4944651440039
-lugo,vigo,136.94048166849973
-alava,vigo,500.81289147724345
-valencia,vigo,767.6806475591726
-asturias,vigo,257.16570400058805
-tenerife,vigo,1703.8245642114728
-soria,vigo,502.8445011891804
-granada,vigo,713.3702181778835
-leon,vigo,230.77998549162336
-huelva,vigo,573.4713865064002
-orense,vigo,98.1793640456823
-burgos,vigo,414.7580173128638
-albacete,vigo,693.8526611724413
-girona,vigo,954.5589263578682
-vigo,zamora,238.65624241768768
-badajoz,vigo,400.0372386273244
-segovia,vigo,409.9209764506703
-almeria,vigo,804.9519498818203
-ciudad real,vigo,543.1322839520732
-a coruña,vigo,128.73829504943376
-tarragona,vigo,839.7191092374073
-toledo,vigo,475.4390124567618
-navarra,vigo,568.7175105802935
-guipuzcoa,vigo,543.6414656559613
-cordoba,vigo,589.0109420653956
-cantabria,vigo,393.4388714264477
-guadalajara,vigo,545.1678925919393
-jaen,vigo,651.7717432615807
-palencia,vigo,339.1769613852874
-melilla,vigo,919.910039257842
-caceres,vigo,350.8582137992422
-cuenca,vigo,603.4985935716586
-teruel,vigo,676.8153452099242
-ceuta,vigo,764.3448317972164
-la rioja,madrid,236.16772118373748
-madrid,soria,155.3176588745793
-albacete,madrid,240.75276648474508
-madrid,zamora,235.1155329335121
-madrid,segovia,68.59397555687384
-guadalajara,madrid,107.57030491689125
-madrid,palencia,234.11394595055245
-madrid,melilla,572.7644129181745
-caceres,madrid,220.0666698912468
-madrid,teruel,236.55195406390857
-ceuta,madrid,522.4120843857131
-baleares,valencia,280.611034391674
-alicante,valencia,125.38498680852368
-cantabria,málaga,715.4314426034979
-alava,málaga,695.9085953666712
-barcelona,málaga,770.3567914602507
-murcia,málaga,323.8767293456554
-madrid,málaga,414.9576716395722
-málaga,sevilla,158.3581197542804
-granada,málaga,88.77198520066909
-cadiz,málaga,134.06933485206503
-málaga,pontevedra,730.1994985678339
-asturias,málaga,743.3321288060885
-baleares,málaga,715.7830500522433
-cordoba,málaga,132.8720608076014
-badajoz,málaga,328.127807385224
-málaga,valencia,467.86183268786834
-a coruña,málaga,812.2584464844082
-málaga,zaragoza,626.9457574985219
-malaga,málaga,0.0
-girona,málaga,854.0312787541089
-málaga,tenerife,1476.8292810609676
-málaga,teruel,527.3140599677562
-alicante,málaga,391.4768538148304
-málaga,tarragona,692.8596045835534
-málaga,salamanca,470.0944497769962
-málaga,vizcaya,735.9121268626691
-lleida,málaga,696.4849390566953
-málaga,navarra,690.7442610587567
-guadalajara,málaga,476.1661787493285
-leon,málaga,669.7877404216899
-jaen,málaga,159.85711801732623
-las palmas,málaga,1430.8439921831146
-huesca,málaga,709.9596284433575
-castellon,málaga,546.0330355133784
-la rioja,málaga,639.3934249744913
-málaga,toledo,349.69830371785787
-burgos,málaga,627.3500461433237
-ciudad real,málaga,255.0212517602996
-alicante,alicante,0.0
-alicante,malaga,391.47685381483035
-alicante,sevilla,495.95998961336403
-alicante,badajoz,567.5567444820524
-alava,alicante,533.0919427273082
-alicante,las palmas,1816.6276964116353
-alicante,cantabria,615.0116868069738
-alicante,guipuzcoa,552.4385870898984
-alicante,jaen,266.786027063926
-alicante,salamanca,546.2364328723336
-alicante,murcia,68.47585005416042
-alicante,navarra,487.4964038722292
-alicante,cadiz,519.654204694686
-alicante,granada,303.3542990852426
-alicante,tarragona,342.260269082805
-alicante,pontevedra,827.3822423914539
-alicante,toledo,348.87573631854974
-alicante,burgos,521.0915562033068
-alicante,zaragoza,368.8846123617381
-alicante,caceres,513.5826687340841
-alicante,leon,665.365767239904
-albacete,alicante,134.5717370921488
-alicante,almeria,241.25832793603027
-alicante,girona,492.2435010103678
-alicante,ciudad real,307.7641676942854
-alicante,valladolid,515.7003014244357
-alicante,castellon,215.02530031332924
-alicante,cordoba,379.42816523296545
-alicante,lleida,375.47567651617805
-alicante,asturias,718.1396126207444
-alicante,vizcaya,578.9483805616809
-alicante,baleares,324.31737725165516
-alicante,guadalajara,317.5802416702797
-alicante,tenerife,1865.8576478657922
-alicante,la rioja,468.9412885618623
-alicante,huesca,422.9087087917075
-alicante,cuenca,238.13297542656395
-alicante,teruel,253.346249294621
-alicante,huelva,581.4541637696984
-alicante,zamora,595.2153893841468
-alicante,melilla,403.18045278248877
-alicante,soria,408.91797029795896
+valencia,valencia,0.0

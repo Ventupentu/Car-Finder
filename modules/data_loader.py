@@ -20,13 +20,3 @@ def load_data(coches_path: str, ratings_path: str) -> tuple:
         print(f"Error al cargar los datos: {e}")
         raise
 
-def assign_model_ids(df_cars: pd.DataFrame) -> pd.DataFrame:
-    """
-    Asigna un ID único a cada modelo de coche.
-    
-    :param df_cars: DataFrame de coches.
-    :return: DataFrame de coches con 'model_id' añadido.
-    """
-    df_cars = df_cars.copy()
-    df_cars['model_id'] = df_cars.groupby(['make', 'model']).ngroup() + 1
-    return df_cars

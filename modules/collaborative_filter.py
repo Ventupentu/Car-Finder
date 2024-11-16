@@ -1,0 +1,36 @@
+from surprise import Dataset, Reader, SVD
+from surprise.model_selection import train_test_split
+import pandas as pd
+
+def train_collaborative_model(ratings_path: str) -> tuple:
+    """
+    Entrena un modelo de filtrado colaborativo con Surprise.
+    
+    :param ratings_path: Ruta al dataset de valoraciones.
+    :return: Tuple (modelo entrenado, datos de prueba)
+    """
+    # Cargar datos
+    df_ratings = pd.read_csv(ratings_path)
+    reader = Reader(rating_scale=(1, 5))
+    data = Dataset.load_from_df(df_ratings[['user_id', 'model_id', 'rating']], reader)
+    
+    # Dividir en datos de entrenamiento y prueba
+    trainset, testset = train_test_split(data, test_size=0.2)
+    
+    # Entrenar modelo
+    model = SVD()
+    model.fit(trainset)
+    
+    return model, testset
+
+def predict_rating(user_id: str, model_id: int, model) -> float:
+    """
+    Predice la valoración de un usuario para un modelo de coche.
+    
+    :param user_id: ID del usuario.
+    :param model_id: ID del modelo de coche.
+    :param model: Modelo entrenado de Surprise.
+    :return: Valoración predicha.
+    """
+    prediction = model.predict(user_id, model_id)
+    return prediction.est

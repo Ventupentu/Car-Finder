@@ -1,101 +1,123 @@
-# main.py
-
-from modules.data_loader import load_data, assign_model_ids
+from modules.hybrid_recommender import hybrid_recommendation
+from modules.collaborative_filter import train_collaborative_model
 from modules.geo_utils import GeoDistanceCalculator
-from modules.recommendation_model import RecommendationModel
-from modules.recommender import recommend
-import pandas as pd
+from modules.data_loader import load_data
 
-def obtener_preferencias_usuario():
-    """Obtiene las preferencias del usuario a través de inputs."""
-    print("Introduce tus preferencias para el coche:")
-    
+# Configuración
+cars_path = 'data/coches.csv'
+ratings_path = 'data/car_ratings.csv'
+user_id = 'new_user'
+
+
+def get_user_input():
     """
-    user_preferences = {
-        'make': input("Marca: ") or None,
-        'model': input("Modelo: ") or None,
-        'min_price': int(input("Precio mínimo (deja en blanco si no aplica): ") or 0),
-        'max_price': int(input("Precio máximo (deja en blanco si no aplica): ") or 0),
-        'fuel': input("Combustible (gasolina, diesel, etc.): ") or None,
-        'year': int(input("Año mínimo (deja en blanco si no aplica): ") or 0),
-        'max_kms': int(input("Kilómetros máximos (deja en blanco si no aplica): ") or 0),
-        'power': int(input("Potencia mínima en CV (deja en blanco si no aplica): ") or 0),
-        'doors': int(input("Número de puertas (deja en blanco si no aplica): ") or 0),
-        'shift': input("Tipo de cambio (manual, automático): ") or None,
-        'color': input("Color (rojo, negro, azul, etc.): ") or None,
-        'origin_city': input("Ciudad de origen: ") or None,
-    }
+    Solicita al usuario que ingrese sus preferencias para un coche y los pesos correspondientes.
+    Incluye la ciudad obligatoria y la importancia de la distancia.
+    
+    :return: Diccionario con las características del coche, los pesos y la ubicación del usuario.
     """
-
-    # Ejemplo de preferencias para probar
-    user_preferences = {
-        'min_price': 0,
-        'max_price': 50000,
-        'fuel': 'Diesel',
-        'max_kms': 100000,
-        'power': 100,
-        'doors': 5,
-        'shift': 'Manual',
-        'color': 'Gris',
-        'origin_city': 'Barcelona',
-    }
-
-    return user_preferences
-
-def obtener_pesos_usuario():
-    """Obtiene los pesos que el usuario asigna a las características del coche."""
-    print("\nAsignar pesos a las características (más alto significa mayor importancia):")
-    """
-    weights = {
-        'make': int(input("Peso para la marca: ") or 1),
-        'model': int(input("Peso para el modelo: ") or 1),
-        'min_price': int(input("Peso para el precio mínimo: ") or 1),
-        'max_price': int(input("Peso para el precio máximo: ") or 1),
-        'fuel': int(input("Peso para el tipo de combustible: ") or 1),
-        'year': int(input("Peso para el año: ") or 1),
-        'max_kms': int(input("Peso para los kilómetros: ") or 1),
-        'power': int(input("Peso para la potencia: ") or 1),
-        'doors': int(input("Peso para el número de puertas: ") or 1),
-        'shift': int(input("Peso para el tipo de cambio: ") or 1),
-        'color': int(input("Peso para el color: ") or 1),
-        'origin_city': int(input("Peso para la ciudad de origen: ") or 1),
-    }
-    """
-    # Ejemplo de pesos para probar
-    weights = {
-        'make': 0,
-        'model': 1,
-        'min_price': 2,
-        'max_price': 4,
-        'fuel': 10,
-        'year': 10,
-        'max_kms': 0,
-        'power': 7,
-        'doors': 4,
-        'shift': 3,
-        'color': 8,
-        'origin_city': 7,
-        'distance': 0,
-    }
+    print("Introduce tus preferencias para un coche ideal:")
     
-    return weights
+    # Características del coche
+    user_input = {}
+    feature_weights = {}
 
-def main():
-    """Función principal para ejecutar la recomendación."""
-    # Obtener preferencias del usuario
-    user_preferences = obtener_preferencias_usuario()
-    
-    # Obtener pesos asignados por el usuario
-    #weights = obtener_pesos_usuario()
-    
-    # Ejecutar el sistema de recomendación
-    recomendaciones = recommend(user_preferences)
-    
-    # Mostrar el top 5 de recomendaciones en forma de tabla
-    top5_recommendations = recomendaciones
-    df = pd.DataFrame(top5_recommendations)
-    print("\nTop 5 recomendaciones:")
-    print(df)
+    # Solicitar características
+    user_input['price'] = input("Rango de precio (por ejemplo, 20000-50000): ").strip()
+    user_input['fuel'] = input("Tipo de combustible (Diesel, Gasolina, Eléctrico, Híbrido): ").strip()
+    user_input['year'] = input("Rango de año (por ejemplo, 2018-2023): ").strip()
+    user_input['kms'] = input("Rango de kilometraje (por ejemplo, 0-100000): ").strip()
+    user_input['power'] = input("Rango de potencia (por ejemplo, 150-300 caballos): ").strip()
+    user_input['doors'] = input("Número de puertas (2, 3, 4, 5): ").strip()
+    user_input['shift'] = input("Tipo de transmisión (Automático, Manual): ").strip()
+    user_input['color'] = input("Color del coche: ").strip()
 
-if __name__ == "__main__":
-    main()
+    # Convertir inputs numéricos a tuplas de (min, max) para los rangos
+    for key, value in user_input.items():
+        if '-' in value:
+            try:
+                min_value, max_value = map(int, value.split('-'))
+                user_input[key] = (min_value, max_value)
+            except ValueError:
+                user_input[key] = value
+        elif value.isdigit():
+            user_input[key] = int(value)
+        elif value == "":
+            user_input[key] = None
+
+    # Solicitar ubicación obligatoria
+    while True:
+        user_location = input("Introduce tu ubicación (ciudad): ").strip()
+        if user_location:
+            break
+        print("La ubicación es obligatoria. Por favor, ingresa tu ciudad.")
+
+    # Solicitar pesos para todas las características
+    print("\nAhora, por favor, asigna un peso del 1 al 10 a cada característica que hayas seleccionado.")
+    print("Si no has seleccionado una característica, pon un peso de 0 para esa opción.")
+    
+    # Pedir el peso para todas las características
+    for key in user_input:
+        if user_input[key] is not None:
+            while True:
+                try:
+                    weight = int(input(f"Peso para {key} (debe ser entre 0 y 10): "))
+                    if 0 <= weight <= 10:
+                        break
+                    else:
+                        print("El peso debe estar entre 0 y 10. Intenta de nuevo.")
+                except ValueError:
+                    print("Por favor, ingresa un número válido entre 0 y 10.")
+            feature_weights[key] = weight
+        else:
+            feature_weights[key] = 0
+
+    # Solicitar importancia de la distancia (obligatoria)
+    while True:
+        try:
+            distance_weight = int(input("¿Qué importancia le das a la distancia? (debe ser entre 0 y 10): "))
+            if 0 <= distance_weight <= 10:
+                break
+            else:
+                print("El peso debe estar entre 0 y 10. Intenta de nuevo.")
+        except ValueError:
+            print("Por favor, ingresa un número válido entre 0 y 10.")
+    feature_weights['distance'] = distance_weight
+
+    # Validar que se haya seleccionado al menos una característica
+    if all(value == 0 for value in feature_weights.values()):
+        print("Debes asignar al menos un peso mayor que 0 para realizar la recomendación.")
+        return None, None, None
+
+    return user_input, feature_weights, user_location
+
+
+if __name__ == '__main__':
+
+    # Configuración
+    user_input, feature_weights, user_location = get_user_input()
+
+
+    # Si no se introdujeron datos válidos, no continuamos
+    if user_input is None or feature_weights is None or user_location is None:
+        print("No se puede realizar la recomendación sin entradas válidas.")
+    else:
+        # Cargar datos
+        cars_df, ratings_df = load_data(cars_path, ratings_path)
+
+        # Entrenar modelo colaborativo
+        collaborative_model, _ = train_collaborative_model(ratings_path)
+
+        # Instanciar calculadora geográfica
+        geo_calculator = GeoDistanceCalculator()
+
+
+        # Generar recomendaciones
+        recommendations = hybrid_recommendation(user_id, user_input, feature_weights, user_location, geo_calculator, collaborative_model, cars_df)
+
+        # Mostrar resultados
+        top_5 = recommendations[['make', 'model', 'price', 'fuel', 'year', 'kms', 'power', 'doors', 'shift', 'color', 'province', 'distance', 'hybrid_score']].head(5)
+
+        print("Hemos encontrado estos coches para ti:")
+        print(top_5.to_string(index=False))
+
