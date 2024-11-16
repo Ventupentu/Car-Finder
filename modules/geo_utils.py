@@ -63,7 +63,6 @@ class GeoDistanceCalculator:
         except Exception as e:
             print(f"Error al calcular la distancia: {e}")
 
-        # Si no se puede calcular, devolver un valor predeterminado alto
         return None
 
     def is_city_in_cache(self, city):
@@ -78,7 +77,7 @@ def apply_geographic_penalty(car_data, user_location, geo_calculator, distance_w
     """
     Aplica penalizaciones geográficas basadas en distancias y peso de la distancia.
     """
-    max_distance = 500  # Distancia máxima de referencia para escalar
+    max_distance = 500  # Distancia máxima
     car_data['distance'] = car_data['province'].apply(lambda x: geo_calculator.calculate_distance(user_location, x) or max_distance)
     car_data['geo_score'] = car_data['distance'].apply(lambda x: -distance_weight * (x / max_distance) if x < max_distance else -distance_weight)
     return car_data

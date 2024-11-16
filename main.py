@@ -23,6 +23,7 @@ def get_user_input():
     feature_weights = {}
 
     # Solicitar características
+    user_input['make'] = input("Marca del coche: ").strip()
     user_input['price'] = input("Rango de precio (por ejemplo, 20000-50000): ").strip()
     user_input['fuel'] = input("Tipo de combustible (Diesel, Gasolina, Eléctrico, Híbrido): ").strip()
     user_input['year'] = input("Rango de año (por ejemplo, 2018-2023): ").strip()

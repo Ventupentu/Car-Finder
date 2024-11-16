@@ -1,5 +1,3 @@
-# modules/data_loader.py
-
 import pandas as pd
 
 def load_data(coches_path: str, ratings_path: str) -> tuple:

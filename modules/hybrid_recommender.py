@@ -19,7 +19,7 @@ def hybrid_recommendation(user_id, user_input, feature_weights, user_location, g
         geo_scores['geo_score'] * 0.2
     )
 
-        # Normalizar el puntaje híbrido a un rango de 0-10
+    # Normalizar el puntaje híbrido a un rango de 0-10
     min_score = geo_scores['hybrid_score'].min()
     max_score = geo_scores['hybrid_score'].max()
     geo_scores['hybrid_score'] = round(geo_scores['hybrid_score'].apply(lambda x: 10 * (x - min_score) / (max_score - min_score) if max_score > min_score else 0), 2)
