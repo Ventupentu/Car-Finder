@@ -12,6 +12,7 @@ class GeoDistanceCalculator:
         self.cache_file = cache_file
         self.distance_cache = {}
         self._load_cache()
+        self.cache_miss_message_shown = False
 
     def _load_cache(self):
         """
@@ -46,10 +47,13 @@ class GeoDistanceCalculator:
         origin = origin.lower()
         destination = destination.lower()
 
-        if (origin, destination) in self.distance_cache:
-            return self.distance_cache[(origin, destination)]
-
+        if (origin, destination) in self.distance_cache or (destination, origin) in self.distance_cache:
+            return self.distance_cache.get((origin, destination)) or self.distance_cache.get((destination, origin))
+        if not self.cache_miss_message_shown:
+            print("Distancia no encontrada en caché. Esto puede tardar unos segundos...")
+            self.cache_miss_message_shown = True
         try:
+            
             coords_origin = self.geolocator.geocode(origin)
             coords_dest = self.geolocator.geocode(destination)
             if coords_origin and coords_dest:
@@ -57,6 +61,8 @@ class GeoDistanceCalculator:
                     (coords_origin.latitude, coords_origin.longitude),
                     (coords_dest.latitude, coords_dest.longitude)
                 ).kilometers
+                #Añadir origin,origin
+                self.distance_cache[(origin, origin)] = 0.0
                 self.distance_cache[(origin, destination)] = distance
                 self._save_cache()
                 return distance
@@ -64,14 +70,6 @@ class GeoDistanceCalculator:
             print(f"Error al calcular la distancia: {e}")
 
         return None
-
-    def is_city_in_cache(self, city):
-        """
-        Verifica si una ciudad ya está en el caché como origen.
-        """
-        city = city.lower()
-        return any(origin == city for origin, _ in self.distance_cache.keys())
-
 
 def apply_geographic_penalty(car_data, user_location, geo_calculator, distance_weight):
     """

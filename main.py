@@ -34,15 +34,9 @@ def get_user_input():
     user_input['shift'] = input("Tipo de transmisión (Automático, Manual): ").strip()
     user_input['color'] = input("Color del coche: ").strip()
 
-    # Convertir inputs numéricos a tuplas de (min, max) para los rangos
+    # Convertir valores numéricos a enteros y vacíos a None
     for key, value in user_input.items():
-        if '-' in value:
-            try:
-                min_value, max_value = map(int, value.split('-'))
-                user_input[key] = (min_value, max_value)
-            except ValueError:
-                user_input[key] = value
-        elif value.isdigit():
+        if value.isdigit():
             user_input[key] = int(value)
         elif value == "":
             user_input[key] = None
@@ -95,9 +89,8 @@ def get_user_input():
 
 
 if __name__ == '__main__':
-    
-    # Configuración
     user_input, feature_weights, user_location = get_user_input()
+
     a = time.time()
     if user_input is None or feature_weights is None or user_location is None:
         print("No se puede realizar la recomendación sin entradas válidas.")
@@ -105,8 +98,7 @@ if __name__ == '__main__':
         # Cargar datos
         cars_df, ratings_df = load_data(cars_path, ratings_path)
 
-        # Entrenar modelo colaborativo con GridSearch habilitado
-        use_gridsearch = True  # Cambiar a False si no deseas ajustar hiperparámetros
+        # Cargar o entrenar modelo colaborativo
         collaborative_model, _ = train_collaborative_model(ratings_path)
 
         # Instanciar calculadora geográfica
@@ -121,11 +113,11 @@ if __name__ == '__main__':
         # Mostrar resultados
         top_5 = recommendations[['make', 'model', 'price', 'fuel', 'year', 'kms', 
                                   'power', 'doors', 'shift', 'color', 'province', 
-                                  'distance', 'hybrid_score']].head(5)
+                                  'distance']].head(5)
         print("Hemos encontrado estos coches para ti:")
         print(top_5.to_string(index=False))
 
     b = time.time()
 
-    print(f"Tiempo de ejecución: {b - a:.2f} segundos.")
+    print(f"Tiempo total: {b-a:.2f} segundos")
 

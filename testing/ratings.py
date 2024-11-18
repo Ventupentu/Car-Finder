@@ -6,7 +6,7 @@ file_path = 'data/coches.csv'
 df = pd.read_csv(file_path)
 
 # Paso 1: Definir segmentos de usuarios con preferencias específicas
-num_users = 15000  # Cambié el número de usuarios a 10k para reflejar tu situación
+num_users = 15000
 
 # Definir características de preferencia
 preferences = {

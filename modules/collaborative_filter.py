@@ -1,14 +1,25 @@
+import pandas as pd
 from surprise import Dataset, Reader, SVD
 from surprise.model_selection import train_test_split
-import pandas as pd
+import pickle
+import os
+
+MODEL_PATH = 'data/collaborative_model.pkl'
 
 def train_collaborative_model(ratings_path: str) -> tuple:
     """
-    Entrena un modelo de filtrado colaborativo con Surprise.
+    Entrena un modelo de filtrado colaborativo con Surprise o carga uno guardado.
     
     :param ratings_path: Ruta al dataset de valoraciones.
     :return: Tuple (modelo entrenado, datos de prueba)
     """
+    if os.path.exists(MODEL_PATH):
+        print("Cargando modelo colaborativo guardado...")
+        with open(MODEL_PATH, 'rb') as model_file:
+            model = pickle.load(model_file)
+        return model, None  # No se devuelve testset ya que no se puede dividir al cargar
+
+    print("Entrenando un nuevo modelo colaborativo...")
     # Cargar datos
     df_ratings = pd.read_csv(ratings_path)
     reader = Reader(rating_scale=(1, 5))
@@ -28,8 +39,13 @@ def train_collaborative_model(ratings_path: str) -> tuple:
         reg_all=best_params['reg_all']
     )
     model.fit(trainset)
-    
+
+    # Guardar el modelo en un archivo
+    with open(MODEL_PATH, 'wb') as model_file:
+        pickle.dump(model, model_file)
+
     return model, testset
+
 
 def predict_rating(user_id: str, model_id: int, model) -> float:
     """

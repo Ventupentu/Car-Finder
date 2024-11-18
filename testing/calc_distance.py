@@ -36,8 +36,8 @@ if __name__ == "__main__":
     #print(f"La distancia entre {ubicacion_1} y {ubicacion_2} es de {distancia:.2f} km")
 
     # Ejemplo de uso con nombres de ciudades
-    ciudad_1 = "Madrid"
-    ciudad_2 = "Girona"
+    ciudad_1 = "Cataluña"
+    ciudad_2 = "Galicia"
 
     distancia_ciudades = calculator.calcular_distancia(ciudad_1, ciudad_2, "España", "España")
     print(f"La distancia entre {ciudad_1} y {ciudad_2} es de {distancia_ciudades:.2f} km")
