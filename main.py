@@ -25,11 +25,11 @@ def get_user_input():
 
     # Solicitar características
     user_input['make'] = input("Marca del coche: ").strip()
-    user_input['price'] = input("Rango de precio (por ejemplo, 20000-50000): ").strip()
+    user_input['price'] = input("Precio del coche: ").strip()
     user_input['fuel'] = input("Tipo de combustible (Diesel, Gasolina, Eléctrico, Híbrido): ").strip()
-    user_input['year'] = input("Rango de año (por ejemplo, 2018-2023): ").strip()
-    user_input['kms'] = input("Rango de kilometraje (por ejemplo, 0-100000): ").strip()
-    user_input['power'] = input("Rango de potencia (por ejemplo, 150-300 caballos): ").strip()
+    user_input['year'] = input("Año del coche ").strip()
+    user_input['kms'] = input("Kilometraje del coche: ").strip()
+    user_input['power'] = input("Potencia del coche en caballo: ").strip()
     user_input['doors'] = input("Número de puertas (2, 3, 4, 5): ").strip()
     user_input['shift'] = input("Tipo de transmisión (Automático, Manual): ").strip()
     user_input['color'] = input("Color del coche: ").strip()
