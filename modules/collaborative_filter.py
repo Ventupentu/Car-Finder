@@ -17,8 +17,16 @@ def train_collaborative_model(ratings_path: str) -> tuple:
     # Dividir en datos de entrenamiento y prueba
     trainset, testset = train_test_split(data, test_size=0.2)
     
-    # Entrenar modelo
-    model = SVD()
+    # Mejores hiperparámetros obtenidos
+    best_params = {'n_factors': 20, 'n_epochs': 10, 'lr_all': 0.002, 'reg_all': 0.4}
+
+    # Crear el modelo SVD con los mejores parámetros
+    model = SVD(
+        n_factors=best_params['n_factors'],
+        n_epochs=best_params['n_epochs'],
+        lr_all=best_params['lr_all'],
+        reg_all=best_params['reg_all']
+    )
     model.fit(trainset)
     
     return model, testset

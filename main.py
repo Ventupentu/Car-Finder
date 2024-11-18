@@ -2,6 +2,7 @@ from modules.hybrid_recommender import hybrid_recommendation
 from modules.collaborative_filter import train_collaborative_model
 from modules.geo_utils import GeoDistanceCalculator
 from modules.data_loader import load_data
+import time
 
 # Configuración
 cars_path = 'data/coches.csv'
@@ -94,31 +95,37 @@ def get_user_input():
 
 
 if __name__ == '__main__':
-
+    
     # Configuración
     user_input, feature_weights, user_location = get_user_input()
-
-
-    # Si no se introdujeron datos válidos, no continuamos
+    a = time.time()
     if user_input is None or feature_weights is None or user_location is None:
         print("No se puede realizar la recomendación sin entradas válidas.")
     else:
         # Cargar datos
         cars_df, ratings_df = load_data(cars_path, ratings_path)
 
-        # Entrenar modelo colaborativo
+        # Entrenar modelo colaborativo con GridSearch habilitado
+        use_gridsearch = True  # Cambiar a False si no deseas ajustar hiperparámetros
         collaborative_model, _ = train_collaborative_model(ratings_path)
 
         # Instanciar calculadora geográfica
         geo_calculator = GeoDistanceCalculator()
 
-
         # Generar recomendaciones
-        recommendations = hybrid_recommendation(user_id, user_input, feature_weights, user_location, geo_calculator, collaborative_model, cars_df)
+        recommendations = hybrid_recommendation(
+            user_id, user_input, feature_weights, user_location,
+            geo_calculator, collaborative_model, cars_df
+        )
 
         # Mostrar resultados
-        top_5 = recommendations[['make', 'model', 'price', 'fuel', 'year', 'kms', 'power', 'doors', 'shift', 'color', 'province', 'distance', 'hybrid_score']].head(5)
-
+        top_5 = recommendations[['make', 'model', 'price', 'fuel', 'year', 'kms', 
+                                  'power', 'doors', 'shift', 'color', 'province', 
+                                  'distance', 'hybrid_score']].head(5)
         print("Hemos encontrado estos coches para ti:")
         print(top_5.to_string(index=False))
+
+    b = time.time()
+
+    print(f"Tiempo de ejecución: {b - a:.2f} segundos.")
 
