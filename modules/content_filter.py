@@ -14,7 +14,7 @@ def calculate_content_similarity(user_input: dict, car_data: pd.DataFrame, featu
     car_data['similarity_score'] = 0.0
     
     for feature, weight in feature_weights.items():
-        if feature in user_input:
+        if feature in user_input and user_input[feature] is not None:
             user_value = user_input[feature]
             
             if feature in ['price', 'year', 'kms', 'power']:  # Características numéricas
@@ -29,7 +29,7 @@ def calculate_content_similarity(user_input: dict, car_data: pd.DataFrame, featu
                 
                 car_data['similarity_score'] += normalized_diff * weight
             
-            elif feature in ['fuel', 'shift', 'color', 'province', 'make', 'model','doors']:  # Características categóricas
+            elif feature in ['fuel', 'shift', 'color', 'make', 'model','doors']:  # Características categóricas
                 car_data['similarity_score'] += car_data[feature].apply(
                     lambda x: weight if x == user_value else 0)
     
