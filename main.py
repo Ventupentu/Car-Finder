@@ -3,12 +3,30 @@ from modules.collaborative_filter import train_collaborative_model
 from modules.geo_utils import GeoDistanceCalculator
 from modules.data_loader import load_data
 import time
+import os
 
 # Configuración
 cars_path = 'data/coches.csv'
 ratings_path = 'data/car_ratings.csv'
+distance_cache = 'data/distance_cache.csv'
 user_id = 'new_user'
 
+def check_csv_files():
+    """
+    Verifica que los archivos CSV necesarios para la recomendación existan en la ruta especificada.
+    
+    :return: Booleano indicando si los archivos existen.
+    :return: True si los archivos existen, False y nombre de los archivos faltantes si no existen.
+    """
+    files = [cars_path, ratings_path, distance_cache]
+    missing_files = [file for file in files if not os.path.exists(file)]
+    if missing_files:
+        print(f"No hemos encontrado los siguientes archivos:")
+        for file in missing_files:
+            print(file)
+        return False
+    print("Archivos CSV cargados correctamente.")
+    return True
 
 def get_user_input():
     """
@@ -89,6 +107,11 @@ def get_user_input():
 
 
 if __name__ == '__main__':
+
+    # Verificar que los archivos CSV necesarios existan
+    if not check_csv_files():
+        exit()
+
     user_input, feature_weights, user_location = get_user_input()
 
     a = time.time()
