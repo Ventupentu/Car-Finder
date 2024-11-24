@@ -43,7 +43,7 @@ def get_user_input():
 
     # Solicitar ubicación obligatoria
     while True:
-        user_location = input("Introduce tu ubicación (ciudad): ").strip()
+        user_location = input("Introduce tu ubicación (ciudad): ").strip().capitalize()
         if user_location:
             break
         print("La ubicación es obligatoria. Por favor, ingresa tu ciudad.")
