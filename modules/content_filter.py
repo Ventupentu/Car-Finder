@@ -29,9 +29,8 @@ def calculate_content_similarity(user_input: dict, car_data: pd.DataFrame, featu
                 
                 car_data['similarity_score'] += normalized_diff * weight
             
-            elif feature in ['fuel', 'shift', 'color', 'make', 'model','doors']:  # Características categóricas
+            elif feature in ['fuel', 'shift', 'color', 'make', 'model', 'doors']:  # Características categóricas
                 car_data['similarity_score'] += car_data[feature].apply(
-                    lambda x: weight if x == user_value else 0)
-    
+                    lambda x: weight if str(x).lower() == str(user_value).lower() else 0)
     # Ordenar por el puntaje de similitud en orden descendente
     return car_data.sort_values(by='similarity_score', ascending=False)
