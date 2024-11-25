@@ -21,12 +21,16 @@ def calculate_content_similarity(user_input: dict, car_data: pd.DataFrame, featu
                 max_val = car_data[feature].max()
                 min_val = car_data[feature].min()
                 
-                # Normalización y cálculo de similitud inversa para price y kms
+                # Penalización para price y kms si son mayores que el valor del usuario
                 if feature in ['price', 'kms']:
-                    normalized_diff = 1 - (np.abs(car_data[feature] - user_value) / (max_val - min_val))
+                    normalized_diff = np.where(car_data[feature] > user_value, 
+                                               (car_data[feature] - user_value) / (max_val - user_value), 
+                                               1.0)
                 else:  # Normalización directa para year y power
-                    normalized_diff = (car_data[feature] - min_val) / (max_val - min_val)
-                
+                    normalized_diff = np.where(car_data[feature] < user_value, 
+                                                (user_value - car_data[feature]) / (user_value - min_val), 
+                                                1.0)
+
                 car_data['similarity_score'] += normalized_diff * weight
             
             elif feature in ['fuel', 'shift', 'color', 'make', 'model', 'doors']:  # Características categóricas
