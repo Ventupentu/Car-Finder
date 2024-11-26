@@ -1,23 +1,21 @@
-from .collaborative_filter import predict_rating
-from .content_filter import calculate_content_similarity
-from .geo_utils import apply_geographic_penalty
+from .collaborative_filter import CollaborativeFilter
+from .content_filter import ContentFilter
+from .geo_utils import GeoUtils
 
-def hybrid_recommendation(user_id, user_input, feature_weights, user_location, geo_calculator, collaborative_model, cars_df):
-    # Filtrado basado en contenido
-    content_scores = calculate_content_similarity(user_input, cars_df, feature_weights)
+class HybridRecommender:
+    def __init__(self, collaborative_model: CollaborativeFilter, geo_calculator: GeoUtils):
+        self.collaborative_model = collaborative_model
+        self.geo_calculator = geo_calculator
 
-    # Penalización geográfica
-    geo_scores = apply_geographic_penalty(content_scores, user_location, geo_calculator, feature_weights.get('distance', 0))
-    
-    # Filtrado colaborativo
-    geo_scores['collaborative_score'] = geo_scores['model_id'].apply(lambda x: predict_rating(user_id, x, collaborative_model))
-    
-    # Calcular puntaje híbrido
-    geo_scores['hybrid_score'] = (
-        geo_scores['similarity_score'] * 0.4 +
-        geo_scores['collaborative_score'] * 0.4 +
-        geo_scores['geo_score'] * 0.2
-    )
+    def recommend(self, user_id, user_input, feature_weights, user_location, cars_df):
+        content_scores = ContentFilter.calculate_content_similarity(user_input, cars_df, feature_weights)
+        geo_scores = self.geo_calculator.apply_penalty(content_scores, user_location, feature_weights.get('distance', 0))
+        geo_scores['collaborative_score'] = geo_scores['model_id'].apply(lambda x: self.collaborative_model.predict_rating(user_id, x))
+        
+        geo_scores['hybrid_score'] = (
+            geo_scores['similarity_score'] * 0.4 +
+            geo_scores['collaborative_score'] * 0.4 +
+            geo_scores['geo_score'] * 0.2
+        )
 
-    return geo_scores.sort_values('hybrid_score', ascending=False)
-
+        return geo_scores.sort_values('hybrid_score', ascending=False)
