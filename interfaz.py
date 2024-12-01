@@ -1,10 +1,10 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
 from PIL import Image, ImageTk
-from modules.hybrid_recommender import hybrid_recommendation
-from modules.collaborative_filter import train_collaborative_model
-from modules.geo_utils import GeoDistanceCalculator
-from modules.data_loader import load_data
+from modules.hybrid_recommender import HybridRecommender
+from modules.collaborative_filter import CollaborativeFilter
+from modules.geo_utils import GeoUtils
+from modules.data_loader import DataLoader
 import pandas as pd
 import os
 
@@ -156,15 +156,16 @@ class CarRecommenderApp:
         self.results_window = self.canvas.create_text(400, 300, text="Hemos encontrado estos coches para ti:", font=("Arial", 12), fill="white")
 
         # Cargar datos y modelos
-        cars_df, ratings_df = load_data(cars_path, ratings_path)
-        collaborative_model, _ = train_collaborative_model(ratings_path)
-        geo_calculator = GeoDistanceCalculator()
+        cars_df, ratings_df = DataLoader(cars_path, ratings_path).load_data()
 
-        # Generar recomendaciones
-        recommendations = hybrid_recommendation(
-            user_id, self.user_input, self.feature_weights, self.user_location,
-            geo_calculator, collaborative_model, cars_df
-        )
+        collaborative_model = CollaborativeFilter()
+        collaborative_model.train_model(ratings_path)
+        
+        geo_calculator = GeoUtils()
+
+        recommender = HybridRecommender(collaborative_model, geo_calculator)
+
+        recommendations = recommender.recommend(user_id, self.user_input, self.feature_weights, self.user_location, cars_df)
 
         # Mostrar resultados
         top_5 = recommendations[['make', 'model', 'price', 'fuel', 'year', 'kms',

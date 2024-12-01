@@ -118,7 +118,7 @@ class CarRecommenderApp:
         
         top_5 = recommendations[['make', 'model', 'price', 'fuel', 'year', 'kms', 
                                   'power', 'doors', 'shift', 'color', 'province', 
-                                  'distance']].head(15)
+                                  'distance']].head(10)
         
         print("Hemos encontrado estos coches para ti:")
         print(top_5.to_string(index=False))

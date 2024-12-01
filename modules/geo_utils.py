@@ -50,7 +50,7 @@ class GeoUtils:
                 self.distance_cache[(origin, origin)] = 0.0
                 self.distance_cache[(origin, destination)] = distance
                 self._save_cache()
-                return distance
+                return round(distance,2)
         except Exception as e:
             print(f"Error al calcular la distancia: {e}")
 
@@ -58,6 +58,10 @@ class GeoUtils:
 
     def apply_penalty(self, car_data, user_location, distance_weight):
         max_distance = 5000
-        car_data['distance'] = car_data['province'].apply(lambda x: self.calculate_distance(user_location, x) or max_distance)
-        car_data['geo_score'] = car_data['distance'].apply(lambda x: -distance_weight * (x / max_distance) if x < max_distance else -distance_weight)
+        car_data['distance'] = round(car_data['province'].apply(
+            lambda x: self.calculate_distance(user_location, x) if self.calculate_distance(user_location, x) is not None else max_distance
+        ), 2)
+        car_data['geo_score'] = car_data['distance'].apply(
+            lambda x: -distance_weight * (x / max_distance) if x < max_distance else -distance_weight
+        )
         return car_data

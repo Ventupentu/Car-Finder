@@ -12,32 +12,39 @@ ratings_path = 'data/car_ratings.csv'
 distance_cache = 'data/distance_cache.csv'
 user_id = 'new_user'
 
+# Cargar datos y modelos
 cars_df, ratings_df = DataLoader(cars_path, ratings_path).load_data()
-
 collaborative_model = CollaborativeFilter()
 collaborative_model.train_model(ratings_path)
-
 geo_calculator = GeoUtils()
+
 
 class CarRecommenderApp(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("Recomendador de Coches")
-        self.geometry("1200x800")  # Pantalla más grande para acomodar más contenido
-        self.configure(bg="#f7f9fc")  # Fondo moderno
+        self.geometry("1400x800")  # Tamaño ajustado
+        self.configure(bg="#edf2f7")  # Fondo claro y moderno
 
         self.user_input = {}
         self.feature_weights = {}
         self.user_location = ""
 
+        # Verificar archivos necesarios
         if not self.check_csv_files():
-            exit()      
+            self.destroy()
+            return
 
-        # Notebook para pestañas
-        self.notebook = ttk.Notebook(self)
-        self.notebook.pack(expand=True, fill="both", padx=10, pady=10)
+        # Crear encabezado
+        self.create_header()
+
+        # Crear estilos personalizados
+        self.setup_styles()
 
         # Crear pestañas
+        self.notebook = ttk.Notebook(self, style="CustomNotebook.TNotebook")
+        self.notebook.pack(expand=True, fill="both", padx=20, pady=10)
+
         self.characteristics_page = CharacteristicsPage(self)
         self.weights_page = WeightsPage(self)
         self.results_page = ResultsPage(self)
@@ -46,20 +53,83 @@ class CarRecommenderApp(tk.Tk):
         self.notebook.add(self.weights_page, text="Paso 2: Pesos")
         self.notebook.add(self.results_page, text="Paso 3: Resultados")
 
-        # Deshabilitar pestañas hasta que sean necesarias
         self.notebook.tab(1, state="disabled")
         self.notebook.tab(2, state="disabled")
-
-
 
     def check_csv_files(self):
         files = [cars_path, ratings_path, distance_cache]
         missing_files = [file for file in files if not os.path.exists(file)]
         if missing_files:
-            print(f"Faltan los siguientes archivos: {missing_files}")
+            messagebox.showerror(
+                "Error",
+                f"Faltan los siguientes archivos necesarios para ejecutar el programa:\n{', '.join(missing_files)}"
+            )
             return False
         return True
-        
+
+    def create_header(self):
+        header = tk.Frame(self, bg="#2b6cb0", height=60)
+        header.pack(fill="x", side="top")
+
+        title = tk.Label(
+            header, text="Bienvenido al Recomendador de Coches",
+            font=("Helvetica", 20, "bold"), fg="white", bg="#2b6cb0", pady=10
+        )
+        title.pack()
+
+    def setup_styles(self):
+        style = ttk.Style()
+        style.theme_use("default")
+
+        # Estilo para pestañas
+        style.configure(
+            "CustomNotebook.TNotebook",
+            background="#edf2f7",
+            tabmargins=[2, 5, 2, 0],
+        )
+        style.configure(
+            "CustomNotebook.TNotebook.Tab",
+            font=("Helvetica", 12, "bold"),
+            padding=[10, 5],
+            background="#d9e3f0",
+            foreground="#2b6cb0",
+        )
+        style.map(
+            "CustomNotebook.TNotebook.Tab",
+            background=[("selected", "#2b6cb0")],
+            foreground=[("selected", "#ffffff")],
+        )
+
+        # Estilo para botones
+        style.configure(
+            "Custom.TButton",
+            font=("Helvetica", 12, "bold"),
+            foreground="white",
+            background="#2b6cb0",
+            padding=10,
+            relief="flat",
+        )
+        style.map(
+            "Custom.TButton",
+            background=[("active", "#1a436a")],
+            foreground=[("active", "white")],
+        )
+
+        # Estilo para etiquetas
+        style.configure(
+            "Custom.TLabel",
+            font=("Helvetica", 12),
+            padding=5,
+        )
+
+        # Estilo para contenedores
+        style.configure(
+            "Custom.TFrame",
+            background="#ffffff",
+            relief="solid",
+            borderwidth=1,
+        )
+
     def enable_weights_page(self):
         self.notebook.tab(1, state="normal")
         self.notebook.select(1)
@@ -71,9 +141,8 @@ class CarRecommenderApp(tk.Tk):
 
 class CharacteristicsPage(tk.Frame):
     def __init__(self, parent):
-        super().__init__(parent)
+        super().__init__(parent, bg="#ffffff")
         self.parent = parent
-
         self.features = [
             "make", "price", "fuel", "year", "kms",
             "power", "doors", "shift", "color"
@@ -89,17 +158,16 @@ class CharacteristicsPage(tk.Frame):
             "shift": "Tipo de transmisión (Automático, Manual)",
             "color": "Color del coche"
         }
-
         self.inputs = {}
 
-        # Diseño del formulario
-        self.form = ttk.LabelFrame(self, text="Características del Coche", padding=20)
+        # Contenedor del formulario
+        self.form = ttk.LabelFrame(self, text="Características del Coche", padding=20, style="Custom.TFrame")
         self.form.pack(fill="both", expand=True, padx=20, pady=20)
 
         for feature in self.features:
-            row = ttk.Frame(self.form)
+            row = ttk.Frame(self.form, style="Custom.TFrame")
             row.pack(fill="x", pady=5)
-            label = ttk.Label(row, text=self.feature_labels[feature], width=40, anchor="w")
+            label = ttk.Label(row, text=self.feature_labels[feature], width=30, anchor="w", style="Custom.TLabel")
             label.pack(side="left")
             entry = ttk.Entry(row)
             entry.pack(side="right", fill="x", expand=True)
@@ -107,12 +175,12 @@ class CharacteristicsPage(tk.Frame):
 
         row = ttk.Frame(self.form)
         row.pack(fill="x", pady=5)
-        label = ttk.Label(row, text="Ubicación (ciudad)", width=40, anchor="w")
+        label = ttk.Label(row, text="Ubicación (ciudad)", width=30, anchor="w", style="Custom.TLabel")
         label.pack(side="left")
         self.location_entry = ttk.Entry(row)
         self.location_entry.pack(side="right", fill="x", expand=True)
 
-        next_button = ttk.Button(self, text="Siguiente", command=self.collect_data)
+        next_button = ttk.Button(self, text="Siguiente", command=self.collect_data, style="Custom.TButton")
         next_button.pack(pady=20)
 
     def collect_data(self):
@@ -132,14 +200,13 @@ class CharacteristicsPage(tk.Frame):
 
 class WeightsPage(tk.Frame):
     def __init__(self, parent):
-        super().__init__(parent)
+        super().__init__(parent, bg="#ffffff")
         self.parent = parent
-
         self.weights = {}
-        self.form = ttk.LabelFrame(self, text="Pesos de Características", padding=20)
+        self.form = ttk.LabelFrame(self, text="Pesos de Características", padding=20, style="Custom.TFrame")
         self.form.pack(fill="both", expand=True, padx=20, pady=20)
 
-        next_button = ttk.Button(self, text="Recomendar", command=self.collect_weights)
+        next_button = ttk.Button(self, text="Recomendar", command=self.collect_weights, style="Custom.TButton")
         next_button.pack(pady=20)
 
     def update_weights(self):
@@ -153,17 +220,17 @@ class WeightsPage(tk.Frame):
             return
 
         for feature in self.features_to_weight:
-            row = ttk.Frame(self.form)
+            row = ttk.Frame(self.form, style="Custom.TFrame")
             row.pack(fill="x", pady=5)
-            label = ttk.Label(row, text=f"Peso para {self.parent.characteristics_page.feature_labels[feature]} (0-10)", width=40, anchor="w")
+            label = ttk.Label(row, text=f"Peso para {self.parent.characteristics_page.feature_labels[feature]} (0-10)", width=30, anchor="w", style="Custom.TLabel")
             label.pack(side="left")
             spinbox = ttk.Spinbox(row, from_=0, to=10, width=5)
             spinbox.pack(side="right", fill="x", expand=True)
             self.weights[feature] = spinbox
 
-        row = ttk.Frame(self.form)
+        row = ttk.Frame(self.form, style="Custom.TFrame")
         row.pack(fill="x", pady=5)
-        label = ttk.Label(row, text="Peso para Distancia (0-10)", width=40, anchor="w")
+        label = ttk.Label(row, text="Peso para Distancia (0-10)", width=30, anchor="w", style="Custom.TLabel")
         label.pack(side="left")
         spinbox = ttk.Spinbox(row, from_=0, to=10, width=5)
         spinbox.pack(side="right", fill="x", expand=True)
@@ -184,10 +251,9 @@ class WeightsPage(tk.Frame):
 
 class ResultsPage(tk.Frame):
     def __init__(self, parent):
-        super().__init__(parent)
-
+        super().__init__(parent, bg="#ffffff")
         self.parent = parent
-        self.results_area = ttk.LabelFrame(self, text="Recomendaciones", padding=20)
+        self.results_area = ttk.LabelFrame(self, text="Recomendaciones", padding=20, style="Custom.TFrame")
         self.results_area.pack(fill="both", expand=True, padx=20, pady=20)
 
         self.tree = ttk.Treeview(self.results_area, columns=(
@@ -209,8 +275,6 @@ class ResultsPage(tk.Frame):
 
     def generate_recommendations(self):
         try:
-            
-
             recommender = HybridRecommender(collaborative_model, geo_calculator)
             recommendations = recommender.recommend(
                 user_id, self.parent.user_input, self.parent.feature_weights,

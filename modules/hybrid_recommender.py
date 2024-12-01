@@ -13,9 +13,9 @@ class HybridRecommender:
         geo_scores['collaborative_score'] = geo_scores['model_id'].apply(lambda x: self.collaborative_model.predict_rating(user_id, x))
         
         geo_scores['hybrid_score'] = (
-            geo_scores['similarity_score'] * 0.4 +
-            geo_scores['collaborative_score'] * 0.4 +
-            geo_scores['geo_score'] * 0.2
+            geo_scores['similarity_score'] * 0.6 +
+            geo_scores['collaborative_score'] * 0.3 +
+            geo_scores['geo_score'] * 0.1
         )
 
         return geo_scores.sort_values('hybrid_score', ascending=False)
