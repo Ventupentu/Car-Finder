@@ -57,7 +57,7 @@ class GeoUtils:
         return None
 
     def apply_penalty(self, car_data, user_location, distance_weight):
-        max_distance = 5000
+        max_distance = 200
         car_data['distance'] = round(car_data['province'].apply(
             lambda x: self.calculate_distance(user_location, x) if self.calculate_distance(user_location, x) is not None else max_distance
         ), 2)

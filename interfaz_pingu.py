@@ -6,13 +6,13 @@ from modules.geo_utils import GeoUtils
 from modules.data_loader import DataLoader
 import os
 
-# Configuración
+# Rutas
 cars_path = 'data/coches.csv'
 ratings_path = 'data/car_ratings.csv'
 distance_cache = 'data/distance_cache.csv'
 user_id = 'new_user'
 
-# Cargar datos y modelos
+# Cargar clases para el modelo y los datos
 cars_df, ratings_df = DataLoader(cars_path, ratings_path).load_data()
 collaborative_model = CollaborativeFilter()
 collaborative_model.train_model(ratings_path)
