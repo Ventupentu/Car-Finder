@@ -2,6 +2,7 @@ import pandas as pd
 from surprise import Dataset, Reader
 from surprise.model_selection import cross_validate
 from surprise import SVD, SVDpp, NMF, KNNBasic, KNNWithMeans, KNNBaseline, BaselineOnly, CoClustering
+import time
 
 # Cargar el dataset
 ratings_path = 'data/car_ratings.csv'  # Cambia esta ruta si es necesario
@@ -24,17 +25,20 @@ algorithms = {
 # Evaluar cada algoritmo
 results = {}
 for name, algo in algorithms.items():
+    a = time.time()
     print(f"Entrenando y evaluando {name}...")
-    cv_results = cross_validate(algo, data, measures=['RMSE', 'MAE'], cv=5, verbose=False)
+    cv_results = cross_validate(algo, data, measures=['RMSE', 'MAE'], cv=5, verbose=False, n_jobs=-1)
     results[name] = {
         "RMSE": round(cv_results['test_rmse'].mean(), 4),
-        "MAE": round(cv_results['test_mae'].mean(), 4)
+        "MAE": round(cv_results['test_mae'].mean(), 4),
+        "Tiempo": round(time.time() - a, 2)
     }
+
 
 # Mostrar resultados
 print("\nResultados finales:")
 for name, metrics in sorted(results.items(), key=lambda x: x[1]['RMSE']):
-    print(f"{name}: RMSE={metrics['RMSE']}, MAE={metrics['MAE']}")
+    print(f"{name}: RMSE={metrics['RMSE']}, MAE={metrics['MAE']}, Tiempo={metrics['Tiempo']}s")
 
 
 

@@ -3,7 +3,13 @@ import pandas as pd
 # Load the CSV file into a DataFrame
 df = pd.read_csv('data/coches.csv')
 
-# Group by 'model_id' and count the occurrences
-model_counts = df['province'].unique()
+makes = df['make'].unique()
 
-print(model_counts)
+fuels = df['fuel'].unique()
+
+shifts = df['shift'].unique()
+
+print(f"Marcas: {makes}")
+print(f"Combustibles: {fuels}")
+print(f"Cambios: {shifts}")
+

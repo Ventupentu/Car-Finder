@@ -150,13 +150,27 @@ class CharacteristicsPage(tk.Frame):
         self.feature_labels = {
             "make": "Marca del coche",
             "price": "Precio del coche",
-            "fuel": "Tipo de combustible (Diesel, Gasolina, Eléctrico, Híbrido)",
+            "fuel": "Tipo de combustible",
             "year": "Año del coche",
             "kms": "Kilometraje del coche",
             "power": "Potencia del coche en caballos",
-            "doors": "Número de puertas (2, 3, 4, 5)",
-            "shift": "Tipo de transmisión (Automático, Manual)",
+            "doors": "Número de puertas",
+            "shift": "Tipo de transmisión",
             "color": "Color del coche"
+        }
+        self.feature_tooltips = {
+            "make": "ABARTH, ALFA ROMEO, ALPINE, ARO, ASTON MARTIN, AUDI, AUSTIN, "\
+                    "BENTLEY, BMW, CADILLAC, CHEVROLET, CHRYSLER, CITROEN, CORVETTE, "\
+                    "CUPRA, DACIA, DAEWOO, DAIHATSU, DFSK, DODGE, DR AUTOMOBILES, DS, "\
+                    "FERRARI, FIAT, FORD, GALLOPER, HONDA, HUMMER, HYUNDAI, INFINITI, "\
+                    "ISUZU, IVECO, IVECO-PEGASO, JAGUAR, JEEP, KIA, LADA, LAMBORGHINI, "\
+                    "LANCIA, LAND-ROVER, LDV, LEXUS, LOTUS, MAHINDRA, MASERATI, MAXUS, "\
+                    "MAZDA, MERCEDES-BENZ, MG, MINI, MITSUBISHI, MORGAN, NISSAN, OPEL, "\
+                    "PEUGEOT, PIAGGIO, PONTIAC, PORSCHE, RENAULT, ROVER, SAAB, "\
+                    "SANTANA, SEAT, SKODA, SMART, SSANGYONG, SUBARU, SUZUKI, TATA, "\
+                    "TESLA, TOYOTA, UMM, VAZ, VOLKSWAGEN, VOLVO",
+            "fuel": "Gasolina, Diesel, Hibrido enchufable, Gas natural, Electrico, Hibrido, Gas licuado",
+            "shift": "Manual, Automatico"
         }
         self.inputs = {}
 
@@ -165,37 +179,85 @@ class CharacteristicsPage(tk.Frame):
         self.form.pack(fill="both", expand=True, padx=20, pady=20)
 
         for feature in self.features:
-            row = ttk.Frame(self.form, style="Custom.TFrame")
+            row = ttk.Frame(self.form)
             row.pack(fill="x", pady=5)
             label = ttk.Label(row, text=self.feature_labels[feature], width=30, anchor="w", style="Custom.TLabel")
             label.pack(side="left")
             entry = ttk.Entry(row)
-            entry.pack(side="right", fill="x", expand=True)
+            entry.pack(side="left", fill="x", expand=False)
             self.inputs[feature] = entry
+
+            # Agregar tooltip si la característica tiene descripción
+            if feature in self.feature_tooltips:
+                tooltip_icon = tk.Label(row, text="🛈", bg="#D9D9D9", cursor="question_arrow", font=("Helvetica", 12))
+                tooltip_icon.pack(side="left")
+                self.create_tooltip(tooltip_icon, self.feature_tooltips[feature])
 
         row = ttk.Frame(self.form)
         row.pack(fill="x", pady=5)
         label = ttk.Label(row, text="Ubicación (ciudad)", width=30, anchor="w", style="Custom.TLabel")
         label.pack(side="left")
         self.location_entry = ttk.Entry(row)
-        self.location_entry.pack(side="right", fill="x", expand=True)
+        self.location_entry.pack(side="left", fill="x", expand=False)
 
         next_button = ttk.Button(self, text="Siguiente", command=self.collect_data, style="Custom.TButton")
         next_button.pack(pady=20)
 
+    def create_tooltip(self, widget, text):
+        tooltip = tk.Toplevel(self)
+        tooltip.withdraw()  # Oculta el tooltip inicialmente
+        tooltip.overrideredirect(True)  # Elimina la barra de título y los bordes
+        tooltip.configure(bg="#edf2f7", padx=5, pady=5, relief="solid", borderwidth=1)
+
+        label = tk.Label(
+            tooltip,
+            text=text,
+            justify="left",
+            wraplength=300,
+            bg="#edf2f7",
+            font=("Helvetica", 10)
+        )
+        label.pack()
+
+        def show_tooltip(event):
+            # Posiciona el tooltip cerca del cursor del ratón
+            tooltip.geometry(f"+{event.x_root + 10}+{event.y_root + 10}")
+            tooltip.deiconify()  # Muestra el tooltip
+
+        def hide_tooltip(event):
+            tooltip.withdraw()  # Oculta el tooltip
+
+        # Asocia los eventos del ratón al widget
+        widget.bind("<Enter>", show_tooltip)  # Al entrar el ratón
+        widget.bind("<Leave>", hide_tooltip)  # Al salir el ratón
+
+
     def collect_data(self):
-        self.parent.user_input = {
-            k: int(v.get()) if v.get().isdigit() else (None if v.get().strip() == "" else v.get())
-            for k, v in self.inputs.items()
-        }
-        self.parent.user_location = self.location_entry.get().strip()
+        try:
+            self.parent.user_input = {
+                k: int(v.get()) if v.get().isdigit() else (None if v.get().strip() == "" else v.get())
+                for k, v in self.inputs.items()
+            }
+            self.parent.user_location = self.location_entry.get().strip()
 
-        if not self.parent.user_location:
-            messagebox.showerror("Error", "La ubicación es obligatoria.")
-            return
+            if not self.parent.user_location:
+                messagebox.showerror("Error", "La ubicación es obligatoria.")
+                return
 
-        self.parent.weights_page.update_weights()
-        self.parent.enable_weights_page()
+            for feature, value in self.parent.user_input.items():
+                if value is None:
+                    continue
+                if feature in ["price", "year", "kms", "power", "doors"] and not isinstance(value, int):
+                    messagebox.showerror("Error", f"El valor para {self.feature_labels[feature]} debe ser un número.")
+                    return
+                if feature in ["make", "fuel", "shift", "color"] and not isinstance(value, str):
+                    messagebox.showerror("Error", f"El valor para {self.feature_labels[feature]} debe ser un texto.")
+                    return
+
+            self.parent.weights_page.update_weights()
+            self.parent.enable_weights_page()
+        except ValueError:
+            messagebox.showerror("Error", "Por favor ingresa valores válidos.")
 
 
 class WeightsPage(tk.Frame):
@@ -222,7 +284,7 @@ class WeightsPage(tk.Frame):
         for feature in self.features_to_weight:
             row = ttk.Frame(self.form, style="Custom.TFrame")
             row.pack(fill="x", pady=5)
-            label = ttk.Label(row, text=f"Peso para {self.parent.characteristics_page.feature_labels[feature]} (0-10)", width=30, anchor="w", style="Custom.TLabel")
+            label = ttk.Label(row, text=f"Peso para {self.parent.characteristics_page.feature_labels[feature]} (0-10)", width=60, anchor="w", style="Custom.TLabel")
             label.pack(side="left")
             spinbox = ttk.Spinbox(row, from_=0, to=10, width=5)
             spinbox.pack(side="right", fill="x", expand=True)
@@ -230,7 +292,7 @@ class WeightsPage(tk.Frame):
 
         row = ttk.Frame(self.form, style="Custom.TFrame")
         row.pack(fill="x", pady=5)
-        label = ttk.Label(row, text="Peso para Distancia (0-10)", width=30, anchor="w", style="Custom.TLabel")
+        label = ttk.Label(row, text="Peso para Distancia (0-10)", width=60, anchor="w", style="Custom.TLabel")
         label.pack(side="left")
         spinbox = ttk.Spinbox(row, from_=0, to=10, width=5)
         spinbox.pack(side="right", fill="x", expand=True)

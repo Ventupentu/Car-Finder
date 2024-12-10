@@ -717,7 +717,7 @@ AUDI,A3,29900,Diesel,2019,8705,150,5,Automatico,Gris,Madrid,31,714
 AUDI,A3,31900,Diesel,2019,9878,150,5,Automatico,Blanco,Pais Vasco,31,715
 AUDI,A3,24490,Gasolina,2019,24647,150,5,Manual,Gris,Madrid,31,716
 AUDI,A3,23900,Gasolina,2019,36538,116,5,Automatico,Gris,Andalucia,31,717
-AUDI,A3,25892,Gas natural (CNG),2019,0,131,5,Automatico,Blanco,Madrid,31,718
+AUDI,A3,25892,Gas natural,2019,0,131,5,Automatico,Blanco,Madrid,31,718
 AUDI,A3,24500,Gasolina,2019,42000,150,5,Automatico,Blanco,Cataluña,31,719
 AUDI,A3,27500,Gasolina,2019,3845,150,5,Manual,Azul,Andalucia,31,720
 AUDI,A3,27890,Diesel,2019,29155,150,5,Automatico,Gris,Madrid,31,721
@@ -782,7 +782,7 @@ AUDI,A3,23590,Gasolina,2018,64000,116,2,Automatico,Blanco,Madrid,31,779
 AUDI,A3,51990,Gasolina,2018,32000,400,5,Automatico,Gris,Canarias,31,780
 AUDI,A3,15490,Diesel,2017,89000,116,3,Manual,Gris,Madrid,31,781
 AUDI,A3,16200,Diesel,2017,112000,116,5,Manual,Negro,Madrid,31,782
-AUDI,A3,17799,Gas natural (CNG),2017,67236,110,5,Manual,Blanco,Andalucia,31,783
+AUDI,A3,17799,Gas natural,2017,67236,110,5,Manual,Blanco,Andalucia,31,783
 AUDI,A3,15400,Diesel,2017,81445,116,5,Manual,Azul,Galicia,31,784
 AUDI,A3,16500,Diesel,2017,68000,116,5,Manual,Blanco,Pais Vasco,31,785
 AUDI,A3,16499,Diesel,2017,100000,116,5,Automatico,Azul,Castilla y Leon,31,786
@@ -793,7 +793,7 @@ AUDI,A3,25900,Diesel,2017,26500,150,5,Manual,Gris,Galicia,31,790
 AUDI,A3,18495,Diesel,2017,130000,150,4,Automatico,Blanco,Andalucia,31,791
 AUDI,A3,19900,Gasolina,2017,65166,150,5,Manual,Gris,Cataluña,31,792
 AUDI,A3,17900,Diesel,2017,90000,116,5,Manual,Blanco,Andalucia,31,793
-AUDI,A3,17800,Gas natural (CNG),2017,67236,110,5,Manual,Blanco,Andalucia,31,794
+AUDI,A3,17800,Gas natural,2017,67236,110,5,Manual,Blanco,Andalucia,31,794
 AUDI,A3,18500,Diesel,2017,50000,116,5,Manual,Gris,Extremadura,31,795
 AUDI,A3,16200,Diesel,2017,93351,150,5,Manual,Negro,Valencia,31,796
 AUDI,A3,18970,Diesel,2017,147000,150,4,Automatico,Negro,Galicia,31,797
@@ -814,7 +814,7 @@ AUDI,A3,50500,Gasolina,2017,60000,400,5,Automatico,Gris,Galicia,31,811
 AUDI,A3,49900,Gasolina,2017,59000,400,5,Automatico,Blanco,Valencia,31,812
 AUDI,A3,24990,Diesel,2017,99980,150,5,Manual,Blanco,Galicia,31,813
 AUDI,A3,16300,Diesel,2017,117604,150,5,Manual,Gris,Madrid,31,814
-AUDI,A3,17799,Gas natural (CNG),2017,67236,110,5,Manual,Blanco,Andalucia,31,815
+AUDI,A3,17799,Gas natural,2017,67236,110,5,Manual,Blanco,Andalucia,31,815
 AUDI,A3,16500,Diesel,2017,42000,110,3,Manual,Blanco,Cataluña,31,816
 AUDI,A3,19900,Diesel,2017,55546,116,5,Manual,Gris,Pais Vasco,31,817
 AUDI,A3,23490,Gasolina,2017,75000,150,5,Automatico,Gris,Asturias,31,818
@@ -849,12 +849,12 @@ AUDI,A3,18900,Diesel,2017,26000,116,5,Manual,Marron,Cataluña,31,846
 AUDI,A3,16500,Diesel,2017,109000,116,5,Manual,Negro,Extremadura,31,847
 AUDI,A3,16550,Diesel,2017,85417,110,5,Manual,Blanco,Madrid,31,848
 AUDI,A3,17990,Diesel,2017,90000,116,5,Manual,Blanco,Pais Vasco,31,849
-AUDI,A3,16900,Gas natural (CNG),2017,99000,110,5,Manual,Blanco,Castilla La Mancha,31,850
+AUDI,A3,16900,Gas natural,2017,99000,110,5,Manual,Blanco,Castilla La Mancha,31,850
 AUDI,A3,20900,Diesel,2017,60000,150,3,Manual,Blanco,Murcia,31,851
 AUDI,A3,20990,Diesel,2017,100000,184,5,Automatico,Blanco,Andalucia,31,852
 AUDI,A3,20900,Diesel,2017,134000,150,5,Manual,Negro,Galicia,31,853
 AUDI,A3,17850,Diesel,2017,95238,110,5,Automatico,Azul,Andalucia,31,854
-AUDI,A3,17800,Gas natural (CNG),2017,67236,110,5,Manual,Blanco,Madrid,31,855
+AUDI,A3,17800,Gas natural,2017,67236,110,5,Manual,Blanco,Madrid,31,855
 AUDI,A3,23900,Gasolina,2017,52408,190,4,Manual,Blanco,Aragon,31,856
 AUDI,A3,15999,Diesel,2017,132000,116,5,Manual,Blanco,Galicia,31,857
 AUDI,A3,23790,Diesel,2017,92994,150,5,Automatico,Negro,Galicia,31,858
@@ -1544,7 +1544,7 @@ AUDI,A4,35500,Gasolina,2019,24995,150,5,Automatico,Negro,Andalucia,32,1541
 AUDI,A4,37100,Diesel,2019,27942,150,5,Automatico,Blanco,Andalucia,32,1542
 AUDI,A4,22990,Gasolina,2019,37000,150,4,Automatico,Negro,Cataluña,32,1543
 AUDI,A4,22200,Gasolina,2019,55546,150,4,Automatico,Negro,Valencia,32,1544
-AUDI,A4,33500,Gas natural (CNG),2019,9999,170,5,Automatico,Blanco,Madrid,32,1545
+AUDI,A4,33500,Gas natural,2019,9999,170,5,Automatico,Blanco,Madrid,32,1545
 AUDI,A4,22200,Gasolina,2019,52847,150,4,Automatico,Negro,Madrid,32,1546
 AUDI,A4,33500,Diesel,2019,21718,150,4,Automatico,Gris,Murcia,32,1547
 AUDI,A4,22200,Gasolina,2019,58019,150,4,Automatico,Negro,Aragon,32,1548
@@ -2531,7 +2531,7 @@ AUDI,A5,31200,Diesel,2017,71361,190,5,Automatico,Azul,Madrid,35,2528
 AUDI,A5,34700,Diesel,2017,51242,190,2,Automatico,Blanco,Madrid,35,2529
 AUDI,A5,34900,Diesel,2017,53000,190,5,Automatico,Rojo,Cataluña,35,2530
 AUDI,A5,36990,Diesel,2017,145000,286,5,Automatico,Negro,Madrid,35,2531
-AUDI,A5,34900,Gas natural (CNG),2017,37087,170,5,Automatico,Blanco,Madrid,35,2532
+AUDI,A5,34900,Gas natural,2017,37087,170,5,Automatico,Blanco,Madrid,35,2532
 AUDI,A5,29890,Diesel,2017,99900,190,5,Automatico,Negro,Madrid,35,2533
 AUDI,A5,31400,Diesel,2017,67809,150,5,Automatico,Negro,Madrid,35,2534
 AUDI,A5,29800,Diesel,2017,108000,272,5,Automatico,Gris,Asturias,35,2535
@@ -11098,7 +11098,7 @@ CITROEN,C-Elysee,11900,Diesel,2018,25174,100,4,Manual,Negro,Madrid,140,11095
 CITROEN,C-Elysee,9690,Gasolina,2018,92411,82,4,Manual,Azul,Madrid,140,11096
 CITROEN,C-Elysee,11900,Diesel,2018,28006,102,4,Manual,Azul,Andalucia,140,11097
 CITROEN,C-Elysee,8995,Gasolina,2018,84200,82,4,Manual,Gris,Murcia,140,11098
-CITROEN,C-Elysee,6990,Gas licuado (GLP),2017,145000,115,4,Manual,Blanco,Castilla y Leon,140,11099
+CITROEN,C-Elysee,6990,Gas licuado,2017,145000,115,4,Manual,Blanco,Castilla y Leon,140,11099
 CITROEN,C-Elysee,7990,Gasolina,2017,72200,82,4,Manual,Azul,Andalucia,140,11100
 CITROEN,C-Elysee,11500,Gasolina,2017,31428,115,4,Manual,Marron,Madrid,140,11101
 CITROEN,C-Elysee,7890,Gasolina,2017,59202,82,4,Manual,Gris,Madrid,140,11102
@@ -11935,25 +11935,25 @@ CUPRA,Leon,36900,Hibrido enchufable,2020,45,245,5,Automatico,Gris,Castilla y Leo
 CUPRA,Leon,37900,Hibrido enchufable,2020,10,245,5,Automatico,Gris,Madrid,180,11933
 DACIA,Dokker,15900,Diesel,2020,12,95,4,Manual,Blanco,Cataluña,181,11934
 DACIA,Dokker,11000,Diesel,2020,23000,95,4,Manual,Blanco,Asturias,181,11935
-DACIA,Dokker,8000,Gas licuado (GLP),2019,49897,98,4,Manual,Blanco,Madrid,181,11936
+DACIA,Dokker,8000,Gas licuado,2019,49897,98,4,Manual,Blanco,Madrid,181,11936
 DACIA,Dokker,11000,Diesel,2019,22000,75,4,Manual,Blanco,Valencia,181,11937
 DACIA,Dokker,11900,Diesel,2019,26000,90,4,Manual,Blanco,Cataluña,181,11938
 DACIA,Dokker,9500,Gasolina,2018,45485,102,4,Manual,Blanco,Andalucia,181,11939
 DACIA,Dokker,7600,Diesel,2018,44000,75,4,Manual,Azul,Aragon,181,11940
 DACIA,Dokker,8900,Diesel,2018,59033,90,4,Manual,Blanco,Madrid,181,11941
 DACIA,Dokker,10700,Diesel,2018,59400,75,4,Manual,Blanco,Islas Baleares,181,11942
-DACIA,Dokker,9499,Gas licuado (GLP),2018,87000,98,4,Manual,Blanco,Madrid,181,11943
+DACIA,Dokker,9499,Gas licuado,2018,87000,98,4,Manual,Blanco,Madrid,181,11943
 DACIA,Dokker,7960,Diesel,2018,37041,90,4,Manual,Blanco,Galicia,181,11944
 DACIA,Dokker,8900,Diesel,2018,59033,90,4,Manual,Blanco,Cataluña,181,11945
 DACIA,Dokker,9999,Diesel,2018,80000,75,4,Manual,Blanco,Madrid,181,11946
 DACIA,Dokker,6603,Diesel,2018,124000,90,4,Manual,Blanco,Madrid,181,11947
 DACIA,Dokker,7900,Diesel,2017,141070,90,4,Manual,Blanco,Valencia,181,11948
 DACIA,Dokker,7500,Gasolina,2017,43500,100,4,Manual,Blanco,Castilla y Leon,181,11949
-DACIA,Dokker,7678,Gas licuado (GLP),2017,72000,98,4,Manual,Blanco,Madrid,181,11950
+DACIA,Dokker,7678,Gas licuado,2017,72000,98,4,Manual,Blanco,Madrid,181,11950
 DACIA,Dokker,8350,Diesel,2017,58800,90,4,Manual,Blanco,Pais Vasco,181,11951
 DACIA,Dokker,9999,Diesel,2017,49000,75,4,Manual,Blanco,Madrid,181,11952
-DACIA,Dokker,7500,Gas licuado (GLP),2017,60000,98,4,Manual,Blanco,Valencia,181,11953
-DACIA,Dokker,8000,Gas licuado (GLP),2017,50400,98,4,Manual,Blanco,Madrid,181,11954
+DACIA,Dokker,7500,Gas licuado,2017,60000,98,4,Manual,Blanco,Valencia,181,11953
+DACIA,Dokker,8000,Gas licuado,2017,50400,98,4,Manual,Blanco,Madrid,181,11954
 DACIA,Dokker,7500,Diesel,2017,118000,90,4,Manual,Blanco,Aragon,181,11955
 DACIA,Dokker,9300,Diesel,2017,85000,90,4,Manual,Blanco,Asturias,181,11956
 DACIA,Dokker,7500,Diesel,2016,51000,75,4,Manual,Blanco,Madrid,181,11957
@@ -11976,7 +11976,7 @@ DACIA,Dokker,6500,Diesel,2014,120000,75,4,Manual,Blanco,Asturias,181,11973
 DACIA,Duster,18400,Gasolina,2020,1,130,5,Manual,Blanco,Castilla La Mancha,182,11974
 DACIA,Duster,19500,Gasolina,2020,10740,130,5,Manual,Naranja,Asturias,182,11975
 DACIA,Duster,17800,Gasolina,2020,6,150,5,Manual,Rojo,Madrid,182,11976
-DACIA,Duster,14900,Gas licuado (GLP),2020,8,100,5,Manual,Blanco,Aragon,182,11977
+DACIA,Duster,14900,Gas licuado,2020,8,100,5,Manual,Blanco,Aragon,182,11977
 DACIA,Duster,16500,Gasolina,2020,10,100,5,Manual,Gris,Andalucia,182,11978
 DACIA,Duster,18800,Diesel,2020,1,115,5,Manual,Blanco,Castilla La Mancha,182,11979
 DACIA,Duster,16700,Gasolina,2020,4,130,5,Manual,Beige,Extremadura,182,11980
@@ -11993,7 +11993,7 @@ DACIA,Duster,13290,Diesel,2018,55748,90,5,Manual,Blanco,Madrid,182,11990
 DACIA,Duster,12900,Gasolina,2018,43000,125,5,Manual,Gris,Castilla y Leon,182,11991
 DACIA,Duster,10800,Diesel,2017,121000,109,5,Manual,Blanco,Andalucia,182,11992
 DACIA,Duster,11000,Diesel,2017,120000,110,5,Manual,Blanco,Andalucia,182,11993
-DACIA,Duster,9500,Gas licuado (GLP),2017,84000,109,5,Automatico,Blanco,Andalucia,182,11994
+DACIA,Duster,9500,Gas licuado,2017,84000,109,5,Automatico,Blanco,Andalucia,182,11994
 DACIA,Duster,9485,Diesel,2017,59995,110,5,Manual,Blanco,Canarias,182,11995
 DACIA,Duster,9800,Diesel,2016,150000,109,5,Manual,Blanco,Murcia,182,11996
 DACIA,Duster,10800,Diesel,2016,124000,109,5,Manual,Blanco,Cataluña,182,11997
@@ -12027,7 +12027,7 @@ DACIA,Duster,5990,Gasolina,2012,68000,105,5,Manual,Azul,Canarias,182,12024
 DACIA,Duster,8499,Diesel,2011,84000,109,5,Manual,Blanco,Andalucia,182,12025
 DACIA,Duster,4450,Diesel,2011,210000,90,5,Manual,Gris,Madrid,182,12026
 DACIA,Duster,7500,Diesel,2010,152000,85,5,Manual,Negro,Navarra,182,12027
-DACIA,Lodgy,14400,Gas licuado (GLP),2020,1,107,5,Manual,Blanco,Castilla La Mancha,183,12028
+DACIA,Lodgy,14400,Gas licuado,2020,1,107,5,Manual,Blanco,Castilla La Mancha,183,12028
 DACIA,Lodgy,13900,Gasolina,2019,18405,102,5,Manual,Blanco,Cataluña,183,12029
 DACIA,Lodgy,13900,Diesel,2018,17000,107,5,Manual,Negro,Madrid,183,12030
 DACIA,Lodgy,10495,Gasolina,2018,49000,102,5,Manual,Blanco,Madrid,183,12031
@@ -12065,7 +12065,7 @@ DACIA,Logan,10700,Gasolina,2020,9553,90,5,Manual,Gris,Andalucia,184,12062
 DACIA,Logan,10700,Diesel,2020,5000,95,4,Manual,Blanco,Pais Vasco,184,12063
 DACIA,Logan,9890,Gasolina,2019,5000,73,5,Manual,Marron,Aragon,184,12064
 DACIA,Logan,8150,Gasolina,2019,6492,73,4,Manual,Azul,Canarias,184,12065
-DACIA,Logan,8150,Gas licuado (GLP),2018,75412,90,4,Manual,Blanco,Cataluña,184,12066
+DACIA,Logan,8150,Gas licuado,2018,75412,90,4,Manual,Blanco,Cataluña,184,12066
 DACIA,Logan,7100,Diesel,2018,40000,75,4,Manual,Blanco,Madrid,184,12067
 DACIA,Logan,6990,Diesel,2017,29000,90,5,Manual,Blanco,Canarias,184,12068
 DACIA,Logan,7450,Diesel,2016,93000,90,5,Manual,Blanco,Andalucia,184,12069
@@ -12078,7 +12078,7 @@ DACIA,Logan,8500,Diesel,2015,48000,90,5,Manual,Rojo,Valencia,184,12075
 DACIA,Logan,6490,Diesel,2015,113000,75,4,Manual,Azul,Cataluña,184,12076
 DACIA,Logan,6490,Diesel,2015,113000,75,4,Manual,Azul,Andalucia,184,12077
 DACIA,Logan,4000,Gasolina,2015,45700,120,5,Manual,Gris,Canarias,184,12078
-DACIA,Logan,8500,Gas licuado (GLP),2015,61500,72,4,Manual,Blanco,Cantabria,184,12079
+DACIA,Logan,8500,Gas licuado,2015,61500,72,4,Manual,Blanco,Cantabria,184,12079
 DACIA,Logan,6490,Diesel,2015,113000,75,4,Manual,Azul,Valencia,184,12080
 DACIA,Logan,2700,Gasolina,2015,254000,75,4,Manual,Blanco,Valencia,184,12081
 DACIA,Logan,4495,Gasolina,2014,90000,75,5,Manual,Blanco,Canarias,184,12082
@@ -12103,17 +12103,17 @@ DACIA,Logan,1800,Gasolina,2006,135000,75,4,Manual,Azul,La Rioja,184,12100
 DACIA,Marron,13525,Gasolina,2021,10,91,5,Manual,Rojo,Madrid,185,12101
 DACIA,Marron,10990,Gasolina,2021,2,67,5,Manual,Azul,Madrid,185,12102
 DACIA,Marron,11690,Diesel,2020,0,95,5,Manual,Azul,Madrid,185,12103
-DACIA,Marron,11900,Gas licuado (GLP),2020,1,100,5,Manual,Blanco,Castilla La Mancha,185,12104
+DACIA,Marron,11900,Gas licuado,2020,1,100,5,Manual,Blanco,Castilla La Mancha,185,12104
 DACIA,Marron,13500,Diesel,2020,1,95,5,Manual,Blanco,Castilla La Mancha,185,12105
 DACIA,Marron,11900,Diesel,2020,1,95,5,Manual,Blanco,Castilla La Mancha,185,12106
-DACIA,Marron,11600,Gas licuado (GLP),2020,1,100,5,Manual,Blanco,Castilla La Mancha,185,12107
+DACIA,Marron,11600,Gas licuado,2020,1,100,5,Manual,Blanco,Castilla La Mancha,185,12107
 DACIA,Marron,12700,Diesel,2020,5,95,5,Manual,Blanco,Aragon,185,12108
 DACIA,Marron,10900,Gasolina,2020,10,100,5,Manual,Blanco,Madrid,185,12109
 DACIA,Marron,14500,Diesel,2020,10500,95,5,Manual,Gris,Pais Vasco,185,12110
 DACIA,Marron,11990,Gasolina,2020,10,100,5,Manual,Azul,Madrid,185,12111
 DACIA,Marron,12600,Diesel,2019,14162,95,5,Manual,Azul,Andalucia,185,12112
 DACIA,Marron,10150,Gasolina,2019,42833,90,5,Manual,Gris,Madrid,185,12113
-DACIA,Marron,12400,Gas licuado (GLP),2019,23000,90,5,Manual,Blanco,Castilla y Leon,185,12114
+DACIA,Marron,12400,Gas licuado,2019,23000,90,5,Manual,Blanco,Castilla y Leon,185,12114
 DACIA,Marron,10800,Gasolina,2019,5500,90,5,Manual,Blanco,Cataluña,185,12115
 DACIA,Marron,10300,Diesel,2019,15317,95,5,Manual,Blanco,Madrid,185,12116
 DACIA,Marron,8930,Gasolina,2019,20000,73,5,Manual,Azul,Andalucia,185,12117
@@ -12292,7 +12292,7 @@ DODGE,Journey,5750,Diesel,2008,199000,140,5,Manual,Gris,Madrid,201,12289
 DODGE,Nitro,10900,Diesel,2008,39000,177,5,Automatico,Rojo,Madrid,202,12290
 DODGE,Nitro,8500,Diesel,2008,169000,177,5,Manual,Negro,Castilla y Leon,202,12291
 DODGE,Viper,29600,Gasolina,2005,95017,506,2,Automatico,Rojo,Cataluña,203,12292
-DR AUTOMOBILES,DR3,16990,Gas licuado (GLP),2020,1,98,5,Manual,Blanco,Andalucia,204,12293
+DR AUTOMOBILES,DR3,16990,Gas licuado,2020,1,98,5,Manual,Blanco,Andalucia,204,12293
 DS,DS 3,16950,Gasolina,2019,8626,110,3,Automatico,Negro,Madrid,205,12294
 DS,DS 3,16490,Gasolina,2019,195,110,3,Automatico,Rojo,Valencia,205,12295
 DS,DS 3,12490,Gasolina,2018,19271,82,3,Manual,Blanco,Andalucia,205,12296
@@ -12459,7 +12459,7 @@ FIAT,500,16750,Gasolina,2020,1,70,3,Manual,Blanco,Valencia,227,12456
 FIAT,500,12100,Gasolina,2020,300,70,3,Manual,Gris,Madrid,227,12457
 FIAT,500,12500,Gasolina,2020,7749,69,3,Automatico,Negro,Andalucia,227,12458
 FIAT,500,12999,Gasolina,2020,9300,69,3,Automatico,Negro,Andalucia,227,12459
-FIAT,500,14490,Gas licuado (GLP),2020,1,69,3,Manual,Blanco,Aragon,227,12460
+FIAT,500,14490,Gas licuado,2020,1,69,3,Manual,Blanco,Aragon,227,12460
 FIAT,500,17900,Gasolina,2020,0,69,3,Manual,Blanco,Pais Vasco,227,12461
 FIAT,500,16240,Hibrido,2020,1,70,3,Manual,Granate,Madrid,227,12462
 FIAT,500,14500,Hibrido,2020,6,70,3,Manual,Blanco,Cataluña,227,12463
@@ -12472,7 +12472,7 @@ FIAT,500,13950,Hibrido,2020,1200,70,3,Manual,Negro,Castilla y Leon,227,12469
 FIAT,500,12995,Hibrido,2020,4799,70,3,Manual,Rojo,Andalucia,227,12470
 FIAT,500,30900,Electrico,2020,1000,118,3,Automatico,Azul,Cataluña,227,12471
 FIAT,500,14300,Gasolina,2020,300,70,3,Manual,Granate,Madrid,227,12472
-FIAT,500,13990,Gas licuado (GLP),2020,10,69,3,Manual,Blanco,Castilla La Mancha,227,12473
+FIAT,500,13990,Gas licuado,2020,10,69,3,Manual,Blanco,Castilla La Mancha,227,12473
 FIAT,500,12200,Gasolina,2020,0,69,3,Automatico,Negro,Valencia,227,12474
 FIAT,500,33500,Electrico,2020,5,118,3,Automatico,Gris,Madrid,227,12475
 FIAT,500,17200,Hibrido,2020,1,70,3,Manual,Verde,Pais Vasco,227,12476
@@ -12483,7 +12483,7 @@ FIAT,500,17500,Hibrido,2020,0,70,3,Automatico,Blanco,Cataluña,227,12480
 FIAT,500,13600,Hibrido,2020,3000,70,3,Manual,Gris,Andalucia,227,12481
 FIAT,500,12995,Gasolina,2020,3384,69,3,Automatico,Gris,Andalucia,227,12482
 FIAT,500,14700,Hibrido,2020,1,70,3,Manual,Negro,Madrid,227,12483
-FIAT,500,14900,Gas licuado (GLP),2020,1,69,3,Manual,Blanco,Andalucia,227,12484
+FIAT,500,14900,Gas licuado,2020,1,69,3,Manual,Blanco,Andalucia,227,12484
 FIAT,500,12800,Gasolina,2020,5,69,3,Manual,Negro,Castilla y Leon,227,12485
 FIAT,500,11990,Gasolina,2020,705,69,3,Manual,Gris,Galicia,227,12486
 FIAT,500,16400,Hibrido,2020,1,70,3,Manual,Verde,Castilla y Leon,227,12487
@@ -12507,7 +12507,7 @@ FIAT,500,10500,Gasolina,2019,30084,69,3,Manual,Gris,Andalucia,227,12504
 FIAT,500,10690,Gasolina,2019,19551,69,3,Manual,Azul,Madrid,227,12505
 FIAT,500,10850,Gasolina,2019,30355,69,3,Manual,Negro,Cataluña,227,12506
 FIAT,500,10600,Gasolina,2019,11738,69,3,Manual,Rojo,Asturias,227,12507
-FIAT,500,11500,Gas licuado (GLP),2019,9247,69,3,Manual,Blanco,Madrid,227,12508
+FIAT,500,11500,Gas licuado,2019,9247,69,3,Manual,Blanco,Madrid,227,12508
 FIAT,500,10000,Gasolina,2019,31115,69,3,Manual,Beige,Valencia,227,12509
 FIAT,500,10600,Gasolina,2019,32317,69,3,Manual,Gris,Asturias,227,12510
 FIAT,500,9990,Gasolina,2019,19000,69,3,Manual,Blanco,Canarias,227,12511
@@ -12521,9 +12521,9 @@ FIAT,500,10990,Gasolina,2019,26560,69,3,Manual,Rojo,Aragon,227,12518
 FIAT,500,8900,Gasolina,2019,29000,69,3,Manual,Blanco,Cataluña,227,12519
 FIAT,500,9990,Gasolina,2019,19000,69,3,Manual,Azul,Canarias,227,12520
 FIAT,500,10500,Gasolina,2019,21145,69,3,Manual,Blanco,Valencia,227,12521
-FIAT,500,11450,Gas licuado (GLP),2019,9000,69,3,Manual,Blanco,Madrid,227,12522
+FIAT,500,11450,Gas licuado,2019,9000,69,3,Manual,Blanco,Madrid,227,12522
 FIAT,500,9500,Gasolina,2019,32000,69,3,Manual,Blanco,Galicia,227,12523
-FIAT,500,10990,Gas licuado (GLP),2019,28000,69,3,Manual,Blanco,Valencia,227,12524
+FIAT,500,10990,Gas licuado,2019,28000,69,3,Manual,Blanco,Valencia,227,12524
 FIAT,500,10000,Gasolina,2019,12500,69,3,Manual,Rojo,Valencia,227,12525
 FIAT,500,10250,Gasolina,2019,18000,69,3,Manual,Azul,Canarias,227,12526
 FIAT,500,10600,Gasolina,2019,20040,69,3,Manual,Gris,Andalucia,227,12527
@@ -12542,7 +12542,7 @@ FIAT,500,10990,Gasolina,2019,15615,69,3,Manual,Gris,Andalucia,227,12539
 FIAT,500,10000,Gasolina,2019,31640,69,3,Manual,Negro,Valencia,227,12540
 FIAT,500,9600,Gasolina,2019,10580,69,3,Manual,Blanco,Islas Baleares,227,12541
 FIAT,500,10500,Gasolina,2019,20000,69,3,Manual,Negro,Cataluña,227,12542
-FIAT,500,12690,Gas licuado (GLP),2019,31053,69,3,Manual,Gris,Andalucia,227,12543
+FIAT,500,12690,Gas licuado,2019,31053,69,3,Manual,Gris,Andalucia,227,12543
 FIAT,500,11500,Gasolina,2019,23550,69,3,Automatico,Rojo,Andalucia,227,12544
 FIAT,500,9600,Gasolina,2019,29000,69,3,Manual,Blanco,Galicia,227,12545
 FIAT,500,10300,Gasolina,2019,23100,69,3,Manual,Azul,Galicia,227,12546
@@ -12661,9 +12661,9 @@ FIAT,500,9650,Gasolina,2018,26653,69,3,Automatico,Blanco,Andalucia,227,12658
 FIAT,500,8800,Gasolina,2018,33000,69,3,Manual,Azul,Islas Baleares,227,12659
 FIAT,500,8490,Gasolina,2018,29000,69,3,Manual,Blanco,Canarias,227,12660
 FIAT,500,10990,Gasolina,2018,42990,69,3,Manual,Blanco,Andalucia,227,12661
-FIAT,500,9600,Gas licuado (GLP),2017,36309,69,3,Manual,Blanco,Valencia,227,12662
+FIAT,500,9600,Gas licuado,2017,36309,69,3,Manual,Blanco,Valencia,227,12662
 FIAT,500,8495,Gasolina,2017,61000,69,3,Manual,Blanco,Canarias,227,12663
-FIAT,500,10999,Gas licuado (GLP),2017,23966,69,3,Manual,Azul,Valencia,227,12664
+FIAT,500,10999,Gas licuado,2017,23966,69,3,Manual,Azul,Valencia,227,12664
 FIAT,500,10500,Gasolina,2017,74999,69,2,Automatico,Gris,Andalucia,227,12665
 FIAT,500,8500,Gasolina,2017,11000,69,3,Manual,Blanco,Cataluña,227,12666
 FIAT,500,8495,Gasolina,2017,58618,69,3,Manual,Rojo,Valencia,227,12667
@@ -12673,19 +12673,19 @@ FIAT,500,9499,Gasolina,2017,28990,69,3,Manual,Negro,Madrid,227,12670
 FIAT,500,7500,Gasolina,2017,40044,69,3,Manual,Blanco,Canarias,227,12671
 FIAT,500,8495,Gasolina,2017,58618,69,3,Manual,Rojo,Valencia,227,12672
 FIAT,500,9970,Gasolina,2017,63000,69,3,Manual,Rojo,Valencia,227,12673
-FIAT,500,8500,Gas licuado (GLP),2017,55000,69,3,Manual,Blanco,Madrid,227,12674
-FIAT,500,9490,Gas licuado (GLP),2017,50290,69,3,Manual,Blanco,Madrid,227,12675
-FIAT,500,9600,Gas licuado (GLP),2017,36309,69,3,Manual,Blanco,Madrid,227,12676
+FIAT,500,8500,Gas licuado,2017,55000,69,3,Manual,Blanco,Madrid,227,12674
+FIAT,500,9490,Gas licuado,2017,50290,69,3,Manual,Blanco,Madrid,227,12675
+FIAT,500,9600,Gas licuado,2017,36309,69,3,Manual,Blanco,Madrid,227,12676
 FIAT,500,7980,Gasolina,2017,59000,105,3,Manual,Rojo,Canarias,227,12677
 FIAT,500,8495,Gasolina,2017,56748,69,3,Manual,Gris,Valencia,227,12678
 FIAT,500,8990,Gasolina,2017,54700,69,3,Manual,Blanco,Cataluña,227,12679
 FIAT,500,8495,Gasolina,2017,28906,69,3,Manual,Granate,Valencia,227,12680
-FIAT,500,9800,Gas licuado (GLP),2017,51000,69,3,Manual,Blanco,Valencia,227,12681
+FIAT,500,9800,Gas licuado,2017,51000,69,3,Manual,Blanco,Valencia,227,12681
 FIAT,500,8485,Gasolina,2017,29995,69,3,Manual,Blanco,Canarias,227,12682
 FIAT,500,7500,Gasolina,2017,38000,69,3,Manual,Rojo,Cataluña,227,12683
 FIAT,500,8300,Gasolina,2017,55357,69,3,Manual,Blanco,Andalucia,227,12684
 FIAT,500,8800,Gasolina,2017,49990,69,3,Manual,Gris,Cataluña,227,12685
-FIAT,500,9100,Gas licuado (GLP),2017,50000,69,3,Manual,Blanco,Cataluña,227,12686
+FIAT,500,9100,Gas licuado,2017,50000,69,3,Manual,Blanco,Cataluña,227,12686
 FIAT,500,8950,Gasolina,2017,45067,69,3,Manual,Azul,Andalucia,227,12687
 FIAT,500,9290,Gasolina,2017,31500,69,3,Manual,Blanco,Madrid,227,12688
 FIAT,500,8990,Gasolina,2017,47000,69,3,Manual,Negro,Pais Vasco,227,12689
@@ -12693,13 +12693,13 @@ FIAT,500,8899,Gasolina,2017,45000,69,3,Manual,Blanco,Islas Baleares,227,12690
 FIAT,500,10655,Gasolina,2017,9999,69,3,Manual,Blanco,Navarra,227,12691
 FIAT,500,8500,Gasolina,2017,42803,69,3,Manual,Azul,Andalucia,227,12692
 FIAT,500,8490,Gasolina,2017,49870,69,3,Manual,Blanco,Andalucia,227,12693
-FIAT,500,10190,Gas licuado (GLP),2017,21500,69,3,Manual,Blanco,Cataluña,227,12694
+FIAT,500,10190,Gas licuado,2017,21500,69,3,Manual,Blanco,Cataluña,227,12694
 FIAT,500,7850,Gasolina,2017,59000,69,3,Manual,Azul,Valencia,227,12695
 FIAT,500,8500,Gasolina,2017,51811,69,3,Manual,Azul,Cataluña,227,12696
 FIAT,500,9450,Gasolina,2017,58491,69,3,Manual,Beige,Andalucia,227,12697
 FIAT,500,8500,Gasolina,2017,85000,69,3,Manual,Blanco,Cantabria,227,12698
 FIAT,500,8650,Gasolina,2017,39150,69,3,Manual,Blanco,Andalucia,227,12699
-FIAT,500,9600,Gas licuado (GLP),2017,36309,69,3,Manual,Blanco,Cataluña,227,12700
+FIAT,500,9600,Gas licuado,2017,36309,69,3,Manual,Blanco,Cataluña,227,12700
 FIAT,500,8799,Gasolina,2017,31432,69,3,Manual,Negro,Madrid,227,12701
 FIAT,500,10500,Gasolina,2017,35000,69,3,Manual,Azul,Cataluña,227,12702
 FIAT,500,8900,Gasolina,2017,42615,69,3,Manual,Blanco,Valencia,227,12703
@@ -12758,7 +12758,7 @@ FIAT,500,7900,Gasolina,2014,63500,185,3,Automatico,Blanco,Castilla y Leon,227,12
 FIAT,500,7490,Diesel,2014,151000,95,3,Manual,Rojo,Madrid,227,12756
 FIAT,500,2300,Gasolina,2014,170000,109,3,Manual,Azul,Madrid,227,12757
 FIAT,500,7000,Gasolina,2014,85000,69,3,Manual,Azul,Cataluña,227,12758
-FIAT,500,6990,Gas licuado (GLP),2014,79445,69,3,Manual,Blanco,Andalucia,227,12759
+FIAT,500,6990,Gas licuado,2014,79445,69,3,Manual,Blanco,Andalucia,227,12759
 FIAT,500,7499,Gasolina,2014,99800,69,3,Manual,Blanco,Andalucia,227,12760
 FIAT,500,7490,Diesel,2014,151000,95,3,Manual,Rojo,Castilla La Mancha,227,12761
 FIAT,500,5600,Gasolina,2013,54000,69,3,Manual,Blanco,Asturias,227,12762
@@ -12768,7 +12768,7 @@ FIAT,500,5990,Gasolina,2013,109000,88,3,Manual,Blanco,Cataluña,227,12765
 FIAT,500,5990,Gasolina,2013,109000,69,3,Manual,Beige,Cataluña,227,12766
 FIAT,500,4500,Gasolina,2013,135000,98,3,Manual,Negro,Canarias,227,12767
 FIAT,500,7699,Gasolina,2013,33001,69,3,Manual,Blanco,Madrid,227,12768
-FIAT,500,6400,Gas licuado (GLP),2013,96000,69,3,Manual,Blanco,Castilla La Mancha,227,12769
+FIAT,500,6400,Gas licuado,2013,96000,69,3,Manual,Blanco,Castilla La Mancha,227,12769
 FIAT,500,5700,Gasolina,2013,85000,69,3,Manual,Blanco,Andalucia,227,12770
 FIAT,500,5200,Gasolina,2013,53500,85,3,Manual,Blanco,Asturias,227,12771
 FIAT,500,5300,Gasolina,2013,79000,115,5,Manual,Blanco,Andalucia,227,12772
@@ -12949,7 +12949,7 @@ FIAT,500X,12990,Gasolina,2017,49000,110,5,Manual,Rojo,Cataluña,230,12946
 FIAT,500X,12490,Gasolina,2017,39000,110,5,Manual,Rojo,Cataluña,230,12947
 FIAT,500X,12690,Diesel,2017,102030,120,5,Manual,Gris,Galicia,230,12948
 FIAT,500X,11500,Diesel,2017,63000,95,5,Manual,Gris,Andalucia,230,12949
-FIAT,500X,14490,Gas licuado (GLP),2017,30876,120,5,Manual,Blanco,Madrid,230,12950
+FIAT,500X,14490,Gas licuado,2017,30876,120,5,Manual,Blanco,Madrid,230,12950
 FIAT,500X,13000,Diesel,2017,75000,120,5,Manual,Gris,Cataluña,230,12951
 FIAT,500X,11999,Gasolina,2017,60000,110,5,Automatico,Beige,Canarias,230,12952
 FIAT,500X,12500,Diesel,2017,58083,95,5,Manual,Blanco,Valencia,230,12953
@@ -13107,17 +13107,17 @@ FIAT,Doblò Cargo,17999,Diesel,2020,1,105,3,Manual,Blanco,Cataluña,238,13104
 FIAT,Doblò Cargo,14990,Diesel,2020,1,95,4,Manual,Blanco,Aragon,238,13105
 FIAT,Doblò Cargo,15990,Diesel,2020,1,95,5,Manual,Blanco,Castilla y Leon,238,13106
 FIAT,Doblò Cargo,16900,Diesel,2020,10,105,4,Manual,Blanco,Cataluña,238,13107
-FIAT,Doblò Cargo,14390,Gas natural (CNG),2019,1,120,3,Manual,Blanco,Madrid,238,13108
+FIAT,Doblò Cargo,14390,Gas natural,2019,1,120,3,Manual,Blanco,Madrid,238,13108
 FIAT,Doblò Cargo,16800,Diesel,2019,1,105,4,Manual,Blanco,Pais Vasco,238,13109
 FIAT,Doblò Cargo,13190,Diesel,2019,35076,95,4,Manual,Blanco,Madrid,238,13110
-FIAT,Doblò Cargo,14990,Gas natural (CNG),2019,24294,120,3,Manual,Blanco,Valencia,238,13111
+FIAT,Doblò Cargo,14990,Gas natural,2019,24294,120,3,Manual,Blanco,Valencia,238,13111
 FIAT,Doblò Cargo,9990,Diesel,2019,11000,95,5,Manual,Blanco,Canarias,238,13112
-FIAT,Doblò Cargo,14500,Gas natural (CNG),2018,38120,120,4,Manual,Blanco,Madrid,238,13113
-FIAT,Doblò Cargo,12900,Gas natural (CNG),2018,30100,120,3,Manual,Blanco,Madrid,238,13114
+FIAT,Doblò Cargo,14500,Gas natural,2018,38120,120,4,Manual,Blanco,Madrid,238,13113
+FIAT,Doblò Cargo,12900,Gas natural,2018,30100,120,3,Manual,Blanco,Madrid,238,13114
 FIAT,Doblò Cargo,10050,Diesel,2018,54000,95,4,Manual,Blanco,Madrid,238,13115
 FIAT,Doblò Cargo,8750,Diesel,2018,81517,95,3,Manual,Blanco,Castilla La Mancha,238,13116
-FIAT,Doblò Cargo,9790,Gas natural (CNG),2018,109000,120,4,Manual,Blanco,Madrid,238,13117
-FIAT,Doblò Cargo,7500,Gas natural (CNG),2018,99000,120,3,Manual,Blanco,Castilla y Leon,238,13118
+FIAT,Doblò Cargo,9790,Gas natural,2018,109000,120,4,Manual,Blanco,Madrid,238,13117
+FIAT,Doblò Cargo,7500,Gas natural,2018,99000,120,3,Manual,Blanco,Castilla y Leon,238,13118
 FIAT,Doblò Cargo,7500,Diesel,2017,100000,90,3,Manual,Blanco,Valencia,238,13119
 FIAT,Doblò Cargo,8550,Diesel,2017,66000,95,3,Manual,Blanco,Madrid,238,13120
 FIAT,Doblò Cargo,8500,Diesel,2017,81372,95,3,Manual,Blanco,Andalucia,238,13121
@@ -13137,7 +13137,7 @@ FIAT,Doblò Cargo,8500,Diesel,2016,92000,90,3,Manual,Blanco,Andalucia,238,13134
 FIAT,Doblò Cargo,5785,Diesel,2016,77000,90,3,Manual,Blanco,Pais Vasco,238,13135
 FIAT,Doblò Cargo,7500,Diesel,2016,122000,90,3,Manual,Blanco,Cataluña,238,13136
 FIAT,Doblò Cargo,5190,Diesel,2015,165000,90,4,Manual,Blanco,Cataluña,238,13137
-FIAT,Doblò Cargo,4550,Gas natural (CNG),2013,114000,120,3,Manual,Blanco,Madrid,238,13138
+FIAT,Doblò Cargo,4550,Gas natural,2013,114000,120,3,Manual,Blanco,Madrid,238,13138
 FIAT,Doblò Cargo,4537,Diesel,2013,162000,90,3,Manual,Blanco,Madrid,238,13139
 FIAT,Doblò Cargo,4537,Diesel,2013,162000,90,3,Manual,Blanco,Madrid,238,13140
 FIAT,Doblò Cargo,3900,Diesel,2012,283400,105,2,Manual,Blanco,Murcia,238,13141
@@ -13217,20 +13217,20 @@ FIAT,Fiorino,14500,Diesel,2020,10,80,4,Manual,Marron,Cataluña,241,13214
 FIAT,Fiorino,13990,Diesel,2020,1,80,3,Manual,Blanco,Aragon,241,13215
 FIAT,Fiorino,13900,Diesel,2020,50,95,3,Manual,Blanco,Galicia,241,13216
 FIAT,Fiorino,11900,Diesel,2020,1,80,4,Manual,Blanco,Pais Vasco,241,13217
-FIAT,Fiorino,8000,Gas natural (CNG),2019,12000,70,3,Manual,Blanco,Valencia,241,13218
-FIAT,Fiorino,9800,Gas natural (CNG),2019,16,70,3,Manual,Blanco,Canarias,241,13219
+FIAT,Fiorino,8000,Gas natural,2019,12000,70,3,Manual,Blanco,Valencia,241,13218
+FIAT,Fiorino,9800,Gas natural,2019,16,70,3,Manual,Blanco,Canarias,241,13219
 FIAT,Fiorino,10900,Diesel,2019,12000,80,4,Manual,Blanco,Aragon,241,13220
 FIAT,Fiorino,10190,Diesel,2019,45854,80,4,Manual,Blanco,Madrid,241,13221
-FIAT,Fiorino,6600,Gas natural (CNG),2018,47000,70,3,Manual,Blanco,Valencia,241,13222
-FIAT,Fiorino,7990,Gas natural (CNG),2018,47000,70,3,Manual,Blanco,Valencia,241,13223
-FIAT,Fiorino,7400,Gas natural (CNG),2017,64079,70,3,Manual,Blanco,Canarias,241,13224
-FIAT,Fiorino,6500,Gas natural (CNG),2017,129000,70,3,Manual,Blanco,Castilla y Leon,241,13225
+FIAT,Fiorino,6600,Gas natural,2018,47000,70,3,Manual,Blanco,Valencia,241,13222
+FIAT,Fiorino,7990,Gas natural,2018,47000,70,3,Manual,Blanco,Valencia,241,13223
+FIAT,Fiorino,7400,Gas natural,2017,64079,70,3,Manual,Blanco,Canarias,241,13224
+FIAT,Fiorino,6500,Gas natural,2017,129000,70,3,Manual,Blanco,Castilla y Leon,241,13225
 FIAT,Fiorino,7250,Diesel,2017,62000,80,4,Manual,Blanco,Valencia,241,13226
-FIAT,Fiorino,6590,Gas natural (CNG),2017,90100,70,3,Manual,Blanco,Madrid,241,13227
-FIAT,Fiorino,5450,Gas natural (CNG),2017,118000,70,3,Manual,Blanco,Valencia,241,13228
-FIAT,Fiorino,6650,Gas natural (CNG),2017,95000,70,3,Manual,Blanco,Madrid,241,13229
+FIAT,Fiorino,6590,Gas natural,2017,90100,70,3,Manual,Blanco,Madrid,241,13227
+FIAT,Fiorino,5450,Gas natural,2017,118000,70,3,Manual,Blanco,Valencia,241,13228
+FIAT,Fiorino,6650,Gas natural,2017,95000,70,3,Manual,Blanco,Madrid,241,13229
 FIAT,Fiorino,6700,Diesel,2017,57000,80,3,Manual,Blanco,Valencia,241,13230
-FIAT,Fiorino,6590,Gas natural (CNG),2017,96000,70,3,Manual,Blanco,Madrid,241,13231
+FIAT,Fiorino,6590,Gas natural,2017,96000,70,3,Manual,Blanco,Madrid,241,13231
 FIAT,Fiorino,9190,Diesel,2016,2,95,3,Manual,Blanco,Valencia,241,13232
 FIAT,Fiorino,5900,Diesel,2016,109500,75,4,Manual,Blanco,Valencia,241,13233
 FIAT,Fiorino,7900,Diesel,2016,46000,80,4,Manual,Blanco,Pais Vasco,241,13234
@@ -13323,7 +13323,7 @@ FIAT,Panda,11488,Gasolina,2020,0,69,5,Manual,Blanco,Valencia,248,13320
 FIAT,Panda,12990,Gasolina,2020,1,70,5,Manual,Blanco,Castilla y Leon,248,13321
 FIAT,Panda,9900,Gasolina,2020,1452,69,5,Manual,Blanco,Islas Baleares,248,13322
 FIAT,Panda,12200,Gasolina,2020,15,70,5,Manual,Gris,Andalucia,248,13323
-FIAT,Panda,12200,Gas licuado (GLP),2020,10,69,5,Manual,Blanco,Madrid,248,13324
+FIAT,Panda,12200,Gas licuado,2020,10,69,5,Manual,Blanco,Madrid,248,13324
 FIAT,Panda,15900,Gasolina,2020,7,85,5,Manual,Verde,Navarra,248,13325
 FIAT,Panda,8300,Gasolina,2019,16000,69,5,Manual,Gris,Islas Baleares,248,13326
 FIAT,Panda,8500,Gasolina,2019,13775,69,5,Manual,Azul,Andalucia,248,13327
@@ -13457,14 +13457,14 @@ FIAT,Punto,5000,Gasolina,2014,65000,69,5,Manual,Gris,Andalucia,250,13454
 FIAT,Punto,2700,Diesel,2013,240000,95,5,Manual,Beige,Cataluña,250,13455
 FIAT,Punto,4500,Gasolina,2013,79000,77,5,Manual,Rojo,Canarias,250,13456
 FIAT,Punto,6900,Gasolina,2013,88090,77,5,Automatico,Gris,Andalucia,250,13457
-FIAT,Punto,6400,Gas natural (CNG),2013,138600,70,5,Manual,Blanco,Madrid,250,13458
+FIAT,Punto,6400,Gas natural,2013,138600,70,5,Manual,Blanco,Madrid,250,13458
 FIAT,Punto,3500,Diesel,2013,160000,107,5,Manual,Blanco,Andalucia,250,13459
 FIAT,Punto,5490,Gasolina,2013,159000,77,5,Manual,Negro,Madrid,250,13460
-FIAT,Punto,5300,Gas natural (CNG),2013,140300,70,5,Manual,Blanco,Andalucia,250,13461
+FIAT,Punto,5300,Gas natural,2013,140300,70,5,Manual,Blanco,Andalucia,250,13461
 FIAT,Punto,3000,Diesel,2013,208000,136,5,Manual,Blanco,Valencia,250,13462
-FIAT,Punto,7200,Gas natural (CNG),2013,93000,70,5,Manual,Blanco,Madrid,250,13463
+FIAT,Punto,7200,Gas natural,2013,93000,70,5,Manual,Blanco,Madrid,250,13463
 FIAT,Punto,3800,Gasolina,2013,130000,97,5,Manual,Gris,Madrid,250,13464
-FIAT,Punto,5395,Gas natural (CNG),2013,122500,70,5,Manual,Blanco,Madrid,250,13465
+FIAT,Punto,5395,Gas natural,2013,122500,70,5,Manual,Blanco,Madrid,250,13465
 FIAT,Punto,3500,Diesel,2013,160000,107,5,Manual,Blanco,Andalucia,250,13466
 FIAT,Punto,4300,Diesel,2012,93000,75,5,Manual,Negro,Andalucia,250,13467
 FIAT,Punto,5000,Gasolina,2012,68652,86,5,Manual,Blanco,Andalucia,250,13468
@@ -13723,70 +13723,70 @@ FIAT,Tipo,21500,Gasolina,2019,14000,248,5,Automatico,Negro,Madrid,260,13720
 FIAT,Tipo,16690,Gasolina,2019,1,120,5,Manual,Azul,Galicia,260,13721
 FIAT,Tipo,12450,Diesel,2018,41844,120,5,Manual,Marron,Valencia,260,13722
 FIAT,Tipo,9990,Gasolina,2018,29990,95,4,Manual,Gris,Valencia,260,13723
-FIAT,Tipo,6990,Gas licuado (GLP),2018,78257,120,4,Manual,Negro,Madrid,260,13724
-FIAT,Tipo,6390,Gas licuado (GLP),2018,130000,120,4,Manual,Negro,Madrid,260,13725
-FIAT,Tipo,7390,Gas licuado (GLP),2018,85495,120,4,Manual,Negro,Cataluña,260,13726
-FIAT,Tipo,7490,Gas licuado (GLP),2018,103000,120,4,Manual,Negro,Cataluña,260,13727
-FIAT,Tipo,6500,Gas licuado (GLP),2018,124745,120,4,Manual,Negro,Pais Vasco,260,13728
+FIAT,Tipo,6990,Gas licuado,2018,78257,120,4,Manual,Negro,Madrid,260,13724
+FIAT,Tipo,6390,Gas licuado,2018,130000,120,4,Manual,Negro,Madrid,260,13725
+FIAT,Tipo,7390,Gas licuado,2018,85495,120,4,Manual,Negro,Cataluña,260,13726
+FIAT,Tipo,7490,Gas licuado,2018,103000,120,4,Manual,Negro,Cataluña,260,13727
+FIAT,Tipo,6500,Gas licuado,2018,124745,120,4,Manual,Negro,Pais Vasco,260,13728
 FIAT,Tipo,10995,Gasolina,2018,18000,95,5,Manual,Blanco,Islas Baleares,260,13729
-FIAT,Tipo,7490,Gas licuado (GLP),2018,100856,120,4,Manual,Negro,Madrid,260,13730
+FIAT,Tipo,7490,Gas licuado,2018,100856,120,4,Manual,Negro,Madrid,260,13730
 FIAT,Tipo,11600,Diesel,2018,51750,95,5,Manual,Gris,Andalucia,260,13731
-FIAT,Tipo,7490,Gas licuado (GLP),2018,115000,120,4,Manual,Negro,Andalucia,260,13732
+FIAT,Tipo,7490,Gas licuado,2018,115000,120,4,Manual,Negro,Andalucia,260,13732
 FIAT,Tipo,7800,Gasolina,2018,28000,95,5,Manual,Blanco,Andalucia,260,13733
-FIAT,Tipo,6500,Gas licuado (GLP),2018,124745,120,4,Manual,Negro,Andalucia,260,13734
+FIAT,Tipo,6500,Gas licuado,2018,124745,120,4,Manual,Negro,Andalucia,260,13734
 FIAT,Tipo,11900,Diesel,2018,43000,95,5,Manual,Blanco,Andalucia,260,13735
-FIAT,Tipo,6990,Gas licuado (GLP),2018,99999,120,4,Manual,Negro,Andalucia,260,13736
+FIAT,Tipo,6990,Gas licuado,2018,99999,120,4,Manual,Negro,Andalucia,260,13736
 FIAT,Tipo,12600,Diesel,2018,16175,95,5,Manual,Marron,Pais Vasco,260,13737
 FIAT,Tipo,12500,Diesel,2018,19868,95,5,Manual,Blanco,Valencia,260,13738
 FIAT,Tipo,10900,Diesel,2018,56000,95,5,Manual,Marron,Andalucia,260,13739
 FIAT,Tipo,11500,Gasolina,2018,7000,95,5,Manual,Beige,Andalucia,260,13740
 FIAT,Tipo,12450,Diesel,2018,41844,120,5,Manual,Marron,Valencia,260,13741
-FIAT,Tipo,6490,Gas licuado (GLP),2018,100283,120,4,Manual,Negro,Cataluña,260,13742
-FIAT,Tipo,13990,Gas licuado (GLP),2018,46100,120,5,Manual,Gris,Castilla y Leon,260,13743
+FIAT,Tipo,6490,Gas licuado,2018,100283,120,4,Manual,Negro,Cataluña,260,13742
+FIAT,Tipo,13990,Gas licuado,2018,46100,120,5,Manual,Gris,Castilla y Leon,260,13743
 FIAT,Tipo,9950,Gasolina,2018,27500,95,5,Manual,Marron,Canarias,260,13744
 FIAT,Tipo,18390,Gasolina,2018,0,95,4,Manual,Gris,Cataluña,260,13745
 FIAT,Tipo,8950,Diesel,2018,129000,120,5,Manual,Blanco,Madrid,260,13746
 FIAT,Tipo,12900,Diesel,2018,60500,95,5,Manual,Blanco,Andalucia,260,13747
-FIAT,Tipo,7390,Gas licuado (GLP),2018,99990,120,4,Manual,Negro,Madrid,260,13748
-FIAT,Tipo,8490,Gas licuado (GLP),2018,122415,120,5,Manual,Blanco,Madrid,260,13749
+FIAT,Tipo,7390,Gas licuado,2018,99990,120,4,Manual,Negro,Madrid,260,13748
+FIAT,Tipo,8490,Gas licuado,2018,122415,120,5,Manual,Blanco,Madrid,260,13749
 FIAT,Tipo,11990,Diesel,2018,72378,120,5,Manual,Blanco,Madrid,260,13750
-FIAT,Tipo,6500,Gas licuado (GLP),2018,124745,120,4,Manual,Negro,Andalucia,260,13751
-FIAT,Tipo,7990,Gas licuado (GLP),2018,66500,120,5,Manual,Negro,Madrid,260,13752
+FIAT,Tipo,6500,Gas licuado,2018,124745,120,4,Manual,Negro,Andalucia,260,13751
+FIAT,Tipo,7990,Gas licuado,2018,66500,120,5,Manual,Negro,Madrid,260,13752
 FIAT,Tipo,10790,Diesel,2018,28184,95,5,Manual,Gris,Madrid,260,13753
 FIAT,Tipo,11300,Gasolina,2018,45820,95,5,Manual,Blanco,Madrid,260,13754
-FIAT,Tipo,7490,Gas licuado (GLP),2018,81158,120,5,Manual,Negro,Madrid,260,13755
+FIAT,Tipo,7490,Gas licuado,2018,81158,120,5,Manual,Negro,Madrid,260,13755
 FIAT,Tipo,12400,Diesel,2018,44000,95,5,Manual,Rojo,Galicia,260,13756
-FIAT,Tipo,7290,Gas licuado (GLP),2018,86300,120,4,Manual,Negro,Andalucia,260,13757
-FIAT,Tipo,7290,Gas licuado (GLP),2018,89680,120,4,Manual,Negro,Cataluña,260,13758
-FIAT,Tipo,7990,Gas licuado (GLP),2018,119990,120,5,Manual,Negro,Valencia,260,13759
+FIAT,Tipo,7290,Gas licuado,2018,86300,120,4,Manual,Negro,Andalucia,260,13757
+FIAT,Tipo,7290,Gas licuado,2018,89680,120,4,Manual,Negro,Cataluña,260,13758
+FIAT,Tipo,7990,Gas licuado,2018,119990,120,5,Manual,Negro,Valencia,260,13759
 FIAT,Tipo,18390,Gasolina,2018,0,95,4,Manual,Gris,Valencia,260,13760
 FIAT,Tipo,11290,Diesel,2018,25576,95,5,Manual,Gris,Madrid,260,13761
-FIAT,Tipo,8490,Gas licuado (GLP),2018,92900,120,5,Manual,Negro,Madrid,260,13762
+FIAT,Tipo,8490,Gas licuado,2018,92900,120,5,Manual,Negro,Madrid,260,13762
 FIAT,Tipo,11495,Gasolina,2018,34000,95,5,Manual,Azul,Madrid,260,13763
 FIAT,Tipo,11900,Diesel,2018,54000,95,5,Manual,Beige,Andalucia,260,13764
 FIAT,Tipo,15700,Diesel,2018,46159,120,5,Automatico,Negro,Cataluña,260,13765
-FIAT,Tipo,7490,Gas licuado (GLP),2018,98253,120,5,Manual,Negro,Cataluña,260,13766
-FIAT,Tipo,7790,Gas licuado (GLP),2018,111373,120,4,Manual,Negro,Valencia,260,13767
+FIAT,Tipo,7490,Gas licuado,2018,98253,120,5,Manual,Negro,Cataluña,260,13766
+FIAT,Tipo,7790,Gas licuado,2018,111373,120,4,Manual,Negro,Valencia,260,13767
 FIAT,Tipo,9500,Gasolina,2018,21500,95,5,Manual,Marron,Andalucia,260,13768
 FIAT,Tipo,9450,Gasolina,2018,35178,95,5,Manual,Gris,Valencia,260,13769
-FIAT,Tipo,10000,Gas licuado (GLP),2018,22000,120,5,Manual,Negro,Madrid,260,13770
+FIAT,Tipo,10000,Gas licuado,2018,22000,120,5,Manual,Negro,Madrid,260,13770
 FIAT,Tipo,9999,Gasolina,2018,40637,95,4,Manual,Gris,Cataluña,260,13771
-FIAT,Tipo,9999,Gas licuado (GLP),2018,26000,120,5,Manual,Negro,Madrid,260,13772
+FIAT,Tipo,9999,Gas licuado,2018,26000,120,5,Manual,Negro,Madrid,260,13772
 FIAT,Tipo,8900,Gasolina,2018,50999,120,5,Manual,Negro,Andalucia,260,13773
-FIAT,Tipo,8490,Gas licuado (GLP),2018,122415,120,5,Manual,Blanco,Valencia,260,13774
-FIAT,Tipo,7290,Gas licuado (GLP),2018,89680,120,4,Manual,Negro,Madrid,260,13775
+FIAT,Tipo,8490,Gas licuado,2018,122415,120,5,Manual,Blanco,Valencia,260,13774
+FIAT,Tipo,7290,Gas licuado,2018,89680,120,4,Manual,Negro,Madrid,260,13775
 FIAT,Tipo,15700,Diesel,2018,46159,120,5,Automatico,Negro,Madrid,260,13776
 FIAT,Tipo,14590,Gasolina,2018,9000,120,5,Manual,Blanco,Castilla La Mancha,260,13777
 FIAT,Tipo,9999,Gasolina,2018,40637,95,4,Manual,Gris,Andalucia,260,13778
 FIAT,Tipo,15490,Diesel,2018,31810,120,5,Manual,Azul,Aragon,260,13779
 FIAT,Tipo,12350,Diesel,2018,48859,120,5,Manual,Gris,Valencia,260,13780
 FIAT,Tipo,12500,Gasolina,2018,22000,120,5,Manual,Gris,Canarias,260,13781
-FIAT,Tipo,7490,Gas licuado (GLP),2018,81158,120,5,Manual,Negro,Pais Vasco,260,13782
+FIAT,Tipo,7490,Gas licuado,2018,81158,120,5,Manual,Negro,Pais Vasco,260,13782
 FIAT,Tipo,9500,Diesel,2018,52000,95,5,Manual,Beige,Madrid,260,13783
 FIAT,Tipo,15900,Diesel,2018,9100,120,4,Manual,Gris,Aragon,260,13784
-FIAT,Tipo,7490,Gas licuado (GLP),2018,81158,120,5,Manual,Negro,Andalucia,260,13785
+FIAT,Tipo,7490,Gas licuado,2018,81158,120,5,Manual,Negro,Andalucia,260,13785
 FIAT,Tipo,11450,Diesel,2018,46420,95,5,Manual,Marron,Valencia,260,13786
-FIAT,Tipo,7490,Gas licuado (GLP),2018,86312,120,5,Manual,Negro,Madrid,260,13787
+FIAT,Tipo,7490,Gas licuado,2018,86312,120,5,Manual,Negro,Madrid,260,13787
 FIAT,Tipo,9999,Gasolina,2018,40637,95,4,Manual,Gris,Madrid,260,13788
 FIAT,Tipo,12200,Gasolina,2018,11350,95,5,Manual,Gris,Madrid,260,13789
 FIAT,Tipo,13500,Diesel,2018,98,95,5,Manual,Beige,Navarra,260,13790
@@ -14221,7 +14221,7 @@ FORD,Escort,5500,Gasolina,1988,156000,130,3,Manual,Negro,Galicia,271,14218
 FORD,Escort,1800,Gasolina,1986,123000,165,2,Manual,Blanco,Canarias,271,14219
 FORD,Explorer,65900,Hibrido enchufable,2020,1,450,4,Automatico,Negro,Madrid,272,14220
 FORD,Explorer,5900,Gasolina,1996,170000,156,5,Automatico,Rojo,Valencia,272,14221
-FORD,Fiesta,13600,Gas licuado (GLP),2020,8,75,5,Manual,Blanco,Madrid,273,14222
+FORD,Fiesta,13600,Gas licuado,2020,8,75,5,Manual,Blanco,Madrid,273,14222
 FORD,Fiesta,15100,Gasolina,2020,19904,95,5,Manual,Rojo,Madrid,273,14223
 FORD,Fiesta,12990,Gasolina,2020,10,75,5,Manual,Rojo,Cataluña,273,14224
 FORD,Fiesta,16590,Diesel,2020,2,85,5,Manual,Rojo,Madrid,273,14225
@@ -14230,51 +14230,51 @@ FORD,Fiesta,16990,Hibrido,2020,10,125,5,Manual,Gris,Andalucia,273,14227
 FORD,Fiesta,16500,Gasolina,2020,6000,140,5,Manual,Azul,Aragon,273,14228
 FORD,Fiesta,15990,Diesel,2020,12,85,5,Manual,Gris,Asturias,273,14229
 FORD,Fiesta,13900,Gasolina,2020,15,75,5,Manual,Blanco,Castilla y Leon,273,14230
-FORD,Fiesta,15850,Gas licuado (GLP),2020,7000,75,5,Manual,Blanco,Madrid,273,14231
-FORD,Fiesta,14400,Gas licuado (GLP),2020,10,75,5,Manual,Blanco,Cataluña,273,14232
-FORD,Fiesta,14500,Gas licuado (GLP),2020,0,75,5,Manual,Blanco,Castilla La Mancha,273,14233
+FORD,Fiesta,15850,Gas licuado,2020,7000,75,5,Manual,Blanco,Madrid,273,14231
+FORD,Fiesta,14400,Gas licuado,2020,10,75,5,Manual,Blanco,Cataluña,273,14232
+FORD,Fiesta,14500,Gas licuado,2020,0,75,5,Manual,Blanco,Castilla La Mancha,273,14233
 FORD,Fiesta,16500,Gasolina,2020,5000,140,5,Manual,Blanco,Aragon,273,14234
 FORD,Fiesta,16450,Hibrido,2020,1,125,5,Manual,Gris,Madrid,273,14235
 FORD,Fiesta,16500,Gasolina,2020,5000,140,5,Manual,Blanco,Valencia,273,14236
-FORD,Fiesta,13900,Gas licuado (GLP),2020,94,75,5,Manual,Blanco,Valencia,273,14237
+FORD,Fiesta,13900,Gas licuado,2020,94,75,5,Manual,Blanco,Valencia,273,14237
 FORD,Fiesta,16900,Hibrido,2020,10,125,5,Manual,Azul,Valencia,273,14238
-FORD,Fiesta,15400,Gas licuado (GLP),2020,0,75,5,Manual,Blanco,Cataluña,273,14239
+FORD,Fiesta,15400,Gas licuado,2020,0,75,5,Manual,Blanco,Cataluña,273,14239
 FORD,Fiesta,16500,Gasolina,2020,1,95,5,Manual,Azul,Cataluña,273,14240
-FORD,Fiesta,16750,Gas licuado (GLP),2020,0,75,5,Manual,Blanco,Murcia,273,14241
+FORD,Fiesta,16750,Gas licuado,2020,0,75,5,Manual,Blanco,Murcia,273,14241
 FORD,Fiesta,16900,Gasolina,2020,15,95,5,Manual,Gris,Andalucia,273,14242
 FORD,Fiesta,16500,Gasolina,2020,8,125,5,Manual,Blanco,Madrid,273,14243
-FORD,Fiesta,15900,Gas licuado (GLP),2020,10,75,5,Manual,Azul,Asturias,273,14244
+FORD,Fiesta,15900,Gas licuado,2020,10,75,5,Manual,Azul,Asturias,273,14244
 FORD,Fiesta,16400,Hibrido,2020,1,125,5,Manual,Azul,Madrid,273,14245
 FORD,Fiesta,17900,Gasolina,2020,10,125,5,Manual,Azul,La Rioja,273,14246
 FORD,Fiesta,16500,Gasolina,2020,8,125,5,Manual,Blanco,Castilla y Leon,273,14247
 FORD,Fiesta,16490,Hibrido,2020,1,125,5,Manual,Azul,Madrid,273,14248
 FORD,Fiesta,13900,Gasolina,2020,2000,95,5,Manual,Blanco,Andalucia,273,14249
-FORD,Fiesta,15400,Gas licuado (GLP),2020,0,75,5,Manual,Blanco,Valencia,273,14250
-FORD,Fiesta,15400,Gas licuado (GLP),2020,0,75,5,Manual,Negro,Valencia,273,14251
-FORD,Fiesta,15400,Gas licuado (GLP),2020,0,75,5,Manual,Blanco,Valencia,273,14252
+FORD,Fiesta,15400,Gas licuado,2020,0,75,5,Manual,Blanco,Valencia,273,14250
+FORD,Fiesta,15400,Gas licuado,2020,0,75,5,Manual,Negro,Valencia,273,14251
+FORD,Fiesta,15400,Gas licuado,2020,0,75,5,Manual,Blanco,Valencia,273,14252
 FORD,Fiesta,16990,Hibrido,2020,10,155,5,Manual,Rojo,Andalucia,273,14253
 FORD,Fiesta,17490,Gasolina,2020,100,125,5,Manual,Gris,Castilla La Mancha,273,14254
 FORD,Fiesta,15400,Gasolina,2020,500,95,5,Manual,Blanco,Madrid,273,14255
 FORD,Fiesta,16500,Gasolina,2020,5000,140,5,Manual,Blanco,Cataluña,273,14256
 FORD,Fiesta,16500,Gasolina,2020,5000,140,5,Manual,Blanco,Aragon,273,14257
-FORD,Fiesta,16900,Gas licuado (GLP),2020,10,75,5,Manual,Blanco,Galicia,273,14258
+FORD,Fiesta,16900,Gas licuado,2020,10,75,5,Manual,Blanco,Galicia,273,14258
 FORD,Fiesta,21690,Gasolina,2020,1,125,5,Automatico,Gris,Madrid,273,14259
 FORD,Fiesta,16700,Gasolina,2020,1,95,5,Manual,Rojo,Pais Vasco,273,14260
-FORD,Fiesta,16750,Gas licuado (GLP),2020,0,75,5,Manual,Blanco,Valencia,273,14261
-FORD,Fiesta,15400,Gas licuado (GLP),2020,0,75,5,Manual,Negro,Murcia,273,14262
+FORD,Fiesta,16750,Gas licuado,2020,0,75,5,Manual,Blanco,Valencia,273,14261
+FORD,Fiesta,15400,Gas licuado,2020,0,75,5,Manual,Negro,Murcia,273,14262
 FORD,Fiesta,24450,Gasolina,2020,18000,200,5,Manual,Gris,Cataluña,273,14263
 FORD,Fiesta,16590,Diesel,2020,1,85,5,Manual,Rojo,Castilla La Mancha,273,14264
-FORD,Fiesta,14990,Gas licuado (GLP),2019,8800,75,5,Manual,Blanco,Andalucia,273,14265
+FORD,Fiesta,14990,Gas licuado,2019,8800,75,5,Manual,Blanco,Andalucia,273,14265
 FORD,Fiesta,15990,Gasolina,2019,0,100,5,Manual,Blanco,Pais Vasco,273,14266
 FORD,Fiesta,15900,Gasolina,2019,17652,140,5,Manual,Azul,Valencia,273,14267
-FORD,Fiesta,16970,Gas licuado (GLP),2019,0,75,5,Manual,Blanco,Castilla La Mancha,273,14268
+FORD,Fiesta,16970,Gas licuado,2019,0,75,5,Manual,Blanco,Castilla La Mancha,273,14268
 FORD,Fiesta,10990,Gasolina,2019,14990,100,5,Manual,Blanco,Valencia,273,14269
 FORD,Fiesta,16500,Gasolina,2019,13070,140,5,Manual,Negro,Valencia,273,14270
 FORD,Fiesta,13985,Gasolina,2019,4995,100,5,Manual,Gris,Canarias,273,14271
 FORD,Fiesta,12450,Gasolina,2019,40000,100,5,Manual,Gris,Madrid,273,14272
 FORD,Fiesta,12950,Gasolina,2019,2000,85,5,Manual,Blanco,Madrid,273,14273
 FORD,Fiesta,12900,Gasolina,2019,17126,85,5,Manual,Gris,Cataluña,273,14274
-FORD,Fiesta,17990,Gas licuado (GLP),2019,0,75,5,Manual,Blanco,Valencia,273,14275
+FORD,Fiesta,17990,Gas licuado,2019,0,75,5,Manual,Blanco,Valencia,273,14275
 FORD,Fiesta,14190,Gasolina,2019,4476,100,5,Manual,Rojo,Madrid,273,14276
 FORD,Fiesta,14590,Gasolina,2019,10,85,5,Manual,Azul,Andalucia,273,14277
 FORD,Fiesta,15400,Gasolina,2019,24980,140,5,Manual,Gris,Andalucia,273,14278
@@ -14282,18 +14282,18 @@ FORD,Fiesta,24000,Gasolina,2019,30000,200,5,Manual,Rojo,Asturias,273,14279
 FORD,Fiesta,16800,Diesel,2019,10,85,5,Manual,Blanco,La Rioja,273,14280
 FORD,Fiesta,11850,Gasolina,2019,57000,100,5,Manual,Gris,Cataluña,273,14281
 FORD,Fiesta,14900,Diesel,2019,7000,85,5,Manual,Azul,Valencia,273,14282
-FORD,Fiesta,12950,Gas licuado (GLP),2019,0,75,5,Manual,Blanco,Cataluña,273,14283
+FORD,Fiesta,12950,Gas licuado,2019,0,75,5,Manual,Blanco,Cataluña,273,14283
 FORD,Fiesta,15990,Gasolina,2019,9999,140,5,Manual,Gris,Murcia,273,14284
 FORD,Fiesta,14700,Gasolina,2019,16628,125,5,Manual,Negro,Andalucia,273,14285
-FORD,Fiesta,14990,Gas licuado (GLP),2019,8900,75,5,Manual,Negro,Andalucia,273,14286
+FORD,Fiesta,14990,Gas licuado,2019,8900,75,5,Manual,Negro,Andalucia,273,14286
 FORD,Fiesta,16900,Gasolina,2019,0,100,5,Manual,Blanco,La Rioja,273,14287
-FORD,Fiesta,16500,Gas licuado (GLP),2019,5100,75,5,Manual,Blanco,Andalucia,273,14288
-FORD,Fiesta,15390,Gas licuado (GLP),2019,11678,75,5,Manual,Negro,Madrid,273,14289
+FORD,Fiesta,16500,Gas licuado,2019,5100,75,5,Manual,Blanco,Andalucia,273,14288
+FORD,Fiesta,15390,Gas licuado,2019,11678,75,5,Manual,Negro,Madrid,273,14289
 FORD,Fiesta,11850,Gasolina,2019,57000,100,5,Manual,Gris,Valencia,273,14290
 FORD,Fiesta,16500,Gasolina,2019,10200,140,5,Manual,Gris,Andalucia,273,14291
 FORD,Fiesta,13500,Gasolina,2019,19745,85,5,Manual,Gris,Cataluña,273,14292
-FORD,Fiesta,14900,Gas licuado (GLP),2019,8,75,5,Manual,Blanco,Castilla y Leon,273,14293
-FORD,Fiesta,16970,Gas licuado (GLP),2019,0,75,5,Manual,Blanco,Cataluña,273,14294
+FORD,Fiesta,14900,Gas licuado,2019,8,75,5,Manual,Blanco,Castilla y Leon,273,14293
+FORD,Fiesta,16970,Gas licuado,2019,0,75,5,Manual,Blanco,Cataluña,273,14294
 FORD,Fiesta,9450,Gasolina,2018,37000,85,5,Manual,Gris,Valencia,273,14295
 FORD,Fiesta,10450,Gasolina,2018,20600,85,5,Manual,Azul,Valencia,273,14296
 FORD,Fiesta,9250,Gasolina,2018,57000,85,5,Manual,Azul,Andalucia,273,14297
@@ -14990,7 +14990,7 @@ FORD,Focus,10745,Diesel,2016,122953,120,5,Manual,Gris,Valencia,275,14987
 FORD,Focus,10299,Diesel,2016,47394,120,5,Manual,Negro,Andalucia,275,14988
 FORD,Focus,11590,Diesel,2016,54590,120,5,Manual,Blanco,Andalucia,275,14989
 FORD,Focus,9200,Diesel,2016,127116,120,5,Manual,Blanco,Extremadura,275,14990
-FORD,Focus,8800,Gas licuado (GLP),2016,158000,117,5,Manual,Blanco,Andalucia,275,14991
+FORD,Focus,8800,Gas licuado,2016,158000,117,5,Manual,Blanco,Andalucia,275,14991
 FORD,Focus,10199,Diesel,2016,57684,120,5,Manual,Negro,Andalucia,275,14992
 FORD,Focus,10900,Diesel,2016,73957,120,5,Manual,Negro,Andalucia,275,14993
 FORD,Focus,9249,Diesel,2016,104079,120,5,Manual,Blanco,Madrid,275,14994
@@ -25965,7 +25965,7 @@ MERCEDES-BENZ,Sprinter,23600,Diesel,2014,46051,129,4,Manual,Granate,La Rioja,545
 MERCEDES-BENZ,Sprinter,21300,Diesel,2014,77000,163,4,Automatico,Blanco,Extremadura,545,25963
 MERCEDES-BENZ,Sprinter,11800,Diesel,2014,149900,95,4,Manual,Blanco,Valencia,545,25964
 MERCEDES-BENZ,Sprinter,26500,Diesel,2014,212000,163,4,Automatico,Gris,Valencia,545,25965
-MERCEDES-BENZ,Sprinter,18755,Gas licuado (GLP),2013,137000,156,4,Manual,Blanco,Castilla y Leon,545,25966
+MERCEDES-BENZ,Sprinter,18755,Gas licuado,2013,137000,156,4,Manual,Blanco,Castilla y Leon,545,25966
 MERCEDES-BENZ,Sprinter,18500,Diesel,2013,138060,129,4,Manual,Blanco,Andalucia,545,25967
 MERCEDES-BENZ,Sprinter,27000,Diesel,2012,116900,190,4,Manual,Negro,Andalucia,545,25968
 MERCEDES-BENZ,Sprinter,12000,Diesel,2012,300000,129,4,Manual,Blanco,Valencia,545,25969
@@ -29345,7 +29345,7 @@ OPEL,Astra,8490,Diesel,2016,168000,110,5,Manual,Blanco,Madrid,632,29342
 OPEL,Astra,12500,Diesel,2016,45000,110,5,Manual,Gris,Cataluña,632,29343
 OPEL,Astra,8990,Diesel,2016,110000,136,5,Manual,Blanco,Madrid,632,29344
 OPEL,Astra,10500,Diesel,2016,73632,110,5,Manual,Gris,Castilla La Mancha,632,29345
-OPEL,Astra,5499,Gas licuado (GLP),2016,290000,140,5,Manual,Blanco,Madrid,632,29346
+OPEL,Astra,5499,Gas licuado,2016,290000,140,5,Manual,Blanco,Madrid,632,29346
 OPEL,Astra,8050,Diesel,2016,124000,110,5,Manual,Rojo,Madrid,632,29347
 OPEL,Astra,7990,Diesel,2016,101000,110,4,Manual,Blanco,Madrid,632,29348
 OPEL,Astra,9900,Diesel,2016,84623,110,5,Manual,Blanco,Murcia,632,29349
@@ -29411,7 +29411,7 @@ OPEL,Astra,5500,Diesel,2015,168000,110,5,Manual,Marron,Andalucia,632,29408
 OPEL,Astra,8249,Diesel,2015,107382,110,4,Manual,Blanco,Madrid,632,29409
 OPEL,Astra,6900,Diesel,2015,183500,110,5,Manual,Negro,Galicia,632,29410
 OPEL,Astra,7300,Diesel,2015,222000,119,5,Manual,Blanco,Andalucia,632,29411
-OPEL,Astra,7900,Gas licuado (GLP),2015,150120,140,5,Manual,Gris,Navarra,632,29412
+OPEL,Astra,7900,Gas licuado,2015,150120,140,5,Manual,Gris,Navarra,632,29412
 OPEL,Astra,11600,Diesel,2015,21888,136,5,Manual,Azul,Andalucia,632,29413
 OPEL,Astra,5490,Diesel,2015,307953,110,5,Manual,Marron,Aragon,632,29414
 OPEL,Astra,5490,Diesel,2015,307000,110,5,Manual,Gris,Aragon,632,29415
@@ -30169,7 +30169,7 @@ OPEL,Corsa,9850,Gasolina,2019,29266,90,5,Manual,Negro,Andalucia,637,30166
 OPEL,Corsa,9850,Gasolina,2019,17518,90,5,Manual,Azul,Valencia,637,30167
 OPEL,Corsa,12300,Gasolina,2019,25137,90,5,Automatico,Blanco,Islas Baleares,637,30168
 OPEL,Corsa,9900,Gasolina,2019,36169,90,5,Manual,Azul,Andalucia,637,30169
-OPEL,Corsa,12300,Gas licuado (GLP),2019,15790,90,5,Manual,Blanco,Andalucia,637,30170
+OPEL,Corsa,12300,Gas licuado,2019,15790,90,5,Manual,Blanco,Andalucia,637,30170
 OPEL,Corsa,8800,Gasolina,2019,17815,90,5,Manual,Verde,Andalucia,637,30171
 OPEL,Corsa,12500,Gasolina,2019,19000,150,3,Manual,Rojo,Valencia,637,30172
 OPEL,Corsa,10900,Gasolina,2019,16000,90,5,Manual,Gris,Pais Vasco,637,30173
@@ -30197,10 +30197,10 @@ OPEL,Corsa,8990,Gasolina,2018,49000,90,5,Manual,Gris,Valencia,637,30194
 OPEL,Corsa,8800,Gasolina,2018,84573,75,5,Manual,Blanco,Andalucia,637,30195
 OPEL,Corsa,9490,Gasolina,2018,14000,90,5,Manual,Blanco,Cataluña,637,30196
 OPEL,Corsa,9400,Gasolina,2018,32278,90,5,Manual,Gris,Islas Baleares,637,30197
-OPEL,Corsa,8200,Gas licuado (GLP),2018,29000,90,5,Manual,Blanco,Madrid,637,30198
+OPEL,Corsa,8200,Gas licuado,2018,29000,90,5,Manual,Blanco,Madrid,637,30198
 OPEL,Corsa,10800,Gasolina,2018,51350,100,5,Manual,Gris,Andalucia,637,30199
 OPEL,Corsa,10490,Gasolina,2018,23500,90,5,Manual,Blanco,Valencia,637,30200
-OPEL,Corsa,7950,Gas licuado (GLP),2018,92444,90,5,Manual,Blanco,Murcia,637,30201
+OPEL,Corsa,7950,Gas licuado,2018,92444,90,5,Manual,Blanco,Murcia,637,30201
 OPEL,Corsa,10900,Gasolina,2018,20000,90,3,Manual,Blanco,Valencia,637,30202
 OPEL,Corsa,9990,Gasolina,2018,27263,90,5,Automatico,Gris,Castilla La Mancha,637,30203
 OPEL,Corsa,9000,Gasolina,2018,82000,90,5,Manual,Azul,Andalucia,637,30204
@@ -30211,15 +30211,15 @@ OPEL,Corsa,8990,Gasolina,2018,18774,90,5,Manual,Blanco,Galicia,637,30208
 OPEL,Corsa,9490,Gasolina,2018,24008,90,5,Manual,Blanco,Madrid,637,30209
 OPEL,Corsa,8300,Gasolina,2018,28742,75,5,Manual,Blanco,Galicia,637,30210
 OPEL,Corsa,9990,Gasolina,2018,69000,100,5,Manual,Blanco,Valencia,637,30211
-OPEL,Corsa,8900,Gas licuado (GLP),2018,23000,90,5,Manual,Blanco,Madrid,637,30212
+OPEL,Corsa,8900,Gas licuado,2018,23000,90,5,Manual,Blanco,Madrid,637,30212
 OPEL,Corsa,8990,Gasolina,2018,14200,90,5,Manual,Blanco,Galicia,637,30213
-OPEL,Corsa,8900,Gas licuado (GLP),2018,23000,90,5,Manual,Blanco,Cataluña,637,30214
+OPEL,Corsa,8900,Gas licuado,2018,23000,90,5,Manual,Blanco,Cataluña,637,30214
 OPEL,Corsa,9500,Gasolina,2018,50638,90,5,Manual,Gris,Andalucia,637,30215
 OPEL,Corsa,13990,Gasolina,2018,32600,150,3,Manual,Blanco,Cataluña,637,30216
 OPEL,Corsa,11500,Gasolina,2018,31000,90,5,Manual,Blanco,Cataluña,637,30217
 OPEL,Corsa,8450,Gasolina,2018,23531,90,5,Manual,Blanco,Aragon,637,30218
 OPEL,Corsa,9790,Diesel,2018,78855,75,5,Manual,Blanco,Madrid,637,30219
-OPEL,Corsa,10000,Gas licuado (GLP),2018,40000,90,5,Manual,Rojo,Madrid,637,30220
+OPEL,Corsa,10000,Gas licuado,2018,40000,90,5,Manual,Rojo,Madrid,637,30220
 OPEL,Corsa,8500,Gasolina,2018,47894,90,3,Manual,Azul,Andalucia,637,30221
 OPEL,Corsa,13990,Gasolina,2018,35683,150,3,Manual,Blanco,Cataluña,637,30222
 OPEL,Corsa,8500,Gasolina,2018,16400,90,5,Manual,Blanco,Valencia,637,30223
@@ -30228,8 +30228,8 @@ OPEL,Corsa,9600,Gasolina,2018,35280,90,5,Manual,Negro,Valencia,637,30225
 OPEL,Corsa,13990,Gasolina,2018,27610,150,3,Manual,Blanco,Cataluña,637,30226
 OPEL,Corsa,9500,Gasolina,2018,44261,90,5,Manual,Gris,Andalucia,637,30227
 OPEL,Corsa,14990,Gasolina,2018,35000,150,3,Manual,Naranja,Asturias,637,30228
-OPEL,Corsa,7950,Gas licuado (GLP),2018,92444,90,5,Manual,Blanco,Valencia,637,30229
-OPEL,Corsa,7850,Gas licuado (GLP),2018,71000,90,5,Manual,Blanco,Valencia,637,30230
+OPEL,Corsa,7950,Gas licuado,2018,92444,90,5,Manual,Blanco,Valencia,637,30229
+OPEL,Corsa,7850,Gas licuado,2018,71000,90,5,Manual,Blanco,Valencia,637,30230
 OPEL,Corsa,7490,Gasolina,2018,48000,90,5,Manual,Azul,Canarias,637,30231
 OPEL,Corsa,10970,Gasolina,2018,51056,90,3,Manual,Negro,Valencia,637,30232
 OPEL,Corsa,7850,Gasolina,2018,80000,90,5,Manual,Gris,Valencia,637,30233
@@ -31035,7 +31035,7 @@ OPEL,Insignia,9750,Diesel,2015,115000,120,5,Manual,Gris,Castilla y Leon,647,3103
 OPEL,Insignia,12850,Diesel,2015,91000,170,5,Automatico,Gris,Cataluña,647,31033
 OPEL,Insignia,7500,Diesel,2015,270700,136,4,Manual,Gris,Murcia,647,31034
 OPEL,Insignia,9500,Diesel,2015,132000,130,5,Manual,Negro,Pais Vasco,647,31035
-OPEL,Insignia,8950,Gas licuado (GLP),2015,143000,140,4,Manual,Negro,Madrid,647,31036
+OPEL,Insignia,8950,Gas licuado,2015,143000,140,4,Manual,Negro,Madrid,647,31036
 OPEL,Insignia,9750,Diesel,2015,131000,136,5,Manual,Gris,Madrid,647,31037
 OPEL,Insignia,8750,Diesel,2015,139999,140,5,Manual,Gris,Madrid,647,31038
 OPEL,Insignia,9990,Diesel,2015,128000,120,5,Manual,Blanco,Andalucia,647,31039
@@ -31224,15 +31224,15 @@ OPEL,Meriva,8900,Gasolina,2016,109928,120,5,Manual,Azul,Pais Vasco,651,31221
 OPEL,Meriva,8500,Diesel,2015,89000,110,5,Manual,Blanco,Andalucia,651,31222
 OPEL,Meriva,8450,Diesel,2015,91253,110,5,Manual,Blanco,Cataluña,651,31223
 OPEL,Meriva,10499,Gasolina,2015,54100,140,5,Automatico,Blanco,Madrid,651,31224
-OPEL,Meriva,6495,Gas licuado (GLP),2015,150000,120,5,Manual,Blanco,Pais Vasco,651,31225
+OPEL,Meriva,6495,Gas licuado,2015,150000,120,5,Manual,Blanco,Pais Vasco,651,31225
 OPEL,Meriva,8900,Gasolina,2015,63385,140,5,Manual,Marron,Valencia,651,31226
 OPEL,Meriva,9500,Gasolina,2015,68000,120,5,Automatico,Blanco,Madrid,651,31227
 OPEL,Meriva,8900,Gasolina,2015,66336,120,5,Manual,Blanco,Galicia,651,31228
 OPEL,Meriva,7590,Gasolina,2015,68000,140,5,Manual,Beige,Valencia,651,31229
-OPEL,Meriva,5800,Gas licuado (GLP),2014,167451,120,5,Manual,Blanco,Andalucia,651,31230
-OPEL,Meriva,8700,Gas licuado (GLP),2014,97524,120,5,Manual,Blanco,Madrid,651,31231
-OPEL,Meriva,9590,Gas licuado (GLP),2014,89990,120,5,Manual,Blanco,Cataluña,651,31232
-OPEL,Meriva,9590,Gas licuado (GLP),2014,89990,120,5,Manual,Blanco,Andalucia,651,31233
+OPEL,Meriva,5800,Gas licuado,2014,167451,120,5,Manual,Blanco,Andalucia,651,31230
+OPEL,Meriva,8700,Gas licuado,2014,97524,120,5,Manual,Blanco,Madrid,651,31231
+OPEL,Meriva,9590,Gas licuado,2014,89990,120,5,Manual,Blanco,Cataluña,651,31232
+OPEL,Meriva,9590,Gas licuado,2014,89990,120,5,Manual,Blanco,Andalucia,651,31233
 OPEL,Meriva,6200,Diesel,2013,100000,137,5,Manual,Blanco,Valencia,651,31234
 OPEL,Meriva,6990,Diesel,2012,99000,100,5,Automatico,Blanco,Valencia,651,31235
 OPEL,Meriva,4800,Gasolina,2012,152000,100,5,Manual,Marron,Madrid,651,31236
@@ -31364,7 +31364,7 @@ OPEL,Mokka X,11999,Gasolina,2018,74000,140,5,Manual,Blanco,Canarias,653,31361
 OPEL,Mokka X,14300,Gasolina,2018,35312,140,5,Manual,Negro,Valencia,653,31362
 OPEL,Mokka X,14200,Gasolina,2018,58529,140,5,Manual,Azul,Islas Baleares,653,31363
 OPEL,Mokka X,16300,Gasolina,2018,53300,140,5,Manual,Negro,Cataluña,653,31364
-OPEL,Mokka X,19490,Gas licuado (GLP),2018,14982,140,5,Manual,Gris,Madrid,653,31365
+OPEL,Mokka X,19490,Gas licuado,2018,14982,140,5,Manual,Gris,Madrid,653,31365
 OPEL,Mokka X,14900,Gasolina,2018,25000,140,5,Manual,Gris,Valencia,653,31366
 OPEL,Mokka X,14250,Gasolina,2018,53083,140,5,Manual,Azul,Castilla y Leon,653,31367
 OPEL,Mokka X,15395,Gasolina,2018,84836,140,5,Automatico,Negro,Andalucia,653,31368
@@ -31432,7 +31432,7 @@ OPEL,Mokka X,14900,Gasolina,2017,36000,140,5,Automatico,Blanco,Cataluña,653,314
 OPEL,Mokka X,13890,Diesel,2017,117000,136,5,Automatico,Blanco,Andalucia,653,31430
 OPEL,Mokka X,14800,Gasolina,2017,50000,140,5,Automatico,Negro,Andalucia,653,31431
 OPEL,Mokka X,14499,Diesel,2017,71000,136,5,Manual,Blanco,Andalucia,653,31432
-OPEL,Mokka X,12900,Gas licuado (GLP),2017,96006,140,5,Manual,Blanco,Madrid,653,31433
+OPEL,Mokka X,12900,Gas licuado,2017,96006,140,5,Manual,Blanco,Madrid,653,31433
 OPEL,Mokka X,13900,Gasolina,2017,45574,140,5,Automatico,Blanco,Islas Baleares,653,31434
 OPEL,Mokka X,13900,Diesel,2017,88406,136,5,Manual,Gris,Valencia,653,31435
 OPEL,Mokka X,12900,Diesel,2017,91000,136,5,Manual,Blanco,Andalucia,653,31436
@@ -35967,7 +35967,7 @@ RENAULT,Clio,16300,Diesel,2020,4500,85,5,Manual,Blanco,Islas Baleares,726,35964
 RENAULT,Clio,17200,Diesel,2020,3000,115,5,Manual,Negro,Castilla La Mancha,726,35965
 RENAULT,Clio,16400,Diesel,2020,50,85,5,Manual,Blanco,Aragon,726,35966
 RENAULT,Clio,15800,Gasolina,2020,2900,100,5,Manual,Gris,Galicia,726,35967
-RENAULT,Clio,14200,Gas licuado (GLP),2020,1,100,5,Manual,Blanco,Madrid,726,35968
+RENAULT,Clio,14200,Gas licuado,2020,1,100,5,Manual,Blanco,Madrid,726,35968
 RENAULT,Clio,14490,Gasolina,2020,2000,100,5,Manual,Naranja,Galicia,726,35969
 RENAULT,Clio,14990,Gasolina,2020,4117,100,5,Manual,Marron,Galicia,726,35970
 RENAULT,Clio,15995,Gasolina,2020,3190,100,5,Manual,Rojo,Castilla y Leon,726,35971
@@ -36043,7 +36043,7 @@ RENAULT,Clio,14490,Gasolina,2019,9000,90,5,Manual,Blanco,Cataluña,726,36040
 RENAULT,Clio,9400,Diesel,2019,54233,90,5,Manual,Blanco,Valencia,726,36041
 RENAULT,Clio,12800,Gasolina,2019,22000,90,5,Manual,Rojo,Andalucia,726,36042
 RENAULT,Clio,14490,Gasolina,2019,8000,90,5,Manual,Blanco,Cataluña,726,36043
-RENAULT,Clio,11750,Gas licuado (GLP),2019,8650,90,5,Manual,Blanco,Castilla y Leon,726,36044
+RENAULT,Clio,11750,Gas licuado,2019,8650,90,5,Manual,Blanco,Castilla y Leon,726,36044
 RENAULT,Clio,10800,Diesel,2019,17478,75,5,Manual,Blanco,Andalucia,726,36045
 RENAULT,Clio,13890,Gasolina,2019,15285,90,5,Manual,Negro,Cataluña,726,36046
 RENAULT,Clio,9500,Gasolina,2018,43543,75,5,Manual,Gris,Cataluña,726,36047
@@ -36064,7 +36064,7 @@ RENAULT,Clio,9990,Diesel,2018,71965,75,5,Manual,Blanco,Madrid,726,36061
 RENAULT,Clio,8400,Diesel,2018,96247,75,5,Manual,Blanco,Madrid,726,36062
 RENAULT,Clio,9500,Gasolina,2018,30330,75,5,Manual,Negro,Cataluña,726,36063
 RENAULT,Clio,11700,Diesel,2018,8343,75,5,Manual,Gris,Valencia,726,36064
-RENAULT,Clio,9250,Gas licuado (GLP),2018,50000,90,5,Manual,Blanco,Andalucia,726,36065
+RENAULT,Clio,9250,Gas licuado,2018,50000,90,5,Manual,Blanco,Andalucia,726,36065
 RENAULT,Clio,9100,Diesel,2018,20348,75,5,Manual,Blanco,Extremadura,726,36066
 RENAULT,Clio,14490,Gasolina,2018,14000,120,5,Automatico,Azul,Canarias,726,36067
 RENAULT,Clio,9500,Gasolina,2018,14820,90,5,Manual,Azul,Valencia,726,36068
@@ -36160,7 +36160,7 @@ RENAULT,Clio,7990,Gasolina,2017,69485,90,5,Manual,Gris,Canarias,726,36157
 RENAULT,Clio,8450,Diesel,2017,87000,90,5,Manual,Blanco,Andalucia,726,36158
 RENAULT,Clio,8750,Diesel,2017,59000,75,5,Manual,Rojo,Cataluña,726,36159
 RENAULT,Clio,9890,Gasolina,2017,27000,75,5,Manual,Blanco,Andalucia,726,36160
-RENAULT,Clio,9990,Gas licuado (GLP),2017,65000,90,5,Manual,Blanco,Madrid,726,36161
+RENAULT,Clio,9990,Gas licuado,2017,65000,90,5,Manual,Blanco,Madrid,726,36161
 RENAULT,Clio,12500,Gasolina,2017,21600,90,5,Manual,Blanco,Andalucia,726,36162
 RENAULT,Clio,9600,Diesel,2017,64000,75,5,Manual,Blanco,Andalucia,726,36163
 RENAULT,Clio,9000,Diesel,2017,112000,90,5,Manual,Blanco,Pais Vasco,726,36164
@@ -39305,7 +39305,7 @@ SEAT,Arona,19490,Gasolina,2020,7000,115,5,Manual,Gris,Cataluña,784,39302
 SEAT,Arona,16990,Gasolina,2020,15000,115,5,Automatico,Azul,Canarias,784,39303
 SEAT,Arona,17495,Gasolina,2020,1930,110,5,Manual,Blanco,Canarias,784,39304
 SEAT,Arona,19490,Gasolina,2020,2249,115,5,Manual,Rojo,Cataluña,784,39305
-SEAT,Arona,16500,Gas natural (CNG),2020,10000,90,5,Manual,Blanco,Galicia,784,39306
+SEAT,Arona,16500,Gas natural,2020,10000,90,5,Manual,Blanco,Galicia,784,39306
 SEAT,Arona,16890,Gasolina,2020,21176,115,5,Manual,Gris,Madrid,784,39307
 SEAT,Arona,20110,Gasolina,2020,18473,150,5,Manual,Blanco,Madrid,784,39308
 SEAT,Arona,18990,Gasolina,2020,21262,115,5,Automatico,Rojo,Cataluña,784,39309
@@ -39325,11 +39325,11 @@ SEAT,Arona,19490,Gasolina,2020,22631,150,5,Manual,Azul,Cataluña,784,39322
 SEAT,Arona,19900,Gasolina,2020,12,115,5,Manual,Negro,Andalucia,784,39323
 SEAT,Arona,18750,Gasolina,2020,1954,115,5,Manual,Blanco,Cataluña,784,39324
 SEAT,Arona,17500,Gasolina,2020,12,115,5,Manual,Azul,Galicia,784,39325
-SEAT,Arona,20719,Gas natural (CNG),2020,0,90,5,Automatico,Blanco,Castilla y Leon,784,39326
+SEAT,Arona,20719,Gas natural,2020,0,90,5,Automatico,Blanco,Castilla y Leon,784,39326
 SEAT,Arona,16590,Gasolina,2020,19389,115,5,Manual,Azul,Madrid,784,39327
 SEAT,Arona,19690,Diesel,2020,7343,95,5,Manual,Gris,Madrid,784,39328
 SEAT,Arona,18990,Gasolina,2020,22000,150,5,Manual,Blanco,Galicia,784,39329
-SEAT,Arona,20719,Gas natural (CNG),2020,0,90,5,Manual,Blanco,Castilla y Leon,784,39330
+SEAT,Arona,20719,Gas natural,2020,0,90,5,Manual,Blanco,Castilla y Leon,784,39330
 SEAT,Arona,17950,Gasolina,2020,23254,115,5,Manual,Gris,Andalucia,784,39331
 SEAT,Arona,19025,Gasolina,2020,1,95,5,Manual,Azul,Castilla La Mancha,784,39332
 SEAT,Arona,18646,Gasolina,2020,0,95,5,Manual,Gris,Madrid,784,39333
@@ -39358,7 +39358,7 @@ SEAT,Arona,19900,Gasolina,2019,3500,115,5,Automatico,Granate,Cataluña,784,39355
 SEAT,Arona,15900,Diesel,2019,9100,115,5,Manual,Blanco,Castilla y Leon,784,39356
 SEAT,Arona,17900,Gasolina,2019,7000,115,5,Manual,Azul,Aragon,784,39357
 SEAT,Arona,16900,Diesel,2019,7182,115,5,Manual,Blanco,Cataluña,784,39358
-SEAT,Arona,18290,Gas natural (CNG),2019,9975,90,5,Manual,Blanco,Madrid,784,39359
+SEAT,Arona,18290,Gas natural,2019,9975,90,5,Manual,Blanco,Madrid,784,39359
 SEAT,Arona,17490,Gasolina,2019,8000,115,5,Manual,Naranja,Cataluña,784,39360
 SEAT,Arona,17800,Gasolina,2019,41483,115,5,Manual,Gris,Andalucia,784,39361
 SEAT,Arona,17900,Gasolina,2019,7000,115,5,Manual,Azul,Cataluña,784,39362
@@ -39369,7 +39369,7 @@ SEAT,Arona,17690,Gasolina,2019,16000,115,5,Manual,Blanco,Murcia,784,39366
 SEAT,Arona,16290,Gasolina,2019,28537,115,5,Manual,Blanco,Cataluña,784,39367
 SEAT,Arona,15600,Diesel,2019,17731,95,5,Manual,Blanco,Cataluña,784,39368
 SEAT,Arona,17100,Diesel,2019,14540,95,5,Manual,Gris,Cataluña,784,39369
-SEAT,Arona,16900,Gas natural (CNG),2019,25000,90,5,Manual,Rojo,Madrid,784,39370
+SEAT,Arona,16900,Gas natural,2019,25000,90,5,Manual,Rojo,Madrid,784,39370
 SEAT,Arona,18900,Gasolina,2019,24385,115,5,Manual,Blanco,Andalucia,784,39371
 SEAT,Arona,18480,Gasolina,2019,16000,115,5,Automatico,Naranja,Andalucia,784,39372
 SEAT,Arona,17300,Diesel,2019,12216,115,5,Manual,Blanco,Andalucia,784,39373
@@ -39377,7 +39377,7 @@ SEAT,Arona,15900,Gasolina,2019,16797,115,5,Manual,Blanco,Andalucia,784,39374
 SEAT,Arona,16990,Diesel,2019,9713,115,5,Manual,Blanco,Galicia,784,39375
 SEAT,Arona,13500,Gasolina,2019,38700,115,5,Manual,Blanco,Galicia,784,39376
 SEAT,Arona,16900,Gasolina,2019,13000,115,5,Manual,Azul,Navarra,784,39377
-SEAT,Arona,16740,Gas natural (CNG),2019,14000,90,5,Manual,Gris,Castilla La Mancha,784,39378
+SEAT,Arona,16740,Gas natural,2019,14000,90,5,Manual,Gris,Castilla La Mancha,784,39378
 SEAT,Arona,19990,Gasolina,2019,10,115,5,Automatico,Blanco,Andalucia,784,39379
 SEAT,Arona,21900,Gasolina,2019,4377,115,5,Automatico,Negro,Cataluña,784,39380
 SEAT,Arona,17900,Gasolina,2019,50109,115,5,Automatico,Azul,Cataluña,784,39381
@@ -39401,7 +39401,7 @@ SEAT,Arona,13600,Gasolina,2019,19500,95,5,Manual,Blanco,Canarias,784,39398
 SEAT,Arona,19960,Diesel,2019,54142,95,5,Automatico,Blanco,Madrid,784,39399
 SEAT,Arona,17900,Gasolina,2019,15000,115,5,Manual,Azul,Aragon,784,39400
 SEAT,Arona,18500,Gasolina,2019,17000,115,5,Automatico,Blanco,Aragon,784,39401
-SEAT,Arona,15900,Gas natural (CNG),2019,1028,90,5,Manual,Blanco,Valencia,784,39402
+SEAT,Arona,15900,Gas natural,2019,1028,90,5,Manual,Blanco,Valencia,784,39402
 SEAT,Arona,19900,Gasolina,2019,12092,115,5,Manual,Blanco,Cataluña,784,39403
 SEAT,Arona,18900,Gasolina,2019,5000,115,5,Manual,Blanco,Aragon,784,39404
 SEAT,Arona,19900,Gasolina,2019,12092,115,5,Manual,Blanco,Cataluña,784,39405
@@ -39413,7 +39413,7 @@ SEAT,Arona,15900,Gasolina,2019,22600,115,5,Manual,Gris,Pais Vasco,784,39410
 SEAT,Arona,17900,Gasolina,2019,16018,115,5,Manual,Gris,Andalucia,784,39411
 SEAT,Arona,17500,Gasolina,2019,15395,115,5,Manual,Negro,Madrid,784,39412
 SEAT,Arona,18900,Gasolina,2019,4000,115,5,Manual,Blanco,Valencia,784,39413
-SEAT,Arona,18500,Gas natural (CNG),2019,22738,90,5,Manual,Negro,Madrid,784,39414
+SEAT,Arona,18500,Gas natural,2019,22738,90,5,Manual,Negro,Madrid,784,39414
 SEAT,Arona,18900,Gasolina,2019,5000,115,5,Manual,Blanco,Valencia,784,39415
 SEAT,Arona,18900,Gasolina,2019,4000,115,5,Manual,Blanco,Valencia,784,39416
 SEAT,Arona,18900,Diesel,2019,22189,115,5,Manual,Blanco,Murcia,784,39417
@@ -39815,27 +39815,27 @@ SEAT,Ibiza,16014,Gasolina,2020,1,95,5,Manual,Blanco,Castilla y Leon,789,39812
 SEAT,Ibiza,13600,Gasolina,2020,1,80,5,Manual,Blanco,Pais Vasco,789,39813
 SEAT,Ibiza,15500,Diesel,2020,17000,95,5,Manual,Blanco,Valencia,789,39814
 SEAT,Ibiza,16200,Gasolina,2020,0,95,5,Manual,Blanco,Pais Vasco,789,39815
-SEAT,Ibiza,15800,Gas natural (CNG),2020,4000,90,5,Manual,Negro,Asturias,789,39816
+SEAT,Ibiza,15800,Gas natural,2020,4000,90,5,Manual,Negro,Asturias,789,39816
 SEAT,Ibiza,16880,Gasolina,2020,0,95,5,Manual,Blanco,Valencia,789,39817
 SEAT,Ibiza,16400,Diesel,2020,560,95,5,Manual,Gris,Valencia,789,39818
 SEAT,Ibiza,14200,Gasolina,2020,100,80,5,Manual,Blanco,Cataluña,789,39819
 SEAT,Ibiza,14900,Gasolina,2020,3222,95,5,Manual,Negro,Madrid,789,39820
 SEAT,Ibiza,15000,Diesel,2020,6,95,5,Manual,Blanco,Navarra,789,39821
-SEAT,Ibiza,16300,Gas natural (CNG),2020,0,90,5,Manual,Gris,Castilla y Leon,789,39822
-SEAT,Ibiza,15650,Gas natural (CNG),2020,6532,90,5,Manual,Blanco,Madrid,789,39823
+SEAT,Ibiza,16300,Gas natural,2020,0,90,5,Manual,Gris,Castilla y Leon,789,39822
+SEAT,Ibiza,15650,Gas natural,2020,6532,90,5,Manual,Blanco,Madrid,789,39823
 SEAT,Ibiza,13900,Gasolina,2020,9999,80,5,Manual,Rojo,Pais Vasco,789,39824
-SEAT,Ibiza,17000,Gas natural (CNG),2020,10,90,5,Manual,Blanco,Cataluña,789,39825
+SEAT,Ibiza,17000,Gas natural,2020,10,90,5,Manual,Blanco,Cataluña,789,39825
 SEAT,Ibiza,15485,Gasolina,2020,1810,115,5,Manual,Blanco,Canarias,789,39826
 SEAT,Ibiza,18660,Diesel,2020,25,95,5,Manual,Gris,Galicia,789,39827
 SEAT,Ibiza,19450,Gasolina,2020,10,110,5,Manual,Gris,Cataluña,789,39828
-SEAT,Ibiza,17600,Gas natural (CNG),2020,0,90,5,Manual,Gris,Madrid,789,39829
-SEAT,Ibiza,13900,Gas natural (CNG),2020,15,90,5,Manual,Blanco,Madrid,789,39830
+SEAT,Ibiza,17600,Gas natural,2020,0,90,5,Manual,Gris,Madrid,789,39829
+SEAT,Ibiza,13900,Gas natural,2020,15,90,5,Manual,Blanco,Madrid,789,39830
 SEAT,Ibiza,17590,Gasolina,2020,150,115,5,Manual,Naranja,Pais Vasco,789,39831
 SEAT,Ibiza,17990,Diesel,2020,0,95,5,Manual,Rojo,Andalucia,789,39832
 SEAT,Ibiza,16400,Gasolina,2020,9000,115,5,Manual,Blanco,Cataluña,789,39833
 SEAT,Ibiza,13900,Gasolina,2020,9999,80,5,Manual,Rojo,Pais Vasco,789,39834
-SEAT,Ibiza,14500,Gas natural (CNG),2019,18571,90,5,Manual,Blanco,Madrid,789,39835
-SEAT,Ibiza,16500,Gas natural (CNG),2019,15275,90,5,Manual,Azul,Madrid,789,39836
+SEAT,Ibiza,14500,Gas natural,2019,18571,90,5,Manual,Blanco,Madrid,789,39835
+SEAT,Ibiza,16500,Gas natural,2019,15275,90,5,Manual,Azul,Madrid,789,39836
 SEAT,Ibiza,15500,Gasolina,2019,27000,115,5,Manual,Gris,Madrid,789,39837
 SEAT,Ibiza,11500,Gasolina,2019,20000,75,5,Manual,Naranja,Cataluña,789,39838
 SEAT,Ibiza,11900,Gasolina,2019,25583,80,5,Manual,Gris,Andalucia,789,39839
@@ -39852,9 +39852,9 @@ SEAT,Ibiza,12290,Gasolina,2019,9000,80,5,Manual,Gris,Madrid,789,39849
 SEAT,Ibiza,16790,Gasolina,2019,41736,115,5,Automatico,Negro,Madrid,789,39850
 SEAT,Ibiza,13000,Gasolina,2019,20000,80,5,Manual,Blanco,Cataluña,789,39851
 SEAT,Ibiza,11450,Gasolina,2019,13146,80,5,Manual,Blanco,Madrid,789,39852
-SEAT,Ibiza,15490,Gas natural (CNG),2019,29800,90,5,Manual,Violeta,Cataluña,789,39853
+SEAT,Ibiza,15490,Gas natural,2019,29800,90,5,Manual,Violeta,Cataluña,789,39853
 SEAT,Ibiza,12900,Gasolina,2019,4860,80,5,Manual,Blanco,Cataluña,789,39854
-SEAT,Ibiza,12740,Gas natural (CNG),2019,22677,90,5,Manual,Blanco,Madrid,789,39855
+SEAT,Ibiza,12740,Gas natural,2019,22677,90,5,Manual,Blanco,Madrid,789,39855
 SEAT,Ibiza,10990,Gasolina,2019,53896,80,5,Manual,Gris,Andalucia,789,39856
 SEAT,Ibiza,10990,Gasolina,2019,34836,80,5,Manual,Blanco,Cataluña,789,39857
 SEAT,Ibiza,12300,Gasolina,2019,13942,80,5,Manual,Gris,Valencia,789,39858
@@ -39882,7 +39882,7 @@ SEAT,Ibiza,16900,Gasolina,2019,40500,115,5,Manual,Rojo,Cataluña,789,39879
 SEAT,Ibiza,17500,Gasolina,2019,22000,115,5,Automatico,Blanco,Cataluña,789,39880
 SEAT,Ibiza,14990,Diesel,2019,22500,95,5,Manual,Blanco,Galicia,789,39881
 SEAT,Ibiza,16990,Gasolina,2019,23832,115,5,Manual,Blanco,Cataluña,789,39882
-SEAT,Ibiza,16900,Gas natural (CNG),2019,6900,90,5,Manual,Rojo,Castilla y Leon,789,39883
+SEAT,Ibiza,16900,Gas natural,2019,6900,90,5,Manual,Rojo,Castilla y Leon,789,39883
 SEAT,Ibiza,10700,Gasolina,2019,35000,95,5,Manual,Gris,Cataluña,789,39884
 SEAT,Ibiza,11100,Gasolina,2019,33638,80,5,Manual,Blanco,Islas Baleares,789,39885
 SEAT,Ibiza,10990,Gasolina,2019,58525,80,5,Manual,Gris,Galicia,789,39886
@@ -39901,7 +39901,7 @@ SEAT,Ibiza,12200,Gasolina,2019,8623,80,5,Manual,Gris,Valencia,789,39898
 SEAT,Ibiza,14900,Gasolina,2019,27112,115,5,Manual,Gris,Madrid,789,39899
 SEAT,Ibiza,13900,Gasolina,2019,14687,80,5,Manual,Blanco,Cataluña,789,39900
 SEAT,Ibiza,11300,Gasolina,2019,11835,80,5,Manual,Negro,Madrid,789,39901
-SEAT,Ibiza,11950,Gas natural (CNG),2019,57000,90,5,Manual,Blanco,Andalucia,789,39902
+SEAT,Ibiza,11950,Gas natural,2019,57000,90,5,Manual,Blanco,Andalucia,789,39902
 SEAT,Ibiza,13490,Gasolina,2019,15000,95,5,Manual,Blanco,Madrid,789,39903
 SEAT,Ibiza,12900,Gasolina,2019,10265,80,5,Manual,Rojo,Andalucia,789,39904
 SEAT,Ibiza,12190,Gasolina,2019,10363,80,5,Manual,Gris,Cataluña,789,39905
@@ -39913,12 +39913,12 @@ SEAT,Ibiza,13799,Gasolina,2019,19585,115,5,Manual,Rojo,Andalucia,789,39910
 SEAT,Ibiza,13900,Gasolina,2019,14687,80,5,Manual,Blanco,Cataluña,789,39911
 SEAT,Ibiza,16990,Gasolina,2019,20600,115,5,Manual,Negro,Cataluña,789,39912
 SEAT,Ibiza,12500,Gasolina,2019,9217,80,5,Manual,Negro,Cataluña,789,39913
-SEAT,Ibiza,13995,Gas natural (CNG),2019,20950,90,5,Manual,Naranja,Cataluña,789,39914
+SEAT,Ibiza,13995,Gas natural,2019,20950,90,5,Manual,Naranja,Cataluña,789,39914
 SEAT,Ibiza,10990,Gasolina,2019,65693,95,5,Manual,Gris,Madrid,789,39915
 SEAT,Ibiza,12400,Gasolina,2019,22800,80,5,Manual,Gris,Aragon,789,39916
 SEAT,Ibiza,11990,Gasolina,2019,25160,80,5,Manual,Blanco,Islas Baleares,789,39917
-SEAT,Ibiza,14990,Gas natural (CNG),2019,24590,90,5,Manual,Gris,Cataluña,789,39918
-SEAT,Ibiza,12990,Gas natural (CNG),2019,16225,90,5,Manual,Blanco,Galicia,789,39919
+SEAT,Ibiza,14990,Gas natural,2019,24590,90,5,Manual,Gris,Cataluña,789,39918
+SEAT,Ibiza,12990,Gas natural,2019,16225,90,5,Manual,Blanco,Galicia,789,39919
 SEAT,Ibiza,12500,Gasolina,2019,18400,80,5,Manual,Blanco,Pais Vasco,789,39920
 SEAT,Ibiza,12000,Gasolina,2019,19080,80,5,Manual,Blanco,Cataluña,789,39921
 SEAT,Ibiza,10300,Gasolina,2019,6942,95,5,Manual,Blanco,Canarias,789,39922
@@ -39945,7 +39945,7 @@ SEAT,Ibiza,12500,Gasolina,2018,7000,80,5,Manual,Blanco,Andalucia,789,39942
 SEAT,Ibiza,10490,Gasolina,2018,77000,95,5,Manual,Blanco,Andalucia,789,39943
 SEAT,Ibiza,13599,Diesel,2018,571,80,5,Manual,Blanco,Madrid,789,39944
 SEAT,Ibiza,10900,Diesel,2018,28700,95,5,Manual,Blanco,Galicia,789,39945
-SEAT,Ibiza,12900,Gas natural (CNG),2018,11482,90,5,Manual,Blanco,Navarra,789,39946
+SEAT,Ibiza,12900,Gas natural,2018,11482,90,5,Manual,Blanco,Navarra,789,39946
 SEAT,Ibiza,13500,Gasolina,2018,16100,115,5,Manual,Naranja,Cataluña,789,39947
 SEAT,Ibiza,11500,Diesel,2018,28500,95,5,Manual,Beige,Cataluña,789,39948
 SEAT,Ibiza,11200,Gasolina,2018,40843,95,5,Manual,Gris,Andalucia,789,39949
@@ -39971,7 +39971,7 @@ SEAT,Ibiza,9450,Gasolina,2018,38000,75,5,Manual,Azul,Cataluña,789,39968
 SEAT,Ibiza,9250,Gasolina,2018,40000,75,5,Manual,Blanco,Valencia,789,39969
 SEAT,Ibiza,10350,Gasolina,2018,70000,95,5,Manual,Negro,Cataluña,789,39970
 SEAT,Ibiza,10500,Gasolina,2018,29718,75,5,Manual,Blanco,Madrid,789,39971
-SEAT,Ibiza,12900,Gas natural (CNG),2018,11482,90,5,Manual,Blanco,Andalucia,789,39972
+SEAT,Ibiza,12900,Gas natural,2018,11482,90,5,Manual,Blanco,Andalucia,789,39972
 SEAT,Ibiza,11350,Gasolina,2018,79000,115,5,Manual,Gris,Valencia,789,39973
 SEAT,Ibiza,12490,Diesel,2018,74322,95,5,Manual,Blanco,Madrid,789,39974
 SEAT,Ibiza,12490,Gasolina,2018,29000,75,5,Manual,Blanco,Cataluña,789,39975
@@ -40659,14 +40659,14 @@ SEAT,Leon,29950,Diesel,2020,0,150,5,Automatico,Blanco,Valencia,791,40656
 SEAT,Leon,21100,Gasolina,2020,7970,130,5,Manual,Blanco,Pais Vasco,791,40657
 SEAT,Leon,31515,Diesel,2020,0,150,5,Automatico,Rojo,Castilla La Mancha,791,40658
 SEAT,Leon,18500,Gasolina,2020,1052,130,5,Manual,Blanco,Murcia,791,40659
-SEAT,Leon,18900,Gas natural (CNG),2020,540,130,5,Manual,Negro,Cataluña,791,40660
+SEAT,Leon,18900,Gas natural,2020,540,130,5,Manual,Negro,Cataluña,791,40660
 SEAT,Leon,23900,Gasolina,2020,1000,150,5,Manual,Azul,Cataluña,791,40661
 SEAT,Leon,29900,Hibrido enchufable,2020,500,204,5,Automatico,Rojo,Madrid,791,40662
 SEAT,Leon,17100,Gasolina,2020,7686,130,5,Manual,Negro,Cataluña,791,40663
 SEAT,Leon,16500,Gasolina,2020,6,110,5,Manual,Gris,Andalucia,791,40664
 SEAT,Leon,27500,Diesel,2020,500,150,5,Automatico,Gris,Cataluña,791,40665
-SEAT,Leon,18900,Gas natural (CNG),2020,12314,130,5,Manual,Gris,Cataluña,791,40666
-SEAT,Leon,17900,Gas natural (CNG),2020,40,130,5,Manual,Blanco,Madrid,791,40667
+SEAT,Leon,18900,Gas natural,2020,12314,130,5,Manual,Gris,Cataluña,791,40666
+SEAT,Leon,17900,Gas natural,2020,40,130,5,Manual,Blanco,Madrid,791,40667
 SEAT,Leon,21495,Gasolina,2020,1960,150,5,Manual,Blanco,Canarias,791,40668
 SEAT,Leon,21495,Gasolina,2020,1960,150,5,Manual,Blanco,Canarias,791,40669
 SEAT,Leon,20900,Diesel,2020,8,115,5,Manual,Rojo,Galicia,791,40670
@@ -40704,12 +40704,12 @@ SEAT,Leon,20020,Gasolina,2019,16644,150,5,Manual,Rojo,Madrid,791,40701
 SEAT,Leon,27890,Gasolina,2019,59990,290,5,Automatico,Negro,Andalucia,791,40702
 SEAT,Leon,17890,Diesel,2019,13152,115,5,Manual,Gris,Madrid,791,40703
 SEAT,Leon,19200,Diesel,2019,18703,150,5,Automatico,Gris,Madrid,791,40704
-SEAT,Leon,17400,Gas natural (CNG),2019,16985,130,5,Manual,Rojo,Galicia,791,40705
+SEAT,Leon,17400,Gas natural,2019,16985,130,5,Manual,Rojo,Galicia,791,40705
 SEAT,Leon,17255,Gasolina,2019,35421,150,5,Manual,Negro,Cataluña,791,40706
 SEAT,Leon,17990,Gasolina,2019,19490,150,5,Manual,Naranja,Cataluña,791,40707
 SEAT,Leon,19990,Gasolina,2019,22649,150,5,Manual,Blanco,Cataluña,791,40708
 SEAT,Leon,15500,Gasolina,2019,25933,115,5,Manual,Blanco,Cataluña,791,40709
-SEAT,Leon,18900,Gas natural (CNG),2019,18038,130,5,Manual,Gris,Madrid,791,40710
+SEAT,Leon,18900,Gas natural,2019,18038,130,5,Manual,Gris,Madrid,791,40710
 SEAT,Leon,14590,Gasolina,2019,34640,130,5,Manual,Rojo,Andalucia,791,40711
 SEAT,Leon,18900,Gasolina,2019,13000,150,5,Manual,Blanco,Aragon,791,40712
 SEAT,Leon,18900,Gasolina,2019,19000,150,5,Manual,Rojo,Aragon,791,40713
@@ -40737,7 +40737,7 @@ SEAT,Leon,18900,Gasolina,2019,26000,150,5,Manual,Blanco,Cataluña,791,40734
 SEAT,Leon,21140,Diesel,2019,10500,150,5,Automatico,Violeta,Castilla La Mancha,791,40735
 SEAT,Leon,22999,Diesel,2019,19717,150,5,Automatico,Blanco,Galicia,791,40736
 SEAT,Leon,15900,Gasolina,2019,17800,84,5,Manual,Gris,Andalucia,791,40737
-SEAT,Leon,16995,Gas natural (CNG),2019,20300,130,5,Manual,Negro,Cataluña,791,40738
+SEAT,Leon,16995,Gas natural,2019,20300,130,5,Manual,Negro,Cataluña,791,40738
 SEAT,Leon,14995,Gasolina,2019,38560,130,5,Manual,Negro,Valencia,791,40739
 SEAT,Leon,27890,Gasolina,2019,59990,290,5,Automatico,Negro,Valencia,791,40740
 SEAT,Leon,18800,Gasolina,2019,51000,150,5,Automatico,Blanco,Pais Vasco,791,40741
@@ -40748,7 +40748,7 @@ SEAT,Leon,26995,Gasolina,2019,20000,290,5,Automatico,Blanco,Cataluña,791,40745
 SEAT,Leon,17900,Diesel,2019,23281,115,5,Manual,Blanco,Andalucia,791,40746
 SEAT,Leon,17290,Gasolina,2019,5878,130,5,Manual,Gris,Madrid,791,40747
 SEAT,Leon,14250,Diesel,2019,10064,115,5,Manual,Gris,Madrid,791,40748
-SEAT,Leon,17800,Gas natural (CNG),2019,4215,130,5,Manual,Azul,Cataluña,791,40749
+SEAT,Leon,17800,Gas natural,2019,4215,130,5,Manual,Azul,Cataluña,791,40749
 SEAT,Leon,18900,Gasolina,2019,23375,150,5,Manual,Gris,Cataluña,791,40750
 SEAT,Leon,18500,Gasolina,2019,3164,130,5,Manual,Negro,Aragon,791,40751
 SEAT,Leon,18590,Diesel,2019,12370,115,5,Manual,Rojo,Madrid,791,40752
@@ -40760,21 +40760,21 @@ SEAT,Leon,18900,Gasolina,2019,23375,150,5,Manual,Gris,Cataluña,791,40757
 SEAT,Leon,16900,Gasolina,2019,12435,130,5,Manual,Negro,Castilla y Leon,791,40758
 SEAT,Leon,18900,Gasolina,2019,11000,150,5,Manual,Blanco,Aragon,791,40759
 SEAT,Leon,17900,Diesel,2019,11931,115,5,Manual,Gris,Aragon,791,40760
-SEAT,Leon,18500,Gas natural (CNG),2019,27328,130,5,Manual,Negro,Pais Vasco,791,40761
+SEAT,Leon,18500,Gas natural,2019,27328,130,5,Manual,Negro,Pais Vasco,791,40761
 SEAT,Leon,29990,Gasolina,2019,20862,290,5,Automatico,Gris,Cataluña,791,40762
 SEAT,Leon,17900,Diesel,2019,21041,115,5,Manual,Blanco,Galicia,791,40763
 SEAT,Leon,14250,Diesel,2019,11212,115,5,Manual,Negro,Galicia,791,40764
-SEAT,Leon,17800,Gas natural (CNG),2019,4215,130,5,Manual,Azul,Madrid,791,40765
+SEAT,Leon,17800,Gas natural,2019,4215,130,5,Manual,Azul,Madrid,791,40765
 SEAT,Leon,22500,Gasolina,2019,13000,190,5,Automatico,Negro,Cataluña,791,40766
 SEAT,Leon,18900,Gasolina,2019,15251,150,5,Manual,Blanco,Cataluña,791,40767
-SEAT,Leon,17800,Gas natural (CNG),2019,4215,130,5,Manual,Azul,Andalucia,791,40768
+SEAT,Leon,17800,Gas natural,2019,4215,130,5,Manual,Azul,Andalucia,791,40768
 SEAT,Leon,19700,Diesel,2019,16500,115,5,Manual,Azul,Galicia,791,40769
-SEAT,Leon,20990,Gas natural (CNG),2019,6570,130,5,Automatico,Blanco,Valencia,791,40770
+SEAT,Leon,20990,Gas natural,2019,6570,130,5,Automatico,Blanco,Valencia,791,40770
 SEAT,Leon,16890,Gasolina,2019,9549,130,5,Manual,Blanco,Madrid,791,40771
 SEAT,Leon,14900,Gasolina,2019,40000,130,5,Manual,Blanco,Madrid,791,40772
 SEAT,Leon,16700,Diesel,2019,23678,115,5,Manual,Blanco,Madrid,791,40773
 SEAT,Leon,16850,Gasolina,2019,34000,150,5,Manual,Negro,Cataluña,791,40774
-SEAT,Leon,18900,Gas natural (CNG),2019,14171,130,5,Manual,Gris,Madrid,791,40775
+SEAT,Leon,18900,Gas natural,2019,14171,130,5,Manual,Gris,Madrid,791,40775
 SEAT,Leon,18490,Diesel,2019,22500,115,5,Automatico,Gris,Valencia,791,40776
 SEAT,Leon,19500,Gasolina,2019,4000,150,5,Manual,Gris,Cataluña,791,40777
 SEAT,Leon,17900,Diesel,2019,13577,115,5,Manual,Gris,Aragon,791,40778
@@ -40812,10 +40812,10 @@ SEAT,Leon,14795,Gasolina,2019,30272,130,5,Manual,Blanco,Murcia,791,40809
 SEAT,Leon,26900,Gasolina,2019,11876,290,5,Automatico,Blanco,Cataluña,791,40810
 SEAT,Leon,18900,Gasolina,2019,11000,150,5,Manual,Blanco,Aragon,791,40811
 SEAT,Leon,16750,Gasolina,2019,11500,130,5,Manual,Blanco,Andalucia,791,40812
-SEAT,Leon,18900,Gas natural (CNG),2019,16349,130,5,Manual,Gris,Madrid,791,40813
+SEAT,Leon,18900,Gas natural,2019,16349,130,5,Manual,Gris,Madrid,791,40813
 SEAT,Leon,15750,Gasolina,2019,35008,130,5,Manual,Blanco,Cataluña,791,40814
 SEAT,Leon,14900,Gasolina,2019,51000,130,5,Manual,Blanco,Cataluña,791,40815
-SEAT,Leon,18900,Gas natural (CNG),2019,14495,130,5,Automatico,Blanco,Cataluña,791,40816
+SEAT,Leon,18900,Gas natural,2019,14495,130,5,Automatico,Blanco,Cataluña,791,40816
 SEAT,Leon,16900,Gasolina,2019,44204,150,5,Manual,Gris,Andalucia,791,40817
 SEAT,Leon,26499,Gasolina,2019,18163,190,5,Automatico,Blanco,Cataluña,791,40818
 SEAT,Leon,15900,Gasolina,2019,19658,130,5,Manual,Gris,Andalucia,791,40819
@@ -40863,10 +40863,10 @@ SEAT,Leon,14499,Diesel,2018,19528,115,5,Manual,Azul,Andalucia,791,40860
 SEAT,Leon,11490,Gasolina,2018,98683,125,5,Manual,Gris,Cataluña,791,40861
 SEAT,Leon,12250,Gasolina,2018,51000,110,5,Manual,Gris,Valencia,791,40862
 SEAT,Leon,14900,Gasolina,2018,15074,110,5,Manual,Granate,Madrid,791,40863
-SEAT,Leon,12390,Gas natural (CNG),2018,78028,110,5,Manual,Blanco,Madrid,791,40864
+SEAT,Leon,12390,Gas natural,2018,78028,110,5,Manual,Blanco,Madrid,791,40864
 SEAT,Leon,18900,Gasolina,2018,16059,150,5,Manual,Rojo,Cataluña,791,40865
 SEAT,Leon,11099,Gasolina,2018,85211,110,5,Manual,Azul,Madrid,791,40866
-SEAT,Leon,13800,Gas natural (CNG),2018,53000,110,5,Manual,Blanco,Madrid,791,40867
+SEAT,Leon,13800,Gas natural,2018,53000,110,5,Manual,Blanco,Madrid,791,40867
 SEAT,Leon,11099,Gasolina,2018,85211,110,5,Manual,Azul,Andalucia,791,40868
 SEAT,Leon,12900,Diesel,2018,77720,115,5,Manual,Blanco,Cataluña,791,40869
 SEAT,Leon,12990,Gasolina,2018,54635,110,5,Automatico,Azul,Andalucia,791,40870
@@ -40883,7 +40883,7 @@ SEAT,Leon,17900,Diesel,2017,78000,150,5,Manual,Blanco,Aragon,791,40880
 SEAT,Leon,10399,Diesel,2017,53810,90,5,Manual,Rojo,Valencia,791,40881
 SEAT,Leon,15000,Gasolina,2017,86000,150,5,Automatico,Azul,Cataluña,791,40882
 SEAT,Leon,16900,Gasolina,2017,41060,150,5,Manual,Gris,Cataluña,791,40883
-SEAT,Leon,12000,Gas natural (CNG),2017,114000,110,5,Manual,Blanco,Andalucia,791,40884
+SEAT,Leon,12000,Gas natural,2017,114000,110,5,Manual,Blanco,Andalucia,791,40884
 SEAT,Leon,13990,Diesel,2017,178000,150,5,Automatico,Blanco,Madrid,791,40885
 SEAT,Leon,14900,Diesel,2017,79000,150,5,Manual,Blanco,Madrid,791,40886
 SEAT,Leon,12290,Gasolina,2017,92723,150,5,Manual,Gris,Madrid,791,40887
@@ -41065,7 +41065,7 @@ SEAT,Leon,15490,Diesel,2015,105000,150,5,Manual,Negro,Galicia,791,41062
 SEAT,Leon,7490,Gasolina,2015,60000,110,5,Manual,Rojo,Canarias,791,41063
 SEAT,Leon,12490,Gasolina,2015,106000,125,5,Manual,Gris,Pais Vasco,791,41064
 SEAT,Leon,10890,Diesel,2015,89900,105,5,Manual,Blanco,Andalucia,791,41065
-SEAT,Leon,8990,Gas natural (CNG),2015,130000,110,5,Manual,Gris,Cataluña,791,41066
+SEAT,Leon,8990,Gas natural,2015,130000,110,5,Manual,Gris,Cataluña,791,41066
 SEAT,Leon,9800,Diesel,2015,95000,120,5,Manual,Gris,Andalucia,791,41067
 SEAT,Leon,12500,Gasolina,2015,77000,150,5,Manual,Azul,Cataluña,791,41068
 SEAT,Leon,10900,Diesel,2015,138400,105,5,Manual,Rojo,Galicia,791,41069
@@ -41078,7 +41078,7 @@ SEAT,Leon,13900,Diesel,2015,120000,110,3,Manual,Negro,Madrid,791,41075
 SEAT,Leon,11499,Diesel,2015,75000,105,5,Manual,Negro,Madrid,791,41076
 SEAT,Leon,7900,Diesel,2015,217000,110,5,Manual,Gris,La Rioja,791,41077
 SEAT,Leon,10750,Diesel,2015,99950,105,5,Manual,Marron,Madrid,791,41078
-SEAT,Leon,8950,Gas natural (CNG),2015,83000,110,5,Manual,Blanco,Andalucia,791,41079
+SEAT,Leon,8950,Gas natural,2015,83000,110,5,Manual,Blanco,Andalucia,791,41079
 SEAT,Leon,12490,Diesel,2014,96734,105,5,Automatico,Rojo,Andalucia,791,41080
 SEAT,Leon,11900,Diesel,2014,189500,184,5,Automatico,Blanco,Madrid,791,41081
 SEAT,Leon,15700,Diesel,2014,100000,150,5,Manual,Blanco,Cataluña,791,41082
@@ -41448,7 +41448,7 @@ SEAT,Marbella,2000,Gasolina,1989,80000,72,3,Manual,Blanco,Cataluña,793,41445
 SEAT,Marbella,1500,Gasolina,1989,69000,72,3,Manual,Blanco,Asturias,793,41446
 SEAT,Marbella,800,Gasolina,1987,66000,67,3,Manual,Rojo,Extremadura,793,41447
 SEAT,Marbella,1800,Gasolina,1984,89000,63,5,Manual,Rojo,Andalucia,793,41448
-SEAT,Mii,11600,Gas natural (CNG),2021,9,68,5,Manual,Blanco,Extremadura,794,41449
+SEAT,Mii,11600,Gas natural,2021,9,68,5,Manual,Blanco,Extremadura,794,41449
 SEAT,Mii,9900,Gasolina,2019,12700,75,5,Manual,Blanco,Cataluña,794,41450
 SEAT,Mii,7450,Gasolina,2019,3700,75,5,Manual,Gris,Canarias,794,41451
 SEAT,Mii,9900,Gasolina,2019,14000,75,5,Manual,Blanco,Cantabria,794,41452
@@ -41844,27 +41844,27 @@ SKODA,Octavia,34900,Gasolina,2020,25,207,5,Automatico,Gris,Andalucia,804,41841
 SKODA,Octavia,17900,Gasolina,2020,13,115,5,Manual,Gris,Cataluña,804,41842
 SKODA,Octavia,28690,Diesel,2020,11000,150,5,Automatico,Azul,Galicia,804,41843
 SKODA,Octavia,13990,Gasolina,2019,7591,115,5,Manual,Gris,Madrid,804,41844
-SKODA,Octavia,17490,Gas natural (CNG),2019,18000,130,5,Automatico,Blanco,Madrid,804,41845
+SKODA,Octavia,17490,Gas natural,2019,18000,130,5,Automatico,Blanco,Madrid,804,41845
 SKODA,Octavia,16500,Gasolina,2019,15059,115,5,Automatico,Gris,Madrid,804,41846
-SKODA,Octavia,19400,Gas natural (CNG),2019,3092,130,5,Automatico,Gris,Canarias,804,41847
-SKODA,Octavia,21500,Gas natural (CNG),2019,4500,130,5,Automatico,Blanco,Madrid,804,41848
+SKODA,Octavia,19400,Gas natural,2019,3092,130,5,Automatico,Gris,Canarias,804,41847
+SKODA,Octavia,21500,Gas natural,2019,4500,130,5,Automatico,Blanco,Madrid,804,41848
 SKODA,Octavia,18091,Gasolina,2019,15,127,5,Manual,Azul,Pais Vasco,804,41849
 SKODA,Octavia,17900,Gasolina,2019,12200,115,5,Automatico,Gris,Cataluña,804,41850
 SKODA,Octavia,19885,Gasolina,2019,17958,115,5,Automatico,Gris,Cataluña,804,41851
 SKODA,Octavia,21800,Gasolina,2019,30,150,5,Manual,Negro,Valencia,804,41852
-SKODA,Octavia,19400,Gas natural (CNG),2019,1201,130,5,Automatico,Blanco,Valencia,804,41853
-SKODA,Octavia,19800,Gas natural (CNG),2019,2770,130,5,Automatico,Gris,Canarias,804,41854
-SKODA,Octavia,19800,Gas natural (CNG),2019,2770,130,5,Automatico,Gris,Valencia,804,41855
-SKODA,Octavia,19400,Gas natural (CNG),2019,2159,130,5,Automatico,Blanco,Valencia,804,41856
+SKODA,Octavia,19400,Gas natural,2019,1201,130,5,Automatico,Blanco,Valencia,804,41853
+SKODA,Octavia,19800,Gas natural,2019,2770,130,5,Automatico,Gris,Canarias,804,41854
+SKODA,Octavia,19800,Gas natural,2019,2770,130,5,Automatico,Gris,Valencia,804,41855
+SKODA,Octavia,19400,Gas natural,2019,2159,130,5,Automatico,Blanco,Valencia,804,41856
 SKODA,Octavia,14900,Gasolina,2019,8451,115,5,Manual,Gris,Andalucia,804,41857
 SKODA,Octavia,17500,Gasolina,2019,7384,115,5,Automatico,Gris,Castilla y Leon,804,41858
-SKODA,Octavia,19400,Gas natural (CNG),2019,1201,130,5,Automatico,Blanco,Madrid,804,41859
-SKODA,Octavia,19900,Gas natural (CNG),2019,1133,130,5,Automatico,Blanco,Cataluña,804,41860
+SKODA,Octavia,19400,Gas natural,2019,1201,130,5,Automatico,Blanco,Madrid,804,41859
+SKODA,Octavia,19900,Gas natural,2019,1133,130,5,Automatico,Blanco,Cataluña,804,41860
 SKODA,Octavia,17900,Diesel,2019,24918,115,5,Manual,Negro,Madrid,804,41861
-SKODA,Octavia,19900,Gas natural (CNG),2019,27000,130,5,Automatico,Blanco,Pais Vasco,804,41862
+SKODA,Octavia,19900,Gas natural,2019,27000,130,5,Automatico,Blanco,Pais Vasco,804,41862
 SKODA,Octavia,17100,Diesel,2019,24579,115,5,Manual,Gris,Extremadura,804,41863
 SKODA,Octavia,19690,Diesel,2019,13500,115,5,Manual,Blanco,Galicia,804,41864
-SKODA,Octavia,19900,Gas natural (CNG),2019,1133,130,5,Automatico,Blanco,Valencia,804,41865
+SKODA,Octavia,19900,Gas natural,2019,1133,130,5,Automatico,Blanco,Valencia,804,41865
 SKODA,Octavia,29990,Gasolina,2019,3800,245,5,Automatico,Negro,Cantabria,804,41866
 SKODA,Octavia,14490,Diesel,2018,69000,115,5,Manual,Blanco,Andalucia,804,41867
 SKODA,Octavia,14990,Gasolina,2018,22800,115,5,Manual,Gris,Valencia,804,41868
@@ -41873,7 +41873,7 @@ SKODA,Octavia,13850,Diesel,2018,95000,116,5,Manual,Gris,Valencia,804,41870
 SKODA,Octavia,14500,Diesel,2018,71000,115,5,Manual,Blanco,Andalucia,804,41871
 SKODA,Octavia,14950,Diesel,2018,71328,115,5,Manual,Blanco,Andalucia,804,41872
 SKODA,Octavia,16500,Gasolina,2018,13790,115,5,Manual,Blanco,Andalucia,804,41873
-SKODA,Octavia,15900,Gas natural (CNG),2018,35000,110,5,Manual,Blanco,Madrid,804,41874
+SKODA,Octavia,15900,Gas natural,2018,35000,110,5,Manual,Blanco,Madrid,804,41874
 SKODA,Octavia,16800,Diesel,2018,92148,150,5,Manual,Negro,Andalucia,804,41875
 SKODA,Octavia,20900,Diesel,2018,140000,184,5,Automatico,Gris,Galicia,804,41876
 SKODA,Octavia,19900,Diesel,2018,56926,150,5,Automatico,Gris,Cataluña,804,41877
@@ -41964,7 +41964,7 @@ SKODA,Octavia,9000,Diesel,2014,160000,134,5,Manual,Gris,Extremadura,804,41961
 SKODA,Octavia,18000,Diesel,2013,132800,184,5,Automatico,Blanco,Cataluña,804,41962
 SKODA,Octavia,18000,Diesel,2013,132800,184,5,Automatico,Blanco,Valencia,804,41963
 SKODA,Octavia,18000,Diesel,2013,132800,184,5,Automatico,Blanco,Aragon,804,41964
-SKODA,Octavia,6400,Gas licuado (GLP),2013,235763,98,5,Manual,Blanco,Extremadura,804,41965
+SKODA,Octavia,6400,Gas licuado,2013,235763,98,5,Manual,Blanco,Extremadura,804,41965
 SKODA,Octavia,8900,Diesel,2013,93211,105,5,Manual,Gris,Pais Vasco,804,41966
 SKODA,Octavia,8500,Diesel,2013,159000,105,5,Manual,Gris,Andalucia,804,41967
 SKODA,Octavia,17500,Diesel,2013,135000,170,5,Automatico,Blanco,Cataluña,804,41968
@@ -42586,7 +42586,7 @@ SSANGYONG,Tivoli,20500,Gasolina,2019,8506,163,5,Automatico,Gris,Andalucia,829,42
 SSANGYONG,Tivoli,20500,Gasolina,2019,8506,163,5,Automatico,Gris,Pais Vasco,829,42584
 SSANGYONG,Tivoli,15800,Gasolina,2019,14667,128,5,Manual,Rojo,Madrid,829,42585
 SSANGYONG,Tivoli,13400,Diesel,2018,39409,115,5,Manual,Gris,Madrid,829,42586
-SSANGYONG,Tivoli,16990,Gas licuado (GLP),2018,30242,128,5,Manual,Blanco,Castilla La Mancha,829,42587
+SSANGYONG,Tivoli,16990,Gas licuado,2018,30242,128,5,Manual,Blanco,Castilla La Mancha,829,42587
 SSANGYONG,Tivoli,13900,Diesel,2018,30000,115,5,Manual,Blanco,Canarias,829,42588
 SSANGYONG,Tivoli,13990,Diesel,2018,37431,115,5,Manual,Gris,Madrid,829,42589
 SSANGYONG,Tivoli,17900,Diesel,2018,34581,115,5,Automatico,Azul,Andalucia,829,42590
@@ -44652,16 +44652,16 @@ VOLKSWAGEN,Bora,900,Diesel,1999,390000,90,4,Manual,Granate,Murcia,905,44649
 VOLKSWAGEN,Caddy,24900,Diesel,2020,35,122,4,Manual,Blanco,Castilla y Leon,907,44650
 VOLKSWAGEN,Caddy,35975,Electrico,2020,20,113,4,Automatico,Blanco,Cataluña,907,44651
 VOLKSWAGEN,Caddy,24500,Diesel,2020,25,122,4,Manual,Blanco,Cataluña,907,44652
-VOLKSWAGEN,Caddy,19950,Gas natural (CNG),2020,20,110,4,Manual,Blanco,Madrid,907,44653
+VOLKSWAGEN,Caddy,19950,Gas natural,2020,20,110,4,Manual,Blanco,Madrid,907,44653
 VOLKSWAGEN,Caddy,26750,Diesel,2020,1,102,4,Manual,Blanco,Madrid,907,44654
 VOLKSWAGEN,Caddy,17900,Diesel,2020,5085,102,4,Manual,Azul,Madrid,907,44655
 VOLKSWAGEN,Caddy,20500,Diesel,2020,9818,102,5,Manual,Blanco,Madrid,907,44656
 VOLKSWAGEN,Caddy,22500,Diesel,2020,6000,102,5,Manual,Rojo,Cataluña,907,44657
-VOLKSWAGEN,Caddy,20900,Gas natural (CNG),2020,9256,110,5,Manual,Blanco,Madrid,907,44658
+VOLKSWAGEN,Caddy,20900,Gas natural,2020,9256,110,5,Manual,Blanco,Madrid,907,44658
 VOLKSWAGEN,Caddy,20500,Diesel,2020,6702,102,5,Manual,Marron,Madrid,907,44659
 VOLKSWAGEN,Caddy,18600,Diesel,2020,4855,102,5,Manual,Marron,Andalucia,907,44660
 VOLKSWAGEN,Caddy,20500,Diesel,2020,4915,102,5,Manual,Azul,Andalucia,907,44661
-VOLKSWAGEN,Caddy,35200,Gas natural (CNG),2020,0,110,5,Manual,Blanco,Madrid,907,44662
+VOLKSWAGEN,Caddy,35200,Gas natural,2020,0,110,5,Manual,Blanco,Madrid,907,44662
 VOLKSWAGEN,Caddy,26900,Diesel,2020,75,122,4,Manual,Blanco,Aragon,907,44663
 VOLKSWAGEN,Caddy,17950,Diesel,2020,50,75,4,Manual,Rojo,Aragon,907,44664
 VOLKSWAGEN,Caddy,19400,Diesel,2020,1,106,4,Manual,Azul,Andalucia,907,44665
@@ -44684,7 +44684,7 @@ VOLKSWAGEN,Caddy,20900,Diesel,2019,4000,122,4,Manual,Blanco,Cataluña,907,44681
 VOLKSWAGEN,Caddy,18500,Diesel,2019,16997,102,4,Automatico,Gris,Madrid,907,44682
 VOLKSWAGEN,Caddy,19950,Gasolina,2019,21265,102,5,Manual,Blanco,Madrid,907,44683
 VOLKSWAGEN,Caddy,18990,Diesel,2019,14583,102,4,Automatico,Rojo,Andalucia,907,44684
-VOLKSWAGEN,Caddy,17500,Gas natural (CNG),2019,2300,110,4,Manual,Azul,Castilla La Mancha,907,44685
+VOLKSWAGEN,Caddy,17500,Gas natural,2019,2300,110,4,Manual,Azul,Castilla La Mancha,907,44685
 VOLKSWAGEN,Caddy,19900,Diesel,2019,18199,102,5,Manual,Azul,Cataluña,907,44686
 VOLKSWAGEN,Caddy,19995,Diesel,2019,11700,102,5,Manual,Negro,Cataluña,907,44687
 VOLKSWAGEN,Caddy,15995,Diesel,2018,24900,102,5,Manual,Beige,Canarias,907,44688
@@ -44754,7 +44754,7 @@ VOLKSWAGEN,Caddy,10900,Diesel,2016,137000,102,5,Manual,Blanco,Valencia,907,44751
 VOLKSWAGEN,Caddy,17990,Diesel,2016,190000,150,5,Automatico,Blanco,Madrid,907,44752
 VOLKSWAGEN,Caddy,11900,Diesel,2016,56571,102,4,Manual,Blanco,Madrid,907,44753
 VOLKSWAGEN,Caddy,7500,Diesel,2016,212000,75,4,Manual,Blanco,Cantabria,907,44754
-VOLKSWAGEN,Caddy,13900,Gas natural (CNG),2015,66100,110,4,Manual,Blanco,Madrid,907,44755
+VOLKSWAGEN,Caddy,13900,Gas natural,2015,66100,110,4,Manual,Blanco,Madrid,907,44755
 VOLKSWAGEN,Caddy,9500,Diesel,2015,160000,75,4,Manual,Blanco,Asturias,907,44756
 VOLKSWAGEN,Caddy,7000,Diesel,2015,164000,102,4,Manual,Blanco,Galicia,907,44757
 VOLKSWAGEN,Caddy,17000,Diesel,2015,60000,102,4,Manual,Blanco,Cataluña,907,44758
@@ -44773,7 +44773,7 @@ VOLKSWAGEN,Caddy,12990,Diesel,2014,125000,110,4,Manual,Blanco,Cataluña,907,4477
 VOLKSWAGEN,Caddy,9500,Diesel,2014,127000,102,4,Manual,Rojo,Murcia,907,44771
 VOLKSWAGEN,Caddy,9100,Diesel,2014,117000,109,5,Manual,Gris,Canarias,907,44772
 VOLKSWAGEN,Caddy,8490,Diesel,2014,210000,75,4,Manual,Blanco,Valencia,907,44773
-VOLKSWAGEN,Caddy,7017,Gas licuado (GLP),2013,70000,98,3,Manual,Blanco,Madrid,907,44774
+VOLKSWAGEN,Caddy,7017,Gas licuado,2013,70000,98,3,Manual,Blanco,Madrid,907,44774
 VOLKSWAGEN,Caddy,10495,Diesel,2013,104000,102,5,Manual,Gris,Canarias,907,44775
 VOLKSWAGEN,Caddy,13900,Diesel,2013,151000,110,4,Manual,Blanco,Asturias,907,44776
 VOLKSWAGEN,Caddy,7500,Diesel,2013,91000,75,4,Manual,Blanco,Cataluña,907,44777
