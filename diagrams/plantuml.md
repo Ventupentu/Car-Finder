@@ -95,13 +95,12 @@ package "data" {
 ## Diagrama de Flujo
 ```
 @startuml
-
 start
 
 :Inicio;
 
 :Verificar Archivos CSV;
-if (Archivos disponibles?) then (sí)
+if (¿Archivos disponibles?) then (sí)
     :Cargar coches.csv;
     :Cargar car_ratings.csv;
     :Cargar distance_cache.csv;
@@ -111,7 +110,7 @@ else (no)
 endif
 
 :Entrenar Modelo Colaborativo;
-if (Modelo existente?) then (sí)
+if (¿Modelo existente?) then (sí)
     :Cargar modelo entrenado;
 else (no)
     :Entrenar nuevo modelo;
@@ -121,14 +120,14 @@ endif
 :Solicitar preferencias y pesos;
 
 :Comprobar Localización;
-if (Ciudad en cache?) then (sí)
+if (¿Ciudad en cache?) then (sí)
     :Cargar distancias del cache;
 else (no)
     :Calcular nuevas distancias;
 endif
 
 :Generación de Recomendaciones;
-:Mostrar Top 5;
+:Mostrar Top 10;
 
 stop
 @enduml

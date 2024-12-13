@@ -33,29 +33,40 @@ class CarRecommenderApp:
         feature_weights = {}
 
         # Solicitar características
-        user_input['make'] = input("Marca del coche: ").strip()
-        user_input['price'] = input("Precio del coche: ").strip()
-        user_input['fuel'] = input("Tipo de combustible (Diesel, Gasolina, Eléctrico, Híbrido): ").strip()
-        user_input['year'] = input("Año del coche: ").strip()
-        user_input['kms'] = input("Kilometraje del coche: ").strip()
-        user_input['power'] = input("Potencia del coche en caballos: ").strip()
-        user_input['doors'] = input("Número de puertas (2, 3, 4, 5): ").strip()
-        user_input['shift'] = input("Tipo de transmisión (Automático, Manual): ").strip()
-        user_input['color'] = input("Color del coche: ").strip()
+        def get_string_input(prompt):
+            while True:
+                value = input(prompt).strip()
+                if value.isdigit():
+                    print("Se requiere un texto. Intenta de nuevo.")
+                else:
+                    return value
 
-        # Convertir valores numéricos a enteros y vacíos a None
-        for key, value in user_input.items():
-            if value.isdigit():
-                user_input[key] = int(value)
-            elif value == "":
-                user_input[key] = None
+        def get_numeric_input(prompt):
+            while True:
+                value = input(prompt).strip()
+                if value.isdigit():
+                    return int(value)
+                elif value == "":
+                    return None
+                else:
+                    print("Se requiere un número. Intenta de nuevo.")
+
+        user_input['make'] = get_string_input("Marca del coche: ")
+        user_input['price'] = get_numeric_input("Precio del coche: ")
+        user_input['fuel'] = get_string_input("Tipo de combustible: ")
+        user_input['year'] = get_numeric_input("Año del coche: ")
+        user_input['kms'] = get_numeric_input("Kilometraje del coche: ")
+        user_input['power'] = get_numeric_input("Potencia del coche en caballos: ")
+        user_input['doors'] = get_numeric_input("Número de puertas: ")
+        user_input['shift'] = get_string_input("Tipo de transmisión: ")
+        user_input['color'] = get_string_input("Color del coche: ")
 
         # Solicitar ubicación obligatoria
         while True:
             user_location = input("Introduce tu ubicación (ciudad): ").strip().capitalize()
-            if user_location:
+            if user_location and not user_location.isdigit():
                 break
-            print("La ubicación es obligatoria. Por favor, ingresa tu ciudad.")
+            print("La ubicación es obligatoria y debe ser un texto. Por favor, ingresa tu ciudad.")
 
         # Solicitar pesos para todas las características
         print("\nAhora, por favor, asigna un peso del 1 al 10 a cada característica que hayas seleccionado.")
@@ -66,13 +77,13 @@ class CarRecommenderApp:
             if user_input[key] is not None:
                 while True:
                     try:
-                        weight = int(input(f"Peso para {key} (debe ser entre 0 y 10): "))
-                        if 0 <= weight <= 10:
+                        weight = int(input(f"Peso para {key} (debe ser entre 1 y 10): "))
+                        if 1 <= weight <= 10:
                             break
                         else:
-                            print("El peso debe estar entre 0 y 10. Intenta de nuevo.")
+                            print("El peso debe estar entre 1 y 10. Intenta de nuevo.")
                     except ValueError:
-                        print("Por favor, ingresa un número válido entre 0 y 10.")
+                        print("Por favor, ingresa un número válido entre 1 y 10.")
                 feature_weights[key] = weight
             else:
                 feature_weights[key] = 0
@@ -80,13 +91,13 @@ class CarRecommenderApp:
         # Solicitar importancia de la distancia (obligatoria)
         while True:
             try:
-                distance_weight = int(input("¿Qué importancia le das a la distancia? (debe ser entre 0 y 10): "))
-                if 0 <= distance_weight <= 10:
+                distance_weight = int(input("¿Qué importancia le das a la distancia? (debe ser entre 1 y 10): "))
+                if 1 <= distance_weight <= 10:
                     break
                 else:
-                    print("El peso debe estar entre 0 y 10. Intenta de nuevo.")
+                    print("El peso debe estar entre 1 y 10. Intenta de nuevo.")
             except ValueError:
-                print("Por favor, ingresa un número válido entre 0 y 10.")
+                print("Por favor, ingresa un número válido entre 1 y 10.")
         feature_weights['distance'] = distance_weight
 
         # Validar que se haya seleccionado al menos una característica

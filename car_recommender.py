@@ -23,7 +23,7 @@ class CarRecommenderApp(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("Recomendador de Coches")
-        self.geometry("1400x800")  # Tamaño ajustado
+        self.geometry("1400x700")  # Tamaño ajustado
         self.configure(bg="#edf2f7")  # Fondo claro y moderno
 
         self.user_input = {}
@@ -153,7 +153,7 @@ class CharacteristicsPage(tk.Frame):
             "fuel": "Tipo de combustible",
             "year": "Año del coche",
             "kms": "Kilometraje del coche",
-            "power": "Potencia del coche en caballos",
+            "power": "Potencia del coche en cv",
             "doors": "Número de puertas",
             "shift": "Tipo de transmisión",
             "color": "Color del coche"
@@ -189,13 +189,13 @@ class CharacteristicsPage(tk.Frame):
 
             # Agregar tooltip si la característica tiene descripción
             if feature in self.feature_tooltips:
-                tooltip_icon = tk.Label(row, text="🛈", bg="#D9D9D9", cursor="question_arrow", font=("Helvetica", 12))
+                tooltip_icon = ttk.Label(row, text="🛈", cursor="question_arrow", font=("Helvetica", 12), style="Custom.TLabel")
                 tooltip_icon.pack(side="left")
                 self.create_tooltip(tooltip_icon, self.feature_tooltips[feature])
 
         row = ttk.Frame(self.form)
         row.pack(fill="x", pady=5)
-        label = ttk.Label(row, text="Ubicación (ciudad)", width=30, anchor="w", style="Custom.TLabel")
+        label = ttk.Label(row, text="Ubicación", width=30, anchor="w", style="Custom.TLabel")
         label.pack(side="left")
         self.location_entry = ttk.Entry(row)
         self.location_entry.pack(side="left", fill="x", expand=False)
@@ -266,7 +266,7 @@ class WeightsPage(tk.Frame):
         self.parent = parent
         self.weights = {}
         self.form = ttk.LabelFrame(self, text="Pesos de Características", padding=20, style="Custom.TFrame")
-        self.form.pack(fill="both", expand=True, padx=20, pady=20)
+        self.form.pack(fill="both", expand=False, padx=20, pady=20)
 
         next_button = ttk.Button(self, text="Recomendar", command=self.collect_weights, style="Custom.TButton")
         next_button.pack(pady=20)
@@ -282,28 +282,32 @@ class WeightsPage(tk.Frame):
             return
 
         for feature in self.features_to_weight:
-            row = ttk.Frame(self.form, style="Custom.TFrame")
+            row = ttk.Frame(self.form)
             row.pack(fill="x", pady=5)
-            label = ttk.Label(row, text=f"Peso para {self.parent.characteristics_page.feature_labels[feature]} (0-10)", width=60, anchor="w", style="Custom.TLabel")
+            label = ttk.Label(row, text=f"Peso para {self.parent.characteristics_page.feature_labels[feature]}", width=30, anchor="w", style="Custom.TLabel")
             label.pack(side="left")
-            spinbox = ttk.Spinbox(row, from_=0, to=10, width=5)
-            spinbox.pack(side="right", fill="x", expand=True)
-            self.weights[feature] = spinbox
+            entry = ttk.Entry(row)
+            entry.pack(side="left", fill="x", expand=False)
+            self.weights[feature] = entry
 
-        row = ttk.Frame(self.form, style="Custom.TFrame")
+        row = ttk.Frame(self.form)
         row.pack(fill="x", pady=5)
-        label = ttk.Label(row, text="Peso para Distancia (0-10)", width=60, anchor="w", style="Custom.TLabel")
+        label = ttk.Label(row, text="Peso para Distancia", width=30, anchor="w", style="Custom.TLabel")
         label.pack(side="left")
-        spinbox = ttk.Spinbox(row, from_=0, to=10, width=5)
-        spinbox.pack(side="right", fill="x", expand=True)
-        self.weights["distance"] = spinbox
+        distance_entry = ttk.Entry(row)
+        distance_entry.pack(side="left", fill="x", expand=False)
+        self.weights["distance"] = distance_entry
 
     def collect_weights(self):
         try:
             self.parent.feature_weights = {k: int(v.get()) for k, v in self.weights.items()}
-            if all(weight == 0 for weight in self.parent.feature_weights.values()):
-                messagebox.showerror("Error", "Debes asignar al menos un peso mayor que 0.")
-                return
+            for weight in self.parent.feature_weights.values():
+                if weight < 1 or weight > 10:
+                    messagebox.showerror("Error", "Los pesos deben estar entre 1 y 10.")
+                    return
+                if all(weight == 0 for weight in self.parent.feature_weights.values()):
+                    messagebox.showerror("Error", "Debes asignar al menos un peso mayor que 0.")
+                    return
 
             self.parent.results_page.generate_recommendations()
             self.parent.enable_results_page()
@@ -354,6 +358,10 @@ class ResultsPage(tk.Frame):
 
         except Exception as e:
             messagebox.showerror("Error", f"Error al generar recomendaciones: {e}")
+
+
+        exit_button = ttk.Button(self, text="Salir", command=self.parent.destroy, style="Custom.TButton")
+        exit_button.pack(pady=20)
 
 
 if __name__ == '__main__':
