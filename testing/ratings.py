@@ -5,10 +5,9 @@ import numpy as np
 file_path = 'data/coches.csv'
 df = pd.read_csv(file_path)
 
-# Paso 1: Definir segmentos de usuarios con preferencias específicas
 num_users = 15000
 
-# Definir características de preferencia
+# Definir segmentos
 preferences = {
     'sporty': {'make': ['PORSCHE', 'BMW', 'AUDI'], 'min_power': 300, 'max_price': 150000},
     'economical': {'make': ['TOYOTA', 'HONDA', 'FORD'], 'max_price': 50000, 'max_kms': 100000},
@@ -34,20 +33,19 @@ users_df = pd.DataFrame({
 ratings = []
 
 # Parámetros para valoraciones
-min_ratings_per_user = 100  # Aseguramos que cada usuario valore al menos 100 modelos
-min_ratings_per_model = 50  # Mínimo de valoraciones por modelo
-max_ratings_per_model = 20000  # Máximo de valoraciones por modelo
+min_ratings_per_user = 120  # Incrementado para asegurar más valoraciones
+min_ratings_per_model = 100  # Incrementado para garantizar más valoraciones por modelo
 
-# Paso 2: Asignar valoraciones de manera equilibrada
+# Inicializar un contador de valoraciones por modelo
+model_ratings_count = {model_id: 0 for model_id in df['model_id'].unique()}
 
-# Para mejorar la densidad, vamos a asignar una cantidad mínima de valoraciones por modelo y por usuario
+# Asegurar un mínimo de valoraciones por usuario
 for user_id in range(1, num_users + 1):
     user = users_df.loc[users_df['user_id'] == user_id]
     prefs = preferences[user['segment'].iloc[0]]
 
-    # Asegurarse de que el usuario valore un número adecuado de modelos (min_ratings_per_user)
-    # Seleccionar un subconjunto de modelos aleatorios para el usuario
-    cars_to_rate = df.sample(n=min_ratings_per_user, replace=False)
+    # Asegurarse de que el usuario valore un número adecuado de modelos
+    cars_to_rate = df.sample(min_ratings_per_user, replace=True)
 
     for _, car in cars_to_rate.iterrows():
         model_id = car['model_id']
@@ -55,7 +53,7 @@ for user_id in range(1, num_users + 1):
         # Verificar si el coche coincide con las preferencias del usuario
         match = True
         for key, value in prefs.items():
-            if key in ['make', 'doors', 'fuel']:
+            if key in ['make', 'fuel', 'year', 'doors', 'shift', 'color', 'province']:
                 if car[key] not in value:
                     match = False
                     break
@@ -75,14 +73,34 @@ for user_id in range(1, num_users + 1):
                 if car['kms'] > value:
                     match = False
                     break
-        
-        if match:
-            rating = np.random.choice([2, 3, 4], p=[0.4, 0.4, 0.2])  # Ajuste de probabilidades para que las valoraciones intermedias sean más frecuentes
-        else:
-            rating = np.random.choice([2, 3], p=[0.6, 0.4])  # Aumentar la probabilidad de obtener valoraciones intermedias
 
+        if match:
+            rating = np.random.choice([1, 2, 3, 4, 5], p=[0.1, 0.2, 0.3, 0.3, 0.1])  # Mejora en la distribución
+        else:
+            rating = np.random.choice([2, 3], p=[0.4, 0.6])
 
         ratings.append((str(user_id), str(model_id), rating))
+        model_ratings_count[model_id] += 1
+
+# Asegurarse de que cada usuario tenga al menos 100 valoraciones
+ratings_per_user = pd.DataFrame(ratings, columns=['user_id', 'model_id', 'rating'])['user_id'].value_counts()
+for user_id, count in ratings_per_user.items():
+    if count < 100:
+        additional_ratings_needed = 100 - count
+        cars_to_rate = df.sample(additional_ratings_needed, replace=True)
+        for _, car in cars_to_rate.iterrows():
+            model_id = car['model_id']
+            rating = np.random.choice([1, 2, 3, 4, 5], p=[0.1, 0.2, 0.3, 0.3, 0.1])
+            ratings.append((str(user_id), str(model_id), rating))
+
+# Asegurarse de que cada modelo tenga al menos min_ratings_per_model valoraciones
+for model_id, count in model_ratings_count.items():
+    if count < min_ratings_per_model:
+        additional_ratings_needed = min_ratings_per_model - count
+        additional_users = np.random.choice(users_df['user_id'], size=additional_ratings_needed, replace=True)
+        for user_id in additional_users:
+            rating = np.random.choice([1, 2, 3, 4, 5], p=[0.1, 0.2, 0.3, 0.3, 0.1])
+            ratings.append((str(user_id), str(model_id), rating))
 
 # Convertir la lista de valoraciones a un DataFrame
 ratings_df = pd.DataFrame(ratings, columns=['user_id', 'model_id', 'rating'])
@@ -119,13 +137,7 @@ rating_dist = ratings_df['rating'].value_counts()
 print("Distribución de valoraciones:")
 print(rating_dist)
 
-# Ver los usuarios con valoraciones extremas (1 o 5)
-extreme_ratings = ratings_df[ratings_df['rating'].isin([1, 5])]
-print(f"Número de valoraciones extremas (1 o 5): {len(extreme_ratings)}")
-print("Ejemplos de valoraciones extremas:")
-print(extreme_ratings.head())
-
-# Revisar modelos populares
-popular_models = ratings_df['model_id'].value_counts().head(10)
-print("Modelos más valorados:")
-print(popular_models)
+# Modelo con más valoraciones
+model_with_most_ratings = ratings_per_model.idxmax()
+most_ratings_count = ratings_per_model.max()
+print(f"Modelo con más valoraciones: {model_with_most_ratings} ({most_ratings_count} valoraciones)")

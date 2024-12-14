@@ -20,6 +20,15 @@ geo_calculator = GeoUtils()
 
 
 class CarRecommenderApp(tk.Tk):
+    """
+    CarRecommenderApp es una aplicación con interfaz gráfica que recomienda coches
+    a los usuarios basándose en sus preferencias y ubicación.
+    
+    Atributos:
+        user_input (dict): Diccionario con las características y valores proporcionados por el usuario.
+        feature_weights (dict): Diccionario con los pesos asignados a cada característica.
+        user_location (str): Ubicación del usuario en formato de texto
+    """
     def __init__(self):
         super().__init__()
         self.title("Recomendador de Coches")
@@ -57,6 +66,12 @@ class CarRecommenderApp(tk.Tk):
         self.notebook.tab(2, state="disabled")
 
     def check_csv_files(self):
+        """
+        Verifica si los archivos CSV necesarios para la aplicación existen en las rutas especificadas.
+
+        Returns:
+            bool: True si los archivos existen, False en caso contrario.
+        """
         files = [cars_path, ratings_path, distance_cache]
         missing_files = [file for file in files if not os.path.exists(file)]
         if missing_files:
@@ -68,6 +83,7 @@ class CarRecommenderApp(tk.Tk):
         return True
 
     def create_header(self):
+        """Crea el encabezado de la aplicación."""
         header = tk.Frame(self, bg="#2b6cb0", height=60)
         header.pack(fill="x", side="top")
 
@@ -78,6 +94,7 @@ class CarRecommenderApp(tk.Tk):
         title.pack()
 
     def setup_styles(self):
+        """Configura los estilos personalizados para la interfaz."""
         style = ttk.Style()
         style.theme_use("default")
 
@@ -131,10 +148,12 @@ class CarRecommenderApp(tk.Tk):
         )
 
     def enable_weights_page(self):
+        """Habilita la pestaña de pesos y la selecciona."""
         self.notebook.tab(1, state="normal")
         self.notebook.select(1)
 
     def enable_results_page(self):
+        """Habilita la pestaña de resultados y la selecciona."""
         self.notebook.tab(2, state="normal")
         self.notebook.select(2)
 
@@ -204,6 +223,7 @@ class CharacteristicsPage(tk.Frame):
         next_button.pack(pady=20)
 
     def create_tooltip(self, widget, text):
+        """Crea un tooltip para un widget dado."""
         tooltip = tk.Toplevel(self)
         tooltip.withdraw()  # Oculta el tooltip inicialmente
         tooltip.overrideredirect(True)  # Elimina la barra de título y los bordes
@@ -231,8 +251,8 @@ class CharacteristicsPage(tk.Frame):
         widget.bind("<Enter>", show_tooltip)  # Al entrar el ratón
         widget.bind("<Leave>", hide_tooltip)  # Al salir el ratón
 
-
     def collect_data(self):
+        """Recoge los datos ingresados por el usuario y los valida."""
         try:
             self.parent.user_input = {
                 k: int(v.get()) if v.get().isdigit() else (None if v.get().strip() == "" else v.get())
@@ -272,6 +292,7 @@ class WeightsPage(tk.Frame):
         next_button.pack(pady=20)
 
     def update_weights(self):
+        """Actualiza los campos de pesos basados en las características seleccionadas."""
         for widget in self.form.winfo_children():
             widget.destroy()
 
@@ -299,6 +320,7 @@ class WeightsPage(tk.Frame):
         self.weights["distance"] = distance_entry
 
     def collect_weights(self):
+        """Recoge los pesos ingresados por el usuario y los valida."""
         try:
             self.parent.feature_weights = {k: int(v.get()) for k, v in self.weights.items()}
             for weight in self.parent.feature_weights.values():
@@ -340,6 +362,7 @@ class ResultsPage(tk.Frame):
             self.tree.column(col, width=100, anchor="center")
 
     def generate_recommendations(self):
+        """Genera recomendaciones basadas en los datos y pesos proporcionados por el usuario."""
         try:
             recommender = HybridRecommender(collaborative_model, geo_calculator)
             recommendations = recommender.recommend(
@@ -358,7 +381,6 @@ class ResultsPage(tk.Frame):
 
         except Exception as e:
             messagebox.showerror("Error", f"Error al generar recomendaciones: {e}")
-
 
         exit_button = ttk.Button(self, text="Salir", command=self.parent.destroy, style="Custom.TButton")
         exit_button.pack(pady=20)

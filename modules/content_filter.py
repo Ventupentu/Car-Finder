@@ -12,37 +12,48 @@ class ContentFilter:
         :param feature_weights: Diccionario con los pesos asignados a cada característica.
         :return: DataFrame con un puntaje de similitud para cada coche.
         """
+        # Crear una copia del DataFrame original para evitar modificarlo directamente
         car_data = car_data.copy()
+        
+        # Inicializar una nueva columna para almacenar el puntaje de similitud
         car_data['similarity_score'] = 0.0
 
-        # Normalizar pesos
+        # Normalizar los pesos de las características para que sumen 1
         total_weight = sum(feature_weights.values())
         if total_weight > 0:
             for feature in feature_weights:
                 feature_weights[feature] /= total_weight
 
+        # Calcular la similitud para cada característica
         for feature, weight in feature_weights.items():
             if feature in user_input and user_input[feature] is not None:
                 user_value = user_input[feature]
 
-                if feature in ['price', 'year', 'kms', 'power', 'distance']:  # Características numéricas
+                # Características numéricas
+                if feature in ['price', 'year', 'kms', 'power', 'distance']:
                     max_val = car_data[feature].max()
                     min_val = car_data[feature].min()
 
                     if feature == 'price':
+                        # Penalizar precios alejados del valor deseado
                         normalized_diff = np.where(
                             car_data[feature] > user_value,
                             1 - ((car_data[feature] - user_value) / (max_val - user_value + 1e-6)),
                             1 - ((user_value - car_data[feature]) / (user_value - min_val + 1e-6))
                         )
                     elif feature == 'distance':
+                        # Invertir la similitud para la distancia (menor es mejor)
                         normalized_diff = 1 - (car_data[feature] / max_val)
                     else:
+                        # Calcular similitud normalizada para otras características numéricas
                         normalized_diff = 1 - abs(car_data[feature] - user_value) / (max_val - min_val + 1e-6)
 
+                    # Ajustar el puntaje de similitud según el peso de la característica
                     car_data['similarity_score'] += normalized_diff * weight
 
-                elif feature in ['fuel', 'shift', 'color', 'make', 'model', 'doors']:  # Características categóricas
+                # Características categóricas
+                elif feature in ['fuel', 'shift', 'color', 'make', 'model', 'doors']:
+                    # Asignar un puntaje según si hay coincidencia exacta o no
                     def category_score(value):
                         if str(value).lower() == str(user_value).lower():
                             return weight  # Coincidencia exacta
@@ -51,7 +62,7 @@ class ContentFilter:
 
                     car_data['similarity_score'] += car_data[feature].apply(category_score)
 
-        # Bonus por coincidencias exactas
+        # Bonus adicional por coincidencias exactas en ciertas características
         for feature in user_input:
             if feature in car_data.columns and user_input[feature] is not None:
                 exact_match_bonus = 0.2 * feature_weights.get(feature, 0)
@@ -59,10 +70,10 @@ class ContentFilter:
                     lambda x: exact_match_bonus if str(x).lower() == str(user_input[feature]).lower() else 0
                 )
 
-        # Normalizar el puntaje final entre 0 y 1
+        # Normalizar el puntaje final entre 0 y 1 para que sea comparable
         max_score = car_data['similarity_score'].max()
         if max_score > 0:
             car_data['similarity_score'] /= max_score
 
+        # Ordenar los coches según el puntaje de similitud de mayor a menor
         return car_data.sort_values(by='similarity_score', ascending=False)
-

@@ -40,5 +40,5 @@ unknown_power['power'] = np.ceil(predicted_power).astype(int)
 # Rellenar el dataset original con las predicciones
 data.loc[data['power'].isna(), 'power'] = unknown_power['power']
 
-# Opcional: Guardar el dataset con los valores imputados
-data.to_csv('dataset_imputado.csv', index=False)
+# Guardar el dataset con los valores imputados
+data.to_csv('data/coches.csv', index=False)

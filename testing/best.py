@@ -43,13 +43,14 @@ for name, metrics in sorted(results.items(), key=lambda x: x[1]['RMSE']):
 
 
 """
-Resultados finales:
-BaselineOnly: RMSE=0.5169, MAE=0.4954
-SVD++: RMSE=0.5198, MAE=0.495
-SVD: RMSE=0.5215, MAE=0.495
-KNNBasic: RMSE=0.5219, MAE=0.4954
-NMF: RMSE=0.522, MAE=0.4946
-KNNBaseline: RMSE=0.5222, MAE=0.4968
-CoClustering: RMSE=0.5227, MAE=0.4951
-KNNWithMeans: RMSE=0.5233, MAE=0.4971
+Algoritmo         RMSE     MAE     Tiempo (s)
+----------------------------------------------
+BaselineOnly     0.5169   0.4954   10.63
+SVD++            0.5198   0.4950   61.18
+SVD              0.5215   0.4950   13.83
+KNNBasic         0.5219   0.4954   355.75
+NMF              0.5220   0.4946   15.04
+KNNBaseline      0.5222   0.4968   365.86
+CoClustering     0.5227   0.4951   17.76
+KNNWithMeans     0.5233   0.4971   359.92
 """

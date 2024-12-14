@@ -5,13 +5,32 @@ from modules.data_loader import DataLoader
 import os
 
 class CarRecommenderApp:
+    """
+    CarRecommenderApp es una aplicación de consola que recomienda coches a los usuarios
+    basándose en sus preferencias y ubicación.
+
+    Atributos:
+        cars_path (str): Ruta al archivo CSV que contiene los datos de los coches.
+        ratings_path (str): Ruta al archivo CSV que contiene las valoraciones de los usuarios.
+        distance_cache (str): Ruta al archivo CSV que contiene el caché de distancias.
+        user_id (str): Identificador del usuario para el que se generan las recomendaciones.
+    """
     def __init__(self):
+        """
+        Inicializa una instancia de la clase CarRecommenderApp.
+        """
         self.cars_path = 'data/coches.csv'
         self.ratings_path = 'data/car_ratings.csv'
         self.distance_cache = 'data/distance_cache.csv'
         self.user_id = 'new_user'
 
     def check_csv_files(self):
+        """
+        Verifica si los archivos CSV necesarios para la aplicación existen en las rutas especificadas.
+
+        Returns:
+            bool: True si los archivos existen, False en caso contrario.
+        """
         files = [self.cars_path, self.ratings_path, self.distance_cache]
         missing_files = [file for file in files if not os.path.exists(file)]
         if missing_files:
@@ -21,10 +40,10 @@ class CarRecommenderApp:
     
     def get_user_input(self):
         """
-        Solicita al usuario que ingrese sus preferencias para un coche y los pesos correspondientes.
-        Incluye la ciudad obligatoria y la importancia de la distancia.
-        
-        :return: Diccionario con las características del coche, los pesos y la ubicación del usuario.
+        Solicita al usuario las preferencias para un coche ideal y los pesos para cada característica.
+
+        Returns:
+            tuple: Una tupla que contiene el diccionario de preferencias del usuario, los pesos de las características y la ubicación del usuario.
         """
         print("Introduce tus preferencias para un coche ideal:")
         
@@ -32,14 +51,16 @@ class CarRecommenderApp:
         user_input = {}
         feature_weights = {}
 
-        # Solicitar características
+        # Funciones para comprobar los tipos correctos de entrada
         def get_string_input(prompt):
             while True:
                 value = input(prompt).strip()
-                if value.isdigit():
-                    print("Se requiere un texto. Intenta de nuevo.")
-                else:
+                if value == "":
+                    return None
+                elif type(value) == str:
                     return value
+                else:
+                    print("Se requiere un texto. Intenta de nuevo.")
 
         def get_numeric_input(prompt):
             while True:
@@ -51,6 +72,7 @@ class CarRecommenderApp:
                 else:
                     print("Se requiere un número. Intenta de nuevo.")
 
+        # Solicitar las preferencias del usuario
         user_input['make'] = get_string_input("Marca del coche: ")
         user_input['price'] = get_numeric_input("Precio del coche: ")
         user_input['fuel'] = get_string_input("Tipo de combustible: ")
@@ -107,26 +129,33 @@ class CarRecommenderApp:
 
         return user_input, feature_weights, user_location
 
-
-
-
     def run(self):
+        """
+        Ejecuta la aplicación de recomendación de coches.
+        """
+        # Verificar si los archivos CSV necesarios existen
         if not self.check_csv_files():
             exit()
 
-        cars_df, ratings_df = DataLoader(self.cars_path, self.ratings_path).load_data()
+        # Cargar datos de coches y valoraciones
+        cars_df, _ = DataLoader(self.cars_path, self.ratings_path).load_data()
 
+        # Entrenar el modelo de filtrado colaborativo
         collaborative_model = CollaborativeFilter()
         collaborative_model.train_model(self.ratings_path)
 
+        # Inicializar el calculador de distancias geográficas
         geo_calculator = GeoUtils()
 
+        # Obtener las preferencias del usuario
         user_input, feature_weights, user_location = self.get_user_input()
         
-
+        # Inicializar el recomendador híbrido
         recommender = HybridRecommender(collaborative_model, geo_calculator)
+        # Obtener recomendaciones
         recommendations = recommender.recommend(self.user_id, user_input, feature_weights, user_location, cars_df)
         
+        # Mostrar las 10 mejores recomendaciones
         top_5 = recommendations[['make', 'model', 'price', 'fuel', 'year', 'kms', 
                                   'power', 'doors', 'shift', 'color', 'province', 
                                   'distance']].head(10)
@@ -136,6 +165,6 @@ class CarRecommenderApp:
 
 
 if __name__ == "__main__":
+    # Crear una instancia de la aplicación y ejecutarla
     app = CarRecommenderApp()
     app.run()
-
