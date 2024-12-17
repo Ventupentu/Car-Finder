@@ -23,6 +23,7 @@ class ContentFilter:
         if total_weight > 0:
             for feature in feature_weights:
                 feature_weights[feature] /= total_weight
+            
 
         # Calcular la similitud para cada característica
         for feature, weight in feature_weights.items():
@@ -30,23 +31,24 @@ class ContentFilter:
                 user_value = user_input[feature]
 
                 # Características numéricas
-                if feature in ['price', 'year', 'kms', 'power', 'distance']:
+                if feature in ['price', 'year', 'kms', 'power']:
                     max_val = car_data[feature].max()
                     min_val = car_data[feature].min()
 
-                    if feature == 'price':
-                        # Penalizar precios alejados del valor deseado
+                    if feature in ['price', 'kms']:
+                        # (menor es mejor)
+                        normalized_diff = np.where(
+                            car_data[feature] < user_value,
+                            1,
+                            1 - (car_data[feature] - user_value) / (max_val - user_value)
+                        )
+                    else:
+                        # (mayor es mejor)
                         normalized_diff = np.where(
                             car_data[feature] > user_value,
-                            1 - ((car_data[feature] - user_value) / (max_val - user_value + 1e-6)),
-                            1 - ((user_value - car_data[feature]) / (user_value - min_val + 1e-6))
+                            1,
+                            1 - (car_data[feature] - user_value) / (max_val - user_value)
                         )
-                    elif feature == 'distance':
-                        # Invertir la similitud para la distancia (menor es mejor)
-                        normalized_diff = 1 - (car_data[feature] / max_val)
-                    else:
-                        # Calcular similitud normalizada para otras características numéricas
-                        normalized_diff = 1 - abs(car_data[feature] - user_value) / (max_val - min_val + 1e-6)
 
                     # Ajustar el puntaje de similitud según el peso de la característica
                     car_data['similarity_score'] += normalized_diff * weight
