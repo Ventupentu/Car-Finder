@@ -1,0 +1,8 @@
+geopy==2.4.1
+matplotlib==3.8.0
+numpy==1.23.4
+pandas==2.0.1
+Pillow==11.0.0
+scikit_learn==1.4.2
+scikit_surprise==1.1.4
+surprise==0.1
