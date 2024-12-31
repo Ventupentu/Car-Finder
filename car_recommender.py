@@ -257,7 +257,7 @@ class CharacteristicsPage(tk.Frame):
         next_button.pack(pady=20)
 
     def create_tooltip(self, widget, text):
-        """Crea un tooltip para un widget dado."""
+        """Crea un tooltip."""
         tooltip = tk.Toplevel(self)
         tooltip.withdraw()  # Oculta el tooltip inicialmente
         tooltip.overrideredirect(True)  # Elimina la barra de título y los bordes
