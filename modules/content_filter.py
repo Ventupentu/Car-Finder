@@ -1,9 +1,21 @@
+"""
+Este módulo contiene la clase ContentFilter que calcula la similitud de contenido
+entre las preferencias del usuario y los datos de los coches.
+"""
+
 import pandas as pd
 import numpy as np
 
 class ContentFilter:
+    """
+    Calcular la similitud de contenido entre las preferencias del usuario y los datos de los coches.
+    """
     @staticmethod
-    def calculate_content_similarity(user_input: dict, car_data: pd.DataFrame, feature_weights: dict) -> pd.DataFrame:
+    def calculate_content_similarity(
+        user_input: dict,
+        car_data: pd.DataFrame,
+        feature_weights: dict
+    ) -> pd.DataFrame:
         """
         Calcula la similitud entre las características deseadas por el usuario y los coches.
 
@@ -14,7 +26,7 @@ class ContentFilter:
         """
         # Crear una copia del DataFrame original para evitar modificarlo directamente
         car_data = car_data.copy()
-        
+
         # Inicializar una nueva columna para almacenar el puntaje de similitud
         car_data['similarity_score'] = 0.0
 
@@ -46,7 +58,8 @@ class ContentFilter:
                         normalized_diff = 1 - (car_data[feature] / max_val)
                     else:
                         # Calcular similitud normalizada para otras características numéricas
-                        normalized_diff = 1 - abs(car_data[feature] - user_value) / (max_val - min_val + 1e-6)
+                        normalized_diff = 1 - abs(car_data[feature] - user_value) / (
+                            max_val - min_val + 1e-6)
 
                     # Ajustar el puntaje de similitud según el peso de la característica
                     car_data['similarity_score'] += normalized_diff * weight
@@ -54,21 +67,22 @@ class ContentFilter:
                 # Características categóricas
                 elif feature in ['fuel', 'shift', 'color', 'make', 'model', 'doors']:
                     # Asignar un puntaje según si hay coincidencia exacta o no
-                    def category_score(value):
+                    def category_score(value, user_value=user_value, weight=weight):
                         if str(value).lower() == str(user_value).lower():
                             return weight  # Coincidencia exacta
-                        else:
-                            return weight * 0.5 if weight < 5 else 0  # Penalización según peso
+                        return weight * 0.5 if weight < 5 else 0  # Penalización según peso
 
                     car_data['similarity_score'] += car_data[feature].apply(category_score)
 
         # Bonus adicional por coincidencias exactas en ciertas características
         for feature in user_input:
             if feature in car_data.columns and user_input[feature] is not None:
-                exact_match_bonus = 0.2 * feature_weights.get(feature, 0)
-                car_data['similarity_score'] += car_data[feature].apply(
-                    lambda x: exact_match_bonus if str(x).lower() == str(user_input[feature]).lower() else 0
-                )
+                def apply_exact_match_bonus(value,
+                                            user_value=user_input[feature],
+                                            bonus=0.2 * feature_weights.get(feature, 0)):
+                    return bonus if str(value).lower() == str(user_value).lower() else 0
+
+                car_data['similarity_score'] += car_data[feature].apply(apply_exact_match_bonus)
 
         # Normalizar el puntaje final entre 0 y 1 para que sea comparable
         max_score = car_data['similarity_score'].max()

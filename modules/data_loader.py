@@ -1,8 +1,13 @@
+"""
+Este módulo contiene la clase DataLoader que se encarga de cargar datos desde archivos CSV.
+"""
+
 import pandas as pd
 
 class DataLoader:
     """
-    DataLoader es una clase que se encarga de cargar los datos de coches y ratings desde archivos CSV.
+    DataLoader es una clase que se encarga de cargar los datos de coches y ratings
+    desde archivos CSV.
 
     Atributos:
         coches_path (str): Ruta al archivo CSV que contiene los datos de los coches.
@@ -24,6 +29,6 @@ class DataLoader:
             df_ratings = pd.read_csv(self.ratings_path)
             print("Datos cargados exitosamente.")
             return df_cars, df_ratings
-        except Exception as e:
-            print(f"Error al cargar los datos: {e}")
+        except Exception as exception:
+            print(f"Error al cargar los datos: {exception}")
             raise

@@ -1,11 +1,17 @@
+"""
+Este módulo proporciona utilidades para calcular distancia entre ciudades.
+"""
+
+import os
+import geopy
 import pandas as pd
 from geopy.distance import geodesic
 from geopy.geocoders import Nominatim
-import os
 
 class GeoUtils:
     """
-    GeoUtils es una clase que proporciona utilidades para cálculos geográficos, como la distancia entre ubicaciones.
+    GeoUtils es una clase que proporciona utilidades para cálculos geográficos,
+    como la distancia entre ubicaciones.
 
     Atributos:
         geolocator (Nominatim): Objeto geolocator de geopy para obtener coordenadas de ubicaciones.
@@ -43,8 +49,9 @@ class GeoUtils:
                     (row['origin'].lower(), row['destination'].lower()): row['distance_km']
                     for _, row in cache_df.iterrows()
                 }  # Llena el diccionario de caché
-            except Exception as e:
-                print(f"Error al cargar el caché: {e}.")  # Manejo de errores
+            except (pd.errors.EmptyDataError, pd.errors.ParserError,
+                    FileNotFoundError) as exception:
+                print(f"Error al cargar el caché: {exception}.")  # Manejo de errores
 
     def _save_cache(self):
         """
@@ -71,14 +78,17 @@ class GeoUtils:
             destination (str): Ubicación de destino.
 
         Returns:
-            float: La distancia en kilómetros entre las dos ubicaciones, o None si no se puede calcular.
+            float: La distancia en kilómetros entre las dos ubicaciones,
+            None si no se puede calcular.
         """
         origin = origin.lower()  # Convierte a minúsculas
         destination = destination.lower()  # Convierte a minúsculas
 
         # Verifica si la distancia ya está en caché
-        if (origin, destination) in self.distance_cache or (destination, origin) in self.distance_cache:
-            return self.distance_cache.get((origin, destination)) or self.distance_cache.get((destination, origin))
+        if ((origin, destination) in self.distance_cache or
+            (destination, origin) in self.distance_cache):
+            return (self.distance_cache.get((origin, destination)) or
+                    self.distance_cache.get((destination, origin)))
         if not self.cache_miss_message_shown:
             print("Distancia no encontrada en caché. Esto puede tardar unos segundos...")
             self.cache_miss_message_shown = True
@@ -92,33 +102,38 @@ class GeoUtils:
                     (coords_origin.latitude, coords_origin.longitude),
                     (coords_dest.latitude, coords_dest.longitude)
                 ).kilometers
-                self.distance_cache[(origin, origin)] = 0.0  # Distancia de origen a sí mismo es 0
-                self.distance_cache[(origin, destination)] = distance  # Guarda la distancia en caché
+                self.distance_cache[(origin, origin)] = 0.0
+                self.distance_cache[(origin, destination)] = distance
                 self._save_cache()  # Guarda el caché actualizado
                 return round(distance, 2)  # Retorna la distancia redondeada
-        except Exception as e:
-            print(f"Error al calcular la distancia: {e}")  # Manejo de errores
+        except (AttributeError, ValueError, geopy.exc.GeocoderServiceError) as exception:
+            print(f"Error al calcular la distancia: {exception}")  # Manejo de errores
 
         return None
 
     def apply_penalty(self, car_data, user_location, distance_weight):
         """
-        Aplica una penalización a los datos de los autos basada en la distancia a la ubicación del usuario.
+        Aplica una penalización a los datos de los coches basada en la distancia
+        a la ubicación del usuario.
 
         Args:
-            car_data (pd.DataFrame): DataFrame que contiene los datos de los autos.
+            car_data (pd.DataFrame): DataFrame que contiene los datos de los coches.
             user_location (str): Ubicación del usuario.
             distance_weight (float): Peso de la penalización por distancia.
 
         Returns:
-            pd.DataFrame: DataFrame con los datos de los autos y una columna adicional 'geo_score' 
-                        que indica la penalización por distancia, ordenado de menor a mayor distancia.
+            pd.DataFrame: DataFrame con los datos de los coches y una columna adicional 'geo_score'
+                        que indica la penalización por distancia.
         """
         max_distance = 200  # Distancia máxima para penalización
         car_data['distance'] = round(car_data['province'].apply(
-            lambda x: self.calculate_distance(user_location, x) if self.calculate_distance(user_location, x) is not None else max_distance
+            lambda x: self.calculate_distance(user_location, x)
+            if self.calculate_distance(user_location, x) is not None
+            else max_distance
         ), 2)  # Calcula la distancia para cada auto
         car_data['geo_score'] = car_data['distance'].apply(
-            lambda x: -distance_weight * (x / max_distance) if x < max_distance else -distance_weight
+            lambda x: (-distance_weight * (x / max_distance)
+                       if x < max_distance
+                       else -distance_weight)
         )  # Aplica la penalización basada en la distancia
         return car_data  # Retorna el DataFrame modificado

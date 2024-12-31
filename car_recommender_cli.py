@@ -1,8 +1,17 @@
+"""
+Aplicación CLI de Recomendación de Coches
+
+Este módulo proporciona una interfaz de línea de comandos para recomendar coches a los usuarios
+basándose en sus preferencias y ubicación.
+"""
+
+import os
+import sys
 from modules.hybrid_recommender import HybridRecommender
 from modules.collaborative_filter import CollaborativeFilter
 from modules.geo_utils import GeoUtils
 from modules.data_loader import DataLoader
-import os
+
 
 class CarRecommenderApp:
     """
@@ -26,7 +35,8 @@ class CarRecommenderApp:
 
     def check_csv_files(self):
         """
-        Verifica si los archivos CSV necesarios para la aplicación existen en las rutas especificadas.
+        Verifica si los archivos CSV necesarios para la aplicación
+        existen en las rutas especificadas.
 
         Returns:
             bool: True si los archivos existen, False en caso contrario.
@@ -37,16 +47,18 @@ class CarRecommenderApp:
             print(f"Faltan los siguientes archivos: {missing_files}")
             return False
         return True
-    
+
     def get_user_input(self):
         """
-        Solicita al usuario las preferencias para un coche ideal y los pesos para cada característica.
+        Solicita al usuario las preferencias para un coche ideal
+        y los pesos para cada característica.
 
         Returns:
-            tuple: Una tupla que contiene el diccionario de preferencias del usuario, los pesos de las características y la ubicación del usuario.
+            tuple: Una tupla que contiene el diccionario de preferencias del usuario,
+            los pesos de las características y la ubicación del usuario.
         """
         print("Introduce tus preferencias para un coche ideal:")
-        
+
         # Características del coche
         user_input = {}
         feature_weights = {}
@@ -57,20 +69,19 @@ class CarRecommenderApp:
                 value = input(prompt).strip()
                 if value == "":
                     return None
-                elif type(value) == str:
+                if isinstance(value, str):
                     return value
-                else:
-                    print("Se requiere un texto. Intenta de nuevo.")
+                print("Se requiere un texto. Intenta de nuevo.")
 
         def get_numeric_input(prompt):
             while True:
                 value = input(prompt).strip()
                 if value.isdigit():
                     return int(value)
-                elif value == "":
+                if value == "":
                     return None
-                else:
-                    print("Se requiere un número. Intenta de nuevo.")
+
+                print("Se requiere un número. Intenta de nuevo.")
 
         # Solicitar las preferencias del usuario
         user_input['make'] = get_string_input("Marca del coche: ")
@@ -91,19 +102,19 @@ class CarRecommenderApp:
             print("La ubicación es obligatoria y debe ser un texto. Por favor, ingresa tu ciudad.")
 
         # Solicitar pesos para todas las características
-        print("\nAhora, por favor, asigna un peso del 1 al 10 a cada característica que hayas seleccionado.")
+        print("\nAhora, asigna un peso del 1 al 10 a cada característica que hayas seleccionado.")
         print("Si no has seleccionado una característica, pon un peso de 0 para esa opción.")
-        
+
         # Pedir el peso para todas las características
-        for key in user_input:
+        for key, _ in user_input.items():
             if user_input[key] is not None:
                 while True:
                     try:
                         weight = int(input(f"Peso para {key} (debe ser entre 1 y 10): "))
                         if 1 <= weight <= 10:
                             break
-                        else:
-                            print("El peso debe estar entre 1 y 10. Intenta de nuevo.")
+
+                        print("El peso debe estar entre 1 y 10. Intenta de nuevo.")
                     except ValueError:
                         print("Por favor, ingresa un número válido entre 1 y 10.")
                 feature_weights[key] = weight
@@ -113,11 +124,12 @@ class CarRecommenderApp:
         # Solicitar importancia de la distancia (obligatoria)
         while True:
             try:
-                distance_weight = int(input("¿Qué importancia le das a la distancia? (debe ser entre 1 y 10): "))
+                distance_weight = int(input("¿Qué importancia le das a la distancia?"/
+                                            "(debe ser entre 1 y 10): "))
                 if 1 <= distance_weight <= 10:
                     break
-                else:
-                    print("El peso debe estar entre 1 y 10. Intenta de nuevo.")
+                print("El peso debe estar entre 1 y 10. Intenta de nuevo.")
+
             except ValueError:
                 print("Por favor, ingresa un número válido entre 1 y 10.")
         feature_weights['distance'] = distance_weight
@@ -135,7 +147,7 @@ class CarRecommenderApp:
         """
         # Verificar si los archivos CSV necesarios existen
         if not self.check_csv_files():
-            exit()
+            sys.exit()
 
         # Cargar datos de coches y valoraciones
         cars_df, _ = DataLoader(self.cars_path, self.ratings_path).load_data()
@@ -149,17 +161,18 @@ class CarRecommenderApp:
 
         # Obtener las preferencias del usuario
         user_input, feature_weights, user_location = self.get_user_input()
-        
+
         # Inicializar el recomendador híbrido
         recommender = HybridRecommender(collaborative_model, geo_calculator)
         # Obtener recomendaciones
-        recommendations = recommender.recommend(self.user_id, user_input, feature_weights, user_location, cars_df)
-        
+        recommendations = recommender.recommend(self.user_id, user_input,
+                                                feature_weights, user_location, cars_df)
+
         # Mostrar las 10 mejores recomendaciones
-        top_5 = recommendations[['make', 'model', 'price', 'fuel', 'year', 'kms', 
-                                  'power', 'doors', 'shift', 'color', 'province', 
+        top_5 = recommendations[['make', 'model', 'price', 'fuel', 'year', 'kms',
+                                  'power', 'doors', 'shift', 'color', 'province',
                                   'distance']].head(10)
-        
+
         print("Hemos encontrado estos coches para ti:")
         print(top_5.to_string(index=False))
 

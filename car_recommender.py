@@ -1,21 +1,29 @@
+"""
+Aplicación de Recomendación de Coches (Intergaz Grágica)
+
+Este módulo proporciona una interfaz gráfica para recomendar coches a los usuarios
+basándose en sus preferencias y ubicación.
+"""
+
+import os
 import tkinter as tk
 from tkinter import ttk, messagebox
 from modules.hybrid_recommender import HybridRecommender
 from modules.collaborative_filter import CollaborativeFilter
 from modules.geo_utils import GeoUtils
 from modules.data_loader import DataLoader
-import os
+
 
 # Rutas
-cars_path = 'data/coches.csv'
-ratings_path = 'data/car_ratings.csv'
-distance_cache = 'data/distance_cache.csv'
-user_id = 'new_user'
+CARS_PATH = 'data/coches.csv'
+RATINGS_PATH = 'data/car_ratings.csv'
+DISTANCE_CACHE = 'data/distance_cache.csv'
+USER_ID = 'new_user'
 
 # Cargar clases para el modelo y los datos
-cars_df, ratings_df = DataLoader(cars_path, ratings_path).load_data()
+cars_df, ratings_df = DataLoader(CARS_PATH, RATINGS_PATH).load_data()
 collaborative_model = CollaborativeFilter()
-collaborative_model.train_model(ratings_path)
+collaborative_model.train_model(RATINGS_PATH)
 geo_calculator = GeoUtils()
 
 
@@ -23,9 +31,10 @@ class CarRecommenderApp(tk.Tk):
     """
     CarRecommenderApp es una aplicación con interfaz gráfica que recomienda coches
     a los usuarios basándose en sus preferencias y ubicación.
-    
+
     Atributos:
-        user_input (dict): Diccionario con las características y valores proporcionados por el usuario.
+        user_input (dict): Diccionario con las características y valores
+        proporcionados por el usuario.
         feature_weights (dict): Diccionario con los pesos asignados a cada característica.
         user_location (str): Ubicación del usuario en formato de texto
     """
@@ -67,17 +76,19 @@ class CarRecommenderApp(tk.Tk):
 
     def check_csv_files(self):
         """
-        Verifica si los archivos CSV necesarios para la aplicación existen en las rutas especificadas.
+        Verifica si los archivos CSV necesarios para la aplicación
+        existen en las rutas especificadas.
 
         Returns:
             bool: True si los archivos existen, False en caso contrario.
         """
-        files = [cars_path, ratings_path, distance_cache]
+        files = [CARS_PATH, RATINGS_PATH, DISTANCE_CACHE]
         missing_files = [file for file in files if not os.path.exists(file)]
         if missing_files:
             messagebox.showerror(
                 "Error",
-                f"Faltan los siguientes archivos necesarios para ejecutar el programa:\n{', '.join(missing_files)}"
+                "Faltan los siguientes archivos necesarios para ejecutar el programa:\n"
+                f"{', '.join(missing_files)}"
             )
             return False
         return True
@@ -159,6 +170,19 @@ class CarRecommenderApp(tk.Tk):
 
 
 class CharacteristicsPage(tk.Frame):
+    """
+    CharacteristicsPage permite al usuario ingresar las características del coche
+    que desea recomendar.
+
+    Atributos:
+        parent (tk.Tk): La ventana principal de la aplicación.
+        features (list): Lista de características del coche.
+        feature_labels (dict): Diccionario de etiquetas para las características.
+        feature_tooltips (dict): Diccionario de descripciones para las características.
+        inputs (dict): Diccionario para almacenar las entradas de características.
+        form (ttk.LabelFrame): Contenedor para los campos de entrada de características.
+        location_entry (ttk.Entry): Campo de entrada para la ubicación del usuario.
+    """
     def __init__(self, parent):
         super().__init__(parent, bg="#ffffff")
         self.parent = parent
@@ -188,19 +212,24 @@ class CharacteristicsPage(tk.Frame):
                     "PEUGEOT, PIAGGIO, PONTIAC, PORSCHE, RENAULT, ROVER, SAAB, "\
                     "SANTANA, SEAT, SKODA, SMART, SSANGYONG, SUBARU, SUZUKI, TATA, "\
                     "TESLA, TOYOTA, UMM, VAZ, VOLKSWAGEN, VOLVO",
-            "fuel": "Gasolina, Diesel, Hibrido enchufable, Gas natural, Electrico, Hibrido, Gas licuado",
+            "fuel": "Gasolina, Diesel, Hibrido enchufable, Gas natural, Electrico, " \
+                    "Hibrido, Gas licuado",
             "shift": "Manual, Automatico"
         }
         self.inputs = {}
 
         # Contenedor del formulario
-        self.form = ttk.LabelFrame(self, text="Características del Coche", padding=20, style="Custom.TFrame")
+        self.form = ttk.LabelFrame(
+            self, text="Características del Coche", padding=20, style="Custom.TFrame"
+        )
         self.form.pack(fill="both", expand=True, padx=20, pady=20)
 
         for feature in self.features:
             row = ttk.Frame(self.form)
             row.pack(fill="x", pady=5)
-            label = ttk.Label(row, text=self.feature_labels[feature], width=30, anchor="w", style="Custom.TLabel")
+            label = ttk.Label(
+                row, text=self.feature_labels[feature], width=30, anchor="w", style="Custom.TLabel"
+            )
             label.pack(side="left")
             entry = ttk.Entry(row)
             entry.pack(side="left", fill="x", expand=False)
@@ -208,7 +237,10 @@ class CharacteristicsPage(tk.Frame):
 
             # Agregar tooltip si la característica tiene descripción
             if feature in self.feature_tooltips:
-                tooltip_icon = ttk.Label(row, text="🛈", cursor="question_arrow", font=("Helvetica", 12), style="Custom.TLabel")
+                tooltip_icon = ttk.Label(
+                    row, text="🛈", cursor="question_arrow",
+                    font=("Helvetica", 12), style="Custom.TLabel"
+                )
                 tooltip_icon.pack(side="left")
                 self.create_tooltip(tooltip_icon, self.feature_tooltips[feature])
 
@@ -219,11 +251,13 @@ class CharacteristicsPage(tk.Frame):
         self.location_entry = ttk.Entry(row)
         self.location_entry.pack(side="left", fill="x", expand=False)
 
-        next_button = ttk.Button(self, text="Siguiente", command=self.collect_data, style="Custom.TButton")
+        next_button = ttk.Button(
+            self, text="Siguiente", command=self.collect_data, style="Custom.TButton"
+        )
         next_button.pack(pady=20)
 
     def create_tooltip(self, widget, text):
-        """Crea un tooltip para un widget dado."""
+        """Crea un tooltip."""
         tooltip = tk.Toplevel(self)
         tooltip.withdraw()  # Oculta el tooltip inicialmente
         tooltip.overrideredirect(True)  # Elimina la barra de título y los bordes
@@ -244,7 +278,7 @@ class CharacteristicsPage(tk.Frame):
             tooltip.geometry(f"+{event.x_root + 10}+{event.y_root + 10}")
             tooltip.deiconify()  # Muestra el tooltip
 
-        def hide_tooltip(event):
+        def hide_tooltip():
             tooltip.withdraw()  # Oculta el tooltip
 
         # Asocia los eventos del ratón al widget
@@ -255,7 +289,9 @@ class CharacteristicsPage(tk.Frame):
         """Recoge los datos ingresados por el usuario y los valida."""
         try:
             self.parent.user_input = {
-                k: int(v.get()) if v.get().isdigit() else (None if v.get().strip() == "" else v.get())
+                k: int(v.get()) if v.get().isdigit() else (
+                    None if v.get().strip() == "" else v.get()
+                )
                 for k, v in self.inputs.items()
             }
             self.parent.user_location = self.location_entry.get().strip()
@@ -267,11 +303,18 @@ class CharacteristicsPage(tk.Frame):
             for feature, value in self.parent.user_input.items():
                 if value is None:
                     continue
-                if feature in ["price", "year", "kms", "power", "doors"] and not isinstance(value, int):
-                    messagebox.showerror("Error", f"El valor para {self.feature_labels[feature]} debe ser un número.")
+                if feature in ["price", "year", "kms", "power", "doors"] and \
+                   not isinstance(value, int):
+                    messagebox.showerror(
+                        "Error",
+                        f"El valor para {self.feature_labels[feature]} debe ser un número."
+                    )
                     return
                 if feature in ["make", "fuel", "shift", "color"] and not isinstance(value, str):
-                    messagebox.showerror("Error", f"El valor para {self.feature_labels[feature]} debe ser un texto.")
+                    messagebox.showerror(
+                        "Error",
+                        f"El valor para {self.feature_labels[feature]} debe ser un texto."
+                    )
                     return
 
             self.parent.weights_page.update_weights()
@@ -281,14 +324,26 @@ class CharacteristicsPage(tk.Frame):
 
 
 class WeightsPage(tk.Frame):
+    """
+    WeightsPage permite al usuario asignar pesos a las características seleccionadas
+    para la recomendación de coches.
+
+    Atributos:
+        parent (tk.Tk): La ventana principal de la aplicación.
+        weights (dict): Diccionario para almacenar los pesos de las características.
+        form (ttk.LabelFrame): Contenedor para los campos de entrada de pesos.
+    """
     def __init__(self, parent):
         super().__init__(parent, bg="#ffffff")
         self.parent = parent
         self.weights = {}
-        self.form = ttk.LabelFrame(self, text="Pesos de Características", padding=20, style="Custom.TFrame")
+        self.features_to_weight = []
+        self.form = ttk.LabelFrame(self, text="Pesos de Características", padding=20,
+                                   style="Custom.TFrame")
         self.form.pack(fill="both", expand=False, padx=20, pady=20)
 
-        next_button = ttk.Button(self, text="Recomendar", command=self.collect_weights, style="Custom.TButton")
+        next_button = ttk.Button(self, text="Recomendar",command=self.collect_weights,
+                                 style="Custom.TButton")
         next_button.pack(pady=20)
 
     def update_weights(self):
@@ -296,7 +351,8 @@ class WeightsPage(tk.Frame):
         for widget in self.form.winfo_children():
             widget.destroy()
 
-        self.features_to_weight = [f for f in self.parent.user_input if self.parent.user_input[f] is not None]
+        self.features_to_weight = [f for f in self.parent.user_input
+                                   if self.parent.user_input[f] is not None]
 
         if not self.features_to_weight:
             messagebox.showerror("Error", "Debes seleccionar al menos una característica.")
@@ -305,7 +361,8 @@ class WeightsPage(tk.Frame):
         for feature in self.features_to_weight:
             row = ttk.Frame(self.form)
             row.pack(fill="x", pady=5)
-            label = ttk.Label(row, text=f"Peso para {self.parent.characteristics_page.feature_labels[feature]}", width=30, anchor="w", style="Custom.TLabel")
+            label_text = f"Peso para {self.parent.characteristics_page.feature_labels[feature]}"
+            label = ttk.Label(row, text=label_text, width=30, anchor="w", style="Custom.TLabel")
             label.pack(side="left")
             entry = ttk.Entry(row)
             entry.pack(side="left", fill="x", expand=False)
@@ -313,7 +370,8 @@ class WeightsPage(tk.Frame):
 
         row = ttk.Frame(self.form)
         row.pack(fill="x", pady=5)
-        label = ttk.Label(row, text="Peso para Distancia", width=30, anchor="w", style="Custom.TLabel")
+        label = ttk.Label(row, text="Peso para Distancia", width=30, anchor="w",
+                          style="Custom.TLabel")
         label.pack(side="left")
         distance_entry = ttk.Entry(row)
         distance_entry.pack(side="left", fill="x", expand=False)
@@ -338,10 +396,20 @@ class WeightsPage(tk.Frame):
 
 
 class ResultsPage(tk.Frame):
+    """
+    ResultsPage muestra las recomendaciones de coches basadas en las preferencias
+    y ubicación del usuario.
+
+    Atributos:
+        parent (tk.Tk): La ventana principal de la aplicación.
+        results_area (ttk.LabelFrame): Contenedor para mostrar las recomendaciones.
+        tree (ttk.Treeview): Tabla para mostrar las recomendaciones de coches.
+    """
     def __init__(self, parent):
         super().__init__(parent, bg="#ffffff")
         self.parent = parent
-        self.results_area = ttk.LabelFrame(self, text="Recomendaciones", padding=20, style="Custom.TFrame")
+        self.results_area = ttk.LabelFrame(self, text="Recomendaciones",
+                                           padding=20, style="Custom.TFrame")
         self.results_area.pack(fill="both", expand=True, padx=20, pady=20)
 
         self.tree = ttk.Treeview(self.results_area, columns=(
@@ -351,8 +419,10 @@ class ResultsPage(tk.Frame):
         self.tree.pack(fill="both", expand=True)
 
         # Scrollbars
-        self.scroll_y = ttk.Scrollbar(self.results_area, orient="vertical", command=self.tree.yview)
-        self.scroll_x = ttk.Scrollbar(self.results_area, orient="horizontal", command=self.tree.xview)
+        self.scroll_y = ttk.Scrollbar(self.results_area, orient="vertical",
+                                      command=self.tree.yview)
+        self.scroll_x = ttk.Scrollbar(self.results_area, orient="horizontal",
+                                      command=self.tree.xview)
         self.tree.configure(yscroll=self.scroll_y.set, xscroll=self.scroll_x.set)
         self.scroll_y.pack(side="right", fill="y")
         self.scroll_x.pack(side="bottom", fill="x")
@@ -366,12 +436,14 @@ class ResultsPage(tk.Frame):
         try:
             recommender = HybridRecommender(collaborative_model, geo_calculator)
             recommendations = recommender.recommend(
-                user_id, self.parent.user_input, self.parent.feature_weights,
+                USER_ID, self.parent.user_input, self.parent.feature_weights,
                 self.parent.user_location, cars_df
             )
 
-            top_recommendations = recommendations[["make", "model", "price", "fuel", "year", "kms", "power",
-                                                    "doors", "shift", "color", "province", "distance"]].head(10)
+            top_recommendations = recommendations[["make", "model", "price", "fuel",
+                                                   "year", "kms", "power", "doors",
+                                                   "shift", "color", "province",
+                                                   "distance"]].head(10)
 
             for row in self.tree.get_children():
                 self.tree.delete(row)
@@ -379,10 +451,11 @@ class ResultsPage(tk.Frame):
             for _, row in top_recommendations.iterrows():
                 self.tree.insert("", "end", values=row.tolist())
 
-        except Exception as e:
-            messagebox.showerror("Error", f"Error al generar recomendaciones: {e}")
+        except (ValueError, KeyError, TypeError) as exception:
+            messagebox.showerror("Error", f"Error al generar recomendaciones: {exception}")
 
-        exit_button = ttk.Button(self, text="Salir", command=self.parent.destroy, style="Custom.TButton")
+        exit_button = ttk.Button(self, text="Salir", command=self.parent.destroy,
+                                 style="Custom.TButton")
         exit_button.pack(pady=20)
 
 

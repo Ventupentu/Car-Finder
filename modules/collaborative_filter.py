@@ -1,8 +1,14 @@
+"""
+Este módulo implementa un modelo de filtrado colaborativo
+para predecir las calificaciones de los usuarios.
+"""
+
+import pickle
+import os
 import pandas as pd
 from surprise import Dataset, Reader, SVD
 from surprise.model_selection import train_test_split
-import pickle
-import os
+
 
 class CollaborativeFilter:
     """
@@ -19,7 +25,7 @@ class CollaborativeFilter:
         Inicializa una instancia de la clase CollaborativeFilter.
 
         Args:
-            model_path (str): Ruta al archivo del modelo colaborativo. 
+            model_path (str): Ruta al archivo del modelo colaborativo.
                               Por defecto es 'data/collaborative_model.pkl'.
         """
         self.model_path = model_path
@@ -28,11 +34,14 @@ class CollaborativeFilter:
 
     def train_model(self, ratings_path: str) -> None:
         """
-        Entrena un modelo de filtrado colaborativo utilizando los datos de calificaciones proporcionados.
-        Si un modelo entrenado ya existe en la ruta especificada, lo carga en lugar de entrenar uno nuevo.
+        Entrena un modelo de filtrado colaborativo utilizando los datos de calificaciones
+        proporcionados.
+        Si un modelo entrenado ya existe en la ruta especificada,
+        lo carga en lugar de entrenar uno nuevo.
 
         Args:
-            ratings_path (str): La ruta al archivo CSV que contiene las calificaciones de los usuarios.
+            ratings_path (str): La ruta al archivo CSV que contiene las
+            calificaciones de los usuarios.
 
         El archivo CSV debe tener las siguientes columnas:
         - user_id: Identificador del usuario.
@@ -53,7 +62,13 @@ class CollaborativeFilter:
 
         trainset, self.testset = train_test_split(data, test_size=0.2)
 
-        best_params = {'n_factors': 20, 'n_epochs': 10, 'lr_all': 0.002, 'reg_all': 0.4} # Estos parámetros han sido encontrados mediante GridSearchCV
+        # Estos parámetros han sido encontrados mediante GridSearchCV
+        best_params = {
+            'n_factors': 20,
+            'n_epochs': 10,
+            'lr_all': 0.002,
+            'reg_all': 0.4
+        }
         self.model = SVD(
             n_factors=best_params['n_factors'],
             n_epochs=best_params['n_epochs'],
